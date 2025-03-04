@@ -1,17 +1,17 @@
-PyTorch Documentation Repository
+# Personal PyTorch Documentation
 
-Overview
+## Overview
 
 This repository serves as a personal reference for tracking and documenting PyTorch files and functions that I use while learning PyTorch. It is intended as a structured and searchable resource for future reference.
 
-Python Version
+## Python Version
 
 This repository uses Python 3.9.
 
-Resources
+## Resources
 
 [PyTorch Official Documentation](https://pytorch.org/docs/stable/index.html)
 
-Contributions
+## Contributions
 
 This repository is primarily for personal reference.
