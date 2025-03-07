@@ -14,4 +14,4 @@ This repository uses Python 3.9.
 
 ## Contributions
 
-This repository is primarily for personal reference.
+This repository is primarily for personal reference, but a lot of the starter materials were taken from the [YouTube Pytorch Tutorial](https://github.com/patrickloeber/pytorchTutorial).
