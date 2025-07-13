@@ -1,0 +1,747 @@
+{
+  "last_updated": "2025-07-13T09:57:33.025552",
+  "total_papers": 25,
+  "papers": [
+    {
+      "title": "DexH2R: A Benchmark for Dynamic Dexterous Grasping in Human-to-Robot\n  Handover",
+      "link": "https://arxiv.org/abs/2506.23152v3",
+      "pdf_link": "https://arxiv.org/pdf/2506.23152v3.pdf",
+      "summary": "Handover between a human and a dexterous robotic hand is a fundamental yet\nchallenging task in human-robot collaboration. It requires handling dynamic\nenvironments and a wide variety of objects and demands robust and adaptive\ngrasping strategies. However, progress in developing effective dynamic\ndexterous grasping methods is limited by the absence of high-quality,\nreal-world human-to-robot handover datasets. Existing datasets primarily focus\non grasping static objects or rely on synthesized handover motions, which\ndiffer significantly from real-world robot motion patterns, creating a\nsubstantial gap in applicability. In this paper, we introduce DexH2R, a\ncomprehensive real-world dataset for human-to-robot handovers, built on a\ndexterous robotic hand. Our dataset captures a diverse range of interactive\nobjects, dynamic motion patterns, rich visual sensor data, and detailed\nannotations. Additionally, to ensure natural and human-like dexterous motions,\nwe utilize teleoperation for data collection, enabling the robot's movements to\nalign with human behaviors and habits, which is a crucial characteristic for\nintelligent humanoid robots. Furthermore, we propose an effective solution,\nDynamicGrasp, for human-to-robot handover and evaluate various state-of-the-art\napproaches, including auto-regressive models and diffusion policy methods,\nproviding a thorough comparison and analysis. We believe our benchmark will\ndrive advancements in human-to-robot handover research by offering a\nhigh-quality dataset, effective solutions, and comprehensive evaluation\nmetrics.",
+      "published": "2025-06-29T09:04:55Z",
+      "authors": [
+        "Youzhuo Wang",
+        "Jiayi Ye",
+        "Chuyang Xiao",
+        "Yiming Zhong",
+        "Heng Tao",
+        "Hang Yu",
+        "Yumeng Liu",
+        "Jingyi Yu",
+        "Yuexin Ma"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.23152v3",
+      "relevance_score": 10
+    },
+    {
+      "title": "Robust Peg-in-Hole Assembly under Uncertainties via Compliant and\n  Interactive Contact-Rich Manipulation",
+      "link": "https://arxiv.org/abs/2506.22766v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.22766v1.pdf",
+      "summary": "Robust and adaptive robotic peg-in-hole assembly under tight tolerances is\ncritical to various industrial applications. However, it remains an open\nchallenge due to perceptual and physical uncertainties from contact-rich\ninteractions that easily exceed the allowed clearance. In this paper, we study\nhow to leverage contact between the peg and its matching hole to eliminate\nuncertainties in the assembly process under unstructured settings. By examining\nthe role of compliance under contact constraints, we present a manipulation\nsystem that plans collision-inclusive interactions for the peg to 1)\niteratively identify its task environment to localize the target hole and 2)\nexploit environmental contact constraints to refine insertion motions into the\ntarget hole without relying on precise perception, enabling a robust solution\nto peg-in-hole assembly. By conceptualizing the above process as the\ncomposition of funneling in different state spaces, we present a formal\napproach to constructing manipulation funnels as an uncertainty-absorbing\nparadigm for peg-in-hole assembly. The proposed system effectively generalizes\nacross diverse peg-in-hole scenarios across varying scales, shapes, and\nmaterials in a learning-free manner. Extensive experiments on a NIST Assembly\nTask Board (ATB) and additional challenging scenarios validate its robustness\nin real-world applications.",
+      "published": "2025-06-28T06:02:42Z",
+      "authors": [
+        "Yiting Chen",
+        "Kenneth Kimble",
+        "Howard H. Qian",
+        "Podshara Chanrungmaneekul",
+        "Robert Seney",
+        "Kaiyu Hang"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.22766v1",
+      "relevance_score": 9
+    },
+    {
+      "title": "Multi-Robot Assembly of Deformable Linear Objects Using Multi-Modal\n  Perception",
+      "link": "https://arxiv.org/abs/2506.22034v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.22034v1.pdf",
+      "summary": "Industrial assembly of deformable linear objects (DLOs) such as cables offers\ngreat potential for many industries. However, DLOs pose several challenges for\nrobot-based automation due to the inherent complexity of deformation and,\nconsequentially, the difficulties in anticipating the behavior of DLOs in\ndynamic situations. Although existing studies have addressed isolated\nsubproblems like shape tracking, grasping, and shape control, there has been\nlimited exploration of integrated workflows that combine these individual\nprocesses. To address this gap, we propose an object-centric perception and\nplanning framework to achieve a comprehensive DLO assembly process throughout\nthe industrial value chain. The framework utilizes visual and tactile\ninformation to track the DLO's shape as well as contact state across different\nstages, which facilitates effective planning of robot actions. Our approach\nencompasses robot-based bin picking of DLOs from cluttered environments,\nfollowed by a coordinated handover to two additional robots that mount the DLOs\nonto designated fixtures. Real-world experiments employing a setup with\nmultiple robots demonstrate the effectiveness of the approach and its relevance\nto industrial scenarios.",
+      "published": "2025-06-27T09:28:44Z",
+      "authors": [
+        "Kejia Chen",
+        "Celina Dettmering",
+        "Florian Pachler",
+        "Zhuo Liu",
+        "Yue Zhang",
+        "Tailai Cheng",
+        "Jonas Dirr",
+        "Zhenshan Bing",
+        "Alois Knoll",
+        "Rüdiger Daub"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.22034v1",
+      "relevance_score": 9
+    },
+    {
+      "title": "Hierarchical Reinforcement Learning for Articulated Tool Manipulation\n  with Multifingered Hand",
+      "link": "https://arxiv.org/abs/2507.06822v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.06822v1.pdf",
+      "summary": "Manipulating articulated tools, such as tweezers or scissors, has rarely been\nexplored in previous research. Unlike rigid tools, articulated tools change\ntheir shape dynamically, creating unique challenges for dexterous robotic\nhands. In this work, we present a hierarchical, goal-conditioned reinforcement\nlearning (GCRL) framework to improve the manipulation capabilities of\nanthropomorphic robotic hands using articulated tools. Our framework comprises\ntwo policy layers: (1) a low-level policy that enables the dexterous hand to\nmanipulate the tool into various configurations for objects of different sizes,\nand (2) a high-level policy that defines the tool's goal state and controls the\nrobotic arm for object-picking tasks. We employ an encoder, trained on\nsynthetic pointclouds, to estimate the tool's affordance states--specifically,\nhow different tool configurations (e.g., tweezer opening angles) enable\ngrasping of objects of varying sizes--from input point clouds, thereby enabling\nprecise tool manipulation. We also utilize a privilege-informed heuristic\npolicy to generate replay buffer, improving the training efficiency of the\nhigh-level policy. We validate our approach through real-world experiments,\nshowing that the robot can effectively manipulate a tweezer-like tool to grasp\nobjects of diverse shapes and sizes with a 70.8 % success rate. This study\nhighlights the potential of RL to advance dexterous robotic manipulation of\narticulated tools.",
+      "published": "2025-07-09T13:11:12Z",
+      "authors": [
+        "Wei Xu",
+        "Yanchao Zhao",
+        "Weichao Guo",
+        "Xinjun Sheng"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.06822v1",
+      "relevance_score": 8
+    },
+    {
+      "title": "Monocular One-Shot Metric-Depth Alignment for RGB-Based Robot Grasping",
+      "link": "https://arxiv.org/abs/2506.17110v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.17110v1.pdf",
+      "summary": "Accurate 6D object pose estimation is a prerequisite for successfully\ncompleting robotic prehensile and non-prehensile manipulation tasks. At\npresent, 6D pose estimation for robotic manipulation generally relies on depth\nsensors based on, e.g., structured light, time-of-flight, and stereo-vision,\nwhich can be expensive, produce noisy output (as compared with RGB cameras),\nand fail to handle transparent objects. On the other hand, state-of-the-art\nmonocular depth estimation models (MDEMs) provide only affine-invariant depths\nup to an unknown scale and shift. Metric MDEMs achieve some successful\nzero-shot results on public datasets, but fail to generalize. We propose a\nnovel framework, Monocular One-shot Metric-depth Alignment (MOMA), to recover\nmetric depth from a single RGB image, through a one-shot adaptation building on\nMDEM techniques. MOMA performs scale-rotation-shift alignments during camera\ncalibration, guided by sparse ground-truth depth points, enabling accurate\ndepth estimation without additional data collection or model retraining on the\ntesting setup. MOMA supports fine-tuning the MDEM on transparent objects,\ndemonstrating strong generalization capabilities. Real-world experiments on\ntabletop 2-finger grasping and suction-based bin-picking applications show MOMA\nachieves high success rates in diverse tasks, confirming its effectiveness.",
+      "published": "2025-06-20T16:11:20Z",
+      "authors": [
+        "Teng Guo",
+        "Baichuan Huang",
+        "Jingjin Yu"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.17110v1",
+      "relevance_score": 8
+    },
+    {
+      "title": "Dex1B: Learning with 1B Demonstrations for Dexterous Manipulation",
+      "link": "https://arxiv.org/abs/2506.17198v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.17198v1.pdf",
+      "summary": "Generating large-scale demonstrations for dexterous hand manipulation remains\nchallenging, and several approaches have been proposed in recent years to\naddress this. Among them, generative models have emerged as a promising\nparadigm, enabling the efficient creation of diverse and physically plausible\ndemonstrations. In this paper, we introduce Dex1B, a large-scale, diverse, and\nhigh-quality demonstration dataset produced with generative models. The dataset\ncontains one billion demonstrations for two fundamental tasks: grasping and\narticulation. To construct it, we propose a generative model that integrates\ngeometric constraints to improve feasibility and applies additional conditions\nto enhance diversity. We validate the model on both established and newly\nintroduced simulation benchmarks, where it significantly outperforms prior\nstate-of-the-art methods. Furthermore, we demonstrate its effectiveness and\nrobustness through real-world robot experiments. Our project page is at\nhttps://jianglongye.com/dex1b",
+      "published": "2025-06-20T17:49:04Z",
+      "authors": [
+        "Jianglong Ye",
+        "Keyi Wang",
+        "Chengjing Yuan",
+        "Ruihan Yang",
+        "Yiquan Li",
+        "Jiyue Zhu",
+        "Yuzhe Qin",
+        "Xueyan Zou",
+        "Xiaolong Wang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.17198v1",
+      "relevance_score": 8
+    },
+    {
+      "title": "FineGrasp: Towards Robust Grasping for Delicate Objects",
+      "link": "https://arxiv.org/abs/2507.05978v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.05978v1.pdf",
+      "summary": "Recent advancements in robotic grasping have led to its integration as a core\nmodule in many manipulation systems. For instance, language-driven semantic\nsegmentation enables the grasping of any designated object or object part.\nHowever, existing methods often struggle to generate feasible grasp poses for\nsmall objects or delicate components, potentially causing the entire pipeline\nto fail. To address this issue, we propose a novel grasping method, FineGrasp,\nwhich introduces improvements in three key aspects. First, we introduce\nmultiple network modifications to enhance the ability of to handle delicate\nregions. Second, we address the issue of label imbalance and propose a refined\ngraspness label normalization strategy. Third, we introduce a new simulated\ngrasp dataset and show that mixed sim-to-real training further improves grasp\nperformance. Experimental results show significant improvements, especially in\ngrasping small objects, and confirm the effectiveness of our system in semantic\ngrasping.",
+      "published": "2025-07-08T13:34:04Z",
+      "authors": [
+        "Yun Du",
+        "Mengao Zhao",
+        "Tianwei Lin",
+        "Yiwei Jin",
+        "Chaodong Huang",
+        "Zhizhong Su"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.05978v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "DexVLG: Dexterous Vision-Language-Grasp Model at Scale",
+      "link": "https://arxiv.org/abs/2507.02747v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.02747v1.pdf",
+      "summary": "As large models gain traction, vision-language-action (VLA) systems are\nenabling robots to tackle increasingly complex tasks. However, limited by the\ndifficulty of data collection, progress has mainly focused on controlling\nsimple gripper end-effectors. There is little research on functional grasping\nwith large models for human-like dexterous hands. In this paper, we introduce\nDexVLG, a large Vision-Language-Grasp model for Dexterous grasp pose prediction\naligned with language instructions using single-view RGBD input. To accomplish\nthis, we generate a dataset of 170 million dexterous grasp poses mapped to\nsemantic parts across 174,000 objects in simulation, paired with detailed\npart-level captions. This large-scale dataset, named DexGraspNet 3.0, is used\nto train a VLM and flow-matching-based pose head capable of producing\ninstruction-aligned grasp poses for tabletop objects. To assess DexVLG's\nperformance, we create benchmarks in physics-based simulations and conduct\nreal-world experiments. Extensive testing demonstrates DexVLG's strong\nzero-shot generalization capabilities-achieving over 76% zero-shot execution\nsuccess rate and state-of-the-art part-grasp accuracy in simulation-and\nsuccessful part-aligned grasps on physical objects in real-world scenarios.",
+      "published": "2025-07-03T16:05:25Z",
+      "authors": [
+        "Jiawei He",
+        "Danshi Li",
+        "Xinqiang Yu",
+        "Zekun Qi",
+        "Wenyao Zhang",
+        "Jiayi Chen",
+        "Zhaoxiang Zhang",
+        "Zhizheng Zhang",
+        "Li Yi",
+        "He Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.02747v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "Kinematic Model Optimization via Differentiable Contact Manifold for\n  In-Space Manipulation",
+      "link": "https://arxiv.org/abs/2506.17458v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.17458v1.pdf",
+      "summary": "Robotic manipulation in space is essential for emerging applications such as\ndebris removal and in-space servicing, assembly, and manufacturing (ISAM). A\nkey requirement for these tasks is the ability to perform precise, contact-rich\nmanipulation under significant uncertainty. In particular, thermal-induced\ndeformation of manipulator links and temperature-dependent encoder bias\nintroduce kinematic parameter errors that significantly degrade end-effector\naccuracy. Traditional calibration techniques rely on external sensors or\ndedicated calibration procedures, which can be infeasible or risky in dynamic,\nspace-based operational scenarios.\n  This paper proposes a novel method for kinematic parameter estimation that\nonly requires encoder measurements and binary contact detection. The approach\nfocuses on estimating link thermal deformation strain and joint encoder biases\nby leveraging information of the contact manifold - the set of relative SE(3)\nposes at which contact between the manipulator and environment occurs. We\npresent two core contributions: (1) a differentiable, learning-based model of\nthe contact manifold, and (2) an optimization-based algorithm for estimating\nkinematic parameters from encoder measurements at contact instances. By\nenabling parameter estimation using only encoder measurements and contact\ndetection, this method provides a robust, interpretable, and data-efficient\nsolution for safe and accurate manipulation in the challenging conditions of\nspace.",
+      "published": "2025-06-20T19:59:31Z",
+      "authors": [
+        "Abhay Negi",
+        "Omey M. Manyar",
+        "Satyandra K. Gupta"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.17458v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "A Careful Examination of Large Behavior Models for Multitask Dexterous\n  Manipulation",
+      "link": "https://arxiv.org/abs/2507.05331v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.05331v1.pdf",
+      "summary": "Robot manipulation has seen tremendous progress in recent years, with\nimitation learning policies enabling successful performance of dexterous and\nhard-to-model tasks. Concurrently, scaling data and model size has led to the\ndevelopment of capable language and vision foundation models, motivating\nlarge-scale efforts to create general-purpose robot foundation models. While\nthese models have garnered significant enthusiasm and investment, meaningful\nevaluation of real-world performance remains a challenge, limiting both the\npace of development and inhibiting a nuanced understanding of current\ncapabilities. In this paper, we rigorously evaluate multitask robot\nmanipulation policies, referred to as Large Behavior Models (LBMs), by\nextending the Diffusion Policy paradigm across a corpus of simulated and\nreal-world robot data. We propose and validate an evaluation pipeline to\nrigorously analyze the capabilities of these models with statistical\nconfidence. We compare against single-task baselines through blind, randomized\ntrials in a controlled setting, using both simulation and real-world\nexperiments. We find that multi-task pretraining makes the policies more\nsuccessful and robust, and enables teaching complex new tasks more quickly,\nusing a fraction of the data when compared to single-task baselines. Moreover,\nperformance predictably increases as pretraining scale and diversity grows.\nProject page: https://toyotaresearchinstitute.github.io/lbm1/",
+      "published": "2025-07-07T17:56:01Z",
+      "authors": [
+        " TRI LBM Team",
+        "Jose Barreiros",
+        "Andrew Beaulieu",
+        "Aditya Bhat",
+        "Rick Cory",
+        "Eric Cousineau",
+        "Hongkai Dai",
+        "Ching-Hsin Fang",
+        "Kunimatsu Hashimoto",
+        "Muhammad Zubair Irshad",
+        "Masha Itkina",
+        "Naveen Kuppuswamy",
+        "Kuan-Hui Lee",
+        "Katherine Liu",
+        "Dale McConachie",
+        "Ian McMahon",
+        "Haruki Nishimura",
+        "Calder Phillips-Grafflin",
+        "Charles Richter",
+        "Paarth Shah",
+        "Krishnan Srinivasan",
+        "Blake Wulfe",
+        "Chen Xu",
+        "Mengchao Zhang",
+        "Alex Alspach",
+        "Maya Angeles",
+        "Kushal Arora",
+        "Vitor Campagnolo Guizilini",
+        "Alejandro Castro",
+        "Dian Chen",
+        "Ting-Sheng Chu",
+        "Sam Creasey",
+        "Sean Curtis",
+        "Richard Denitto",
+        "Emma Dixon",
+        "Eric Dusel",
+        "Matthew Ferreira",
+        "Aimee Goncalves",
+        "Grant Gould",
+        "Damrong Guoy",
+        "Swati Gupta",
+        "Xuchen Han",
+        "Kyle Hatch",
+        "Brendan Hathaway",
+        "Allison Henry",
+        "Hillel Hochsztein",
+        "Phoebe Horgan",
+        "Shun Iwase",
+        "Donovon Jackson",
+        "Siddharth Karamcheti",
+        "Sedrick Keh",
+        "Joseph Masterjohn",
+        "Jean Mercat",
+        "Patrick Miller",
+        "Paul Mitiguy",
+        "Tony Nguyen",
+        "Jeremy Nimmer",
+        "Yuki Noguchi",
+        "Reko Ong",
+        "Aykut Onol",
+        "Owen Pfannenstiehl",
+        "Richard Poyner",
+        "Leticia Priebe Mendes Rocha",
+        "Gordon Richardson",
+        "Christopher Rodriguez",
+        "Derick Seale",
+        "Michael Sherman",
+        "Mariah Smith-Jones",
+        "David Tago",
+        "Pavel Tokmakov",
+        "Matthew Tran",
+        "Basile Van Hoorick",
+        "Igor Vasiljevic",
+        "Sergey Zakharov",
+        "Mark Zolotas",
+        "Rares Ambrus",
+        "Kerri Fetzer-Borelli",
+        "Benjamin Burchfiel",
+        "Hadas Kress-Gazit",
+        "Siyuan Feng",
+        "Stacie Ford",
+        "Russ Tedrake"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.05331v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "TypeTele: Releasing Dexterity in Teleoperation by Dexterous Manipulation\n  Types",
+      "link": "https://arxiv.org/abs/2507.01857v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.01857v1.pdf",
+      "summary": "Dexterous teleoperation plays a crucial role in robotic manipulation for\nreal-world data collection and remote robot control. Previous dexterous\nteleoperation mostly relies on hand retargeting to closely mimic human hand\npostures. However, these approaches may fail to fully leverage the inherent\ndexterity of dexterous hands, which can execute unique actions through their\nstructural advantages compared to human hands. To address this limitation, we\npropose TypeTele, a type-guided dexterous teleoperation system, which enables\ndexterous hands to perform actions that are not constrained by human motion\npatterns. This is achieved by introducing dexterous manipulation types into the\nteleoperation system, allowing operators to employ appropriate types to\ncomplete specific tasks. To support this system, we build an extensible\ndexterous manipulation type library to cover comprehensive dexterous postures\nused in manipulation tasks. During teleoperation, we employ a MLLM\n(Multi-modality Large Language Model)-assisted type retrieval module to\nidentify the most suitable manipulation type based on the specific task and\noperator commands. Extensive experiments of real-world teleoperation and\nimitation learning demonstrate that the incorporation of manipulation types\nsignificantly takes full advantage of the dexterous robot's ability to perform\ndiverse and complex tasks with higher success rates.",
+      "published": "2025-07-02T16:16:39Z",
+      "authors": [
+        "Yuhao Lin",
+        "Yi-Lin Wei",
+        "Haoran Liao",
+        "Mu Lin",
+        "Chengyi Xing",
+        "Hao Li",
+        "Dandan Zhang",
+        "Mark Cutkosky",
+        "Wei-Shi Zheng"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.01857v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "Self-Closing Suction Grippers for Industrial Grasping via Form-Flexible\n  Design",
+      "link": "https://arxiv.org/abs/2507.01561v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.01561v1.pdf",
+      "summary": "Shape-morphing robots have shown benefits in industrial grasping. We propose\nform-flexible grippers for adaptive grasping. The design is based on the hybrid\njamming and suction mechanism, which deforms to handle objects that vary\nsignificantly in size from the aperture, including both larger and smaller\nparts. Compared with traditional grippers, the gripper achieves self-closing to\nform an airtight seal. Under a vacuum, a wide range of grasping is realized\nthrough the passive morphing mechanism at the interface that harmonizes\npressure and flow rate. This hybrid gripper showcases the capability to\nsecurely grasp an egg, as small as 54.5% of its aperture, while achieving a\nmaximum load-to-mass ratio of 94.3.",
+      "published": "2025-07-02T10:22:28Z",
+      "authors": [
+        "Huijiang Wang",
+        "Holger Kunz",
+        "Timon Adler",
+        "Fumiya Iida"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.01561v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM\n  Reasoning",
+      "link": "https://arxiv.org/abs/2507.00833v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.00833v1.pdf",
+      "summary": "For robotic manipulation, existing robotics datasets and simulation\nbenchmarks predominantly cater to robot-arm platforms. However, for humanoid\nrobots equipped with dual arms and dexterous hands, simulation tasks and\nhigh-quality demonstrations are notably lacking. Bimanual dexterous\nmanipulation is inherently more complex, as it requires coordinated arm\nmovements and hand operations, making autonomous data collection challenging.\nThis paper presents HumanoidGen, an automated task creation and demonstration\ncollection framework that leverages atomic dexterous operations and LLM\nreasoning to generate relational constraints. Specifically, we provide spatial\nannotations for both assets and dexterous hands based on the atomic operations,\nand perform an LLM planner to generate a chain of actionable spatial\nconstraints for arm movements based on object affordances and scenes. To\nfurther improve planning ability, we employ a variant of Monte Carlo tree\nsearch to enhance LLM reasoning for long-horizon tasks and insufficient\nannotation. In experiments, we create a novel benchmark with augmented\nscenarios to evaluate the quality of the collected data. The results show that\nthe performance of the 2D and 3D diffusion policies can scale with the\ngenerated dataset. Project page is https://openhumanoidgen.github.io.",
+      "published": "2025-07-01T15:04:38Z",
+      "authors": [
+        "Zhi Jing",
+        "Siyuan Yang",
+        "Jicong Ao",
+        "Ting Xiao",
+        "Yugang Jiang",
+        "Chenjia Bai"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.00833v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "ConViTac: Aligning Visual-Tactile Fusion with Contrastive\n  Representations",
+      "link": "https://arxiv.org/abs/2506.20757v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.20757v1.pdf",
+      "summary": "Vision and touch are two fundamental sensory modalities for robots, offering\ncomplementary information that enhances perception and manipulation tasks.\nPrevious research has attempted to jointly learn visual-tactile representations\nto extract more meaningful information. However, these approaches often rely on\ndirect combination, such as feature addition and concatenation, for modality\nfusion, which tend to result in poor feature integration. In this paper, we\npropose ConViTac, a visual-tactile representation learning network designed to\nenhance the alignment of features during fusion using contrastive\nrepresentations. Our key contribution is a Contrastive Embedding Conditioning\n(CEC) mechanism that leverages a contrastive encoder pretrained through\nself-supervised contrastive learning to project visual and tactile inputs into\nunified latent embeddings. These embeddings are used to couple visual-tactile\nfeature fusion through cross-modal attention, aiming at aligning the unified\nrepresentations and enhancing performance on downstream tasks. We conduct\nextensive experiments to demonstrate the superiority of ConViTac in real world\nover current state-of-the-art methods and the effectiveness of our proposed CEC\nmechanism, which improves accuracy by up to 12.0% in material classification\nand grasping prediction tasks.",
+      "published": "2025-06-25T18:43:35Z",
+      "authors": [
+        "Zhiyuan Wu",
+        "Yongqiang Zhao",
+        "Shan Luo"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.20757v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "EC-Flow: Enabling Versatile Robotic Manipulation from Action-Unlabeled\n  Videos via Embodiment-Centric Flow",
+      "link": "https://arxiv.org/abs/2507.06224v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.06224v1.pdf",
+      "summary": "Current language-guided robotic manipulation systems often require low-level\naction-labeled datasets for imitation learning. While object-centric flow\nprediction methods mitigate this issue, they remain limited to scenarios\ninvolving rigid objects with clear displacement and minimal occlusion. In this\nwork, we present Embodiment-Centric Flow (EC-Flow), a framework that directly\nlearns manipulation from action-unlabeled videos by predicting\nembodiment-centric flow. Our key insight is that incorporating the embodiment's\ninherent kinematics significantly enhances generalization to versatile\nmanipulation scenarios, including deformable object handling, occlusions, and\nnon-object-displacement tasks. To connect the EC-Flow with language\ninstructions and object interactions, we further introduce a goal-alignment\nmodule by jointly optimizing movement consistency and goal-image prediction.\nMoreover, translating EC-Flow to executable robot actions only requires a\nstandard robot URDF (Unified Robot Description Format) file to specify\nkinematic constraints across joints, which makes it easy to use in practice. We\nvalidate EC-Flow on both simulation (Meta-World) and real-world tasks,\ndemonstrating its state-of-the-art performance in occluded object handling (62%\nimprovement), deformable object manipulation (45% improvement), and\nnon-object-displacement tasks (80% improvement) than prior state-of-the-art\nobject-centric flow methods. For more information, see our project website at\nhttps://ec-flow1.github.io .",
+      "published": "2025-07-08T17:57:03Z",
+      "authors": [
+        "Yixiang Chen",
+        "Peiyan Li",
+        "Yan Huang",
+        "Jiabing Yang",
+        "Kehan Chen",
+        "Liang Wang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.06224v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "DreamGrasp: Zero-Shot 3D Multi-Object Reconstruction from Partial-View\n  Images for Robotic Manipulation",
+      "link": "https://arxiv.org/abs/2507.05627v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.05627v1.pdf",
+      "summary": "Partial-view 3D recognition -- reconstructing 3D geometry and identifying\nobject instances from a few sparse RGB images -- is an exceptionally\nchallenging yet practically essential task, particularly in cluttered, occluded\nreal-world settings where full-view or reliable depth data are often\nunavailable. Existing methods, whether based on strong symmetry priors or\nsupervised learning on curated datasets, fail to generalize to such scenarios.\nIn this work, we introduce DreamGrasp, a framework that leverages the\nimagination capability of large-scale pre-trained image generative models to\ninfer the unobserved parts of a scene. By combining coarse 3D reconstruction,\ninstance segmentation via contrastive learning, and text-guided instance-wise\nrefinement, DreamGrasp circumvents limitations of prior methods and enables\nrobust 3D reconstruction in complex, multi-object environments. Our experiments\nshow that DreamGrasp not only recovers accurate object geometry but also\nsupports downstream tasks like sequential decluttering and target retrieval\nwith high success rates.",
+      "published": "2025-07-08T03:12:49Z",
+      "authors": [
+        "Young Hun Kim",
+        "Seungyeon Kim",
+        "Yonghyeon Lee",
+        "Frank Chongwoo Park"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.05627v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "MLLM-Fabric: Multimodal Large Language Model-Driven Robotic Framework\n  for Fabric Sorting and Selection",
+      "link": "https://arxiv.org/abs/2507.04351v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.04351v1.pdf",
+      "summary": "Choosing the right fabric is crucial to meet functional and quality\nrequirements in robotic applications for textile manufacturing, apparel\nproduction, and smart retail. We present MLLM-Fabric, a robotic framework\npowered by multimodal large language models (MLLMs) for fabric sorting and\nselection. The system includes a robotic arm, a camera, a visuotactile sensor,\nand a pressure sensor. It employs supervised fine-tuning and multimodal\nexplanation-guided knowledge distillation to accurately classify and rank\nfabric properties. To facilitate further research, we release a dataset of 220\nunique fabric samples, including RGB images and synchronized visuotactile and\npressure data. Experimental results show that our Fabric-Llama-90B model\nconsistently outperforms pretrained vision-language baselines in both property\nranking accuracy and selection reliability.",
+      "published": "2025-07-06T11:27:27Z",
+      "authors": [
+        "Liman Wang",
+        "Hanyang Zhong",
+        "Tianyuan Wang",
+        "Shan Luo",
+        "Jihong Zhu"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.04351v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "Hierarchical Vision-Language Planning for Multi-Step Humanoid\n  Manipulation",
+      "link": "https://arxiv.org/abs/2506.22827v3",
+      "pdf_link": "https://arxiv.org/pdf/2506.22827v3.pdf",
+      "summary": "Enabling humanoid robots to reliably execute complex multi-step manipulation\ntasks is crucial for their effective deployment in industrial and household\nenvironments. This paper presents a hierarchical planning and control framework\ndesigned to achieve reliable multi-step humanoid manipulation. The proposed\nsystem comprises three layers: (1) a low-level RL-based controller responsible\nfor tracking whole-body motion targets; (2) a mid-level set of skill policies\ntrained via imitation learning that produce motion targets for different steps\nof a task; and (3) a high-level vision-language planning module that determines\nwhich skills should be executed and also monitors their completion in real-time\nusing pretrained vision-language models (VLMs). Experimental validation is\nperformed on a Unitree G1 humanoid robot executing a non-prehensile\npick-and-place task. Over 40 real-world trials, the hierarchical system\nachieved a 73% success rate in completing the full manipulation sequence. These\nexperiments confirm the feasibility of the proposed hierarchical system,\nhighlighting the benefits of VLM-based skill planning and monitoring for\nmulti-step manipulation scenarios. See https://vlp-humanoid.github.io/ for\nvideo demonstrations of the policy rollout.",
+      "published": "2025-06-28T09:39:37Z",
+      "authors": [
+        "André Schakkal",
+        "Ben Zandonati",
+        "Zhutian Yang",
+        "Navid Azizan"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.22827v3",
+      "relevance_score": 5
+    },
+    {
+      "title": "Learning Efficient Robotic Garment Manipulation with Standardization",
+      "link": "https://arxiv.org/abs/2506.22769v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.22769v1.pdf",
+      "summary": "Garment manipulation is a significant challenge for robots due to the complex\ndynamics and potential self-occlusion of garments. Most existing methods of\nefficient garment unfolding overlook the crucial role of standardization of\nflattened garments, which could significantly simplify downstream tasks like\nfolding, ironing, and packing. This paper presents APS-Net, a novel approach to\ngarment manipulation that combines unfolding and standardization in a unified\nframework. APS-Net employs a dual-arm, multi-primitive policy with dynamic\nfling to quickly unfold crumpled garments and pick-and-place (p and p) for\nprecise alignment. The purpose of garment standardization during unfolding\ninvolves not only maximizing surface coverage but also aligning the garment's\nshape and orientation to predefined requirements. To guide effective robot\nlearning, we introduce a novel factorized reward function for standardization,\nwhich incorporates garment coverage (Cov), keypoint distance (KD), and\nintersection-over-union (IoU) metrics. Additionally, we introduce a spatial\naction mask and an Action Optimized Module to improve unfolding efficiency by\nselecting actions and operation points effectively. In simulation, APS-Net\noutperforms state-of-the-art methods for long sleeves, achieving 3.9 percent\nbetter coverage, 5.2 percent higher IoU, and a 0.14 decrease in KD (7.09\npercent relative reduction). Real-world folding tasks further demonstrate that\nstandardization simplifies the folding process. Project page: see\nhttps://hellohaia.github.io/APS/",
+      "published": "2025-06-28T06:13:13Z",
+      "authors": [
+        "Changshi Zhou",
+        "Feng Luan",
+        "Jiarui Hu",
+        "Shaoqiang Meng",
+        "Zhipeng Wang",
+        "Yanchao Dong",
+        "Yanmin Zhou",
+        "Bin He"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.22769v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "Generative Grasp Detection and Estimation with Concept Learning-based\n  Safety Criteria",
+      "link": "https://arxiv.org/abs/2506.17842v1",
+      "pdf_link": "https://arxiv.org/pdf/2506.17842v1.pdf",
+      "summary": "Neural networks are often regarded as universal equations that can estimate\nany function. This flexibility, however, comes with the drawback of high\ncomplexity, rendering these networks into black box models, which is especially\nrelevant in safety-centric applications. To that end, we propose a pipeline for\na collaborative robot (Cobot) grasping algorithm that detects relevant tools\nand generates the optimal grasp. To increase the transparency and reliability\nof this approach, we integrate an explainable AI method that provides an\nexplanation for the underlying prediction of a model by extracting the learned\nfeatures and correlating them to corresponding classes from the input. These\nconcepts are then used as additional criteria to ensure the safe handling of\nwork tools. In this paper, we show the consistency of this approach and the\ncriterion for improving the handover position. This approach was tested in an\nindustrial environment, where a camera system was set up to enable a robot to\npick up certain tools and objects.",
+      "published": "2025-06-21T22:33:25Z",
+      "authors": [
+        "Al-Harith Farhad",
+        "Khalil Abuibaid",
+        "Christiane Plociennik",
+        "Achim Wagner",
+        "Martin Ruskowski"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.17842v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "RoboEval: Where Robotic Manipulation Meets Structured and Scalable\n  Evaluation",
+      "link": "https://arxiv.org/abs/2507.00435v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.00435v1.pdf",
+      "summary": "We present RoboEval, a simulation benchmark and structured evaluation\nframework designed to reveal the limitations of current bimanual manipulation\npolicies. While prior benchmarks report only binary task success, we show that\nsuch metrics often conceal critical weaknesses in policy behavior -- such as\npoor coordination, slipping during grasping, or asymmetric arm usage. RoboEval\nintroduces a suite of tiered, semantically grounded tasks decomposed into\nskill-specific stages, with variations that systematically challenge spatial,\nphysical, and coordination capabilities. Tasks are paired with fine-grained\ndiagnostic metrics and 3000+ human demonstrations to support imitation\nlearning. Our experiments reveal that policies with similar success rates\ndiverge in how tasks are executed -- some struggle with alignment, others with\ntemporally consistent bimanual control. We find that behavioral metrics\ncorrelate with success in over half of task-metric pairs, and remain\ninformative even when binary success saturates. By pinpointing when and how\npolicies fail, RoboEval enables a deeper, more actionable understanding of\nrobotic manipulation -- and highlights the need for evaluation tools that go\nbeyond success alone.",
+      "published": "2025-07-01T05:33:16Z",
+      "authors": [
+        "Yi Ru Wang",
+        "Carter Ung",
+        "Grant Tannert",
+        "Jiafei Duan",
+        "Josephine Li",
+        "Amy Le",
+        "Rishabh Oswal",
+        "Markus Grotz",
+        "Wilbert Pumacay",
+        "Yuquan Deng",
+        "Ranjay Krishna",
+        "Dieter Fox",
+        "Siddhartha Srinivasa"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.00435v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "UniTac: Whole-Robot Touch Sensing Without Tactile Sensors",
+      "link": "https://arxiv.org/abs/2507.07980v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.07980v1.pdf",
+      "summary": "Robots can better interact with humans and unstructured environments through\ntouch sensing. However, most commercial robots are not equipped with tactile\nskins, making it challenging to achieve even basic touch-sensing functions,\nsuch as contact localization. We present UniTac, a data-driven whole-body\ntouch-sensing approach that uses only proprioceptive joint sensors and does not\nrequire the installation of additional sensors. Our approach enables a robot\nequipped solely with joint sensors to localize contacts. Our goal is to\ndemocratize touch sensing and provide an off-the-shelf tool for HRI researchers\nto provide their robots with touch-sensing capabilities. We validate our\napproach on two platforms: the Franka robot arm and the Spot quadruped. On\nFranka, we can localize contact to within 8.0 centimeters, and on Spot, we can\nlocalize to within 7.2 centimeters at around 2,000 Hz on an RTX 3090 GPU\nwithout adding any additional sensors to the robot. Project website:\nhttps://ivl.cs.brown.edu/research/unitac.",
+      "published": "2025-07-10T17:55:05Z",
+      "authors": [
+        "Wanjia Fu",
+        "Hongyu Li",
+        "Ivy X. He",
+        "Stefanie Tellex",
+        "Srinath Sridhar"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.07980v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Dexterous Teleoperation of 20-DoF ByteDexter Hand via Human Motion\n  Retargeting",
+      "link": "https://arxiv.org/abs/2507.03227v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.03227v1.pdf",
+      "summary": "Replicating human--level dexterity remains a fundamental robotics challenge,\nrequiring integrated solutions from mechatronic design to the control of high\ndegree--of--freedom (DoF) robotic hands. While imitation learning shows promise\nin transferring human dexterity to robots, the efficacy of trained policies\nrelies on the quality of human demonstration data. We bridge this gap with a\nhand--arm teleoperation system featuring: (1) a 20--DoF linkage--driven\nanthropomorphic robotic hand for biomimetic dexterity, and (2) an\noptimization--based motion retargeting for real--time, high--fidelity\nreproduction of intricate human hand motions and seamless hand--arm\ncoordination. We validate the system via extensive empirical evaluations,\nincluding dexterous in-hand manipulation tasks and a long--horizon task\nrequiring the organization of a cluttered makeup table randomly populated with\nnine objects. Experimental results demonstrate its intuitive teleoperation\ninterface with real--time control and the ability to generate high--quality\ndemonstration data. Please refer to the accompanying video for further details.",
+      "published": "2025-07-04T00:06:52Z",
+      "authors": [
+        "Ruoshi Wen",
+        "Jiajun Zhang",
+        "Guangzeng Chen",
+        "Zhongren Cui",
+        "Min Du",
+        "Yang Gou",
+        "Zhigang Han",
+        "Junkai Hu",
+        "Liqun Huang",
+        "Hao Niu",
+        "Wei Xu",
+        "Haoxiang Zhang",
+        "Zhengming Zhu",
+        "Hang Li",
+        "Zeyu Ren"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.03227v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Accurate Pose Estimation Using Contact Manifold Sampling for Safe\n  Peg-in-Hole Insertion of Complex Geometries",
+      "link": "https://arxiv.org/abs/2507.03925v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.03925v1.pdf",
+      "summary": "Robotic assembly of complex, non-convex geometries with tight clearances\nremains a challenging problem, demanding precise state estimation for\nsuccessful insertion. In this work, we propose a novel framework that relies\nsolely on contact states to estimate the full SE(3) pose of a peg relative to a\nhole. Our method constructs an online submanifold of contact states through\nprimitive motions with just 6 seconds of online execution, subsequently mapping\nit to an offline contact manifold for precise pose estimation. We demonstrate\nthat without such state estimation, robots risk jamming and excessive force\napplication, potentially causing damage. We evaluate our approach on five\nindustrially relevant, complex geometries with 0.1 to 1.0 mm clearances,\nachieving a 96.7% success rate - a 6x improvement over primitive-based\ninsertion without state estimation. Additionally, we analyze insertion forces,\nand overall insertion times, showing our method significantly reduces the\naverage wrench, enabling safer and more efficient assembly.",
+      "published": "2025-07-05T07:18:07Z",
+      "authors": [
+        "Abhay Negi",
+        "Omey M. Manyar",
+        "Dhanush K. Penmetsa",
+        "Satyandra K. Gupta"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.03925v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Benchmarking Generalizable Bimanual Manipulation: RoboTwin Dual-Arm\n  Collaboration Challenge at CVPR 2025 MEIS Workshop",
+      "link": "https://arxiv.org/abs/2506.23351v2",
+      "pdf_link": "https://arxiv.org/pdf/2506.23351v2.pdf",
+      "summary": "Embodied Artificial Intelligence (Embodied AI) is an emerging frontier in\nrobotics, driven by the need for autonomous systems that can perceive, reason,\nand act in complex physical environments. While single-arm systems have shown\nstrong task performance, collaborative dual-arm systems are essential for\nhandling more intricate tasks involving rigid, deformable, and\ntactile-sensitive objects. To advance this goal, we launched the RoboTwin\nDual-Arm Collaboration Challenge at the 2nd MEIS Workshop, CVPR 2025. Built on\nthe RoboTwin Simulation platform (1.0 and 2.0) and the AgileX COBOT-Magic Robot\nplatform, the competition consisted of three stages: Simulation Round 1,\nSimulation Round 2, and a final Real-World Round. Participants totally tackled\n17 dual-arm manipulation tasks, covering rigid, deformable, and tactile-based\nscenarios. The challenge attracted 64 global teams and over 400 participants,\nproducing top-performing solutions like SEM and AnchorDP3 and generating\nvaluable insights into generalizable bimanual policy learning. This report\noutlines the competition setup, task design, evaluation methodology, key\nfindings and future direction, aiming to support future research on robust and\ngeneralizable bimanual manipulation policies. The Challenge Webpage is\navailable at https://robotwin-benchmark.github.io/cvpr-2025-challenge/.",
+      "published": "2025-06-29T17:56:41Z",
+      "authors": [
+        "Tianxing Chen",
+        "Kaixuan Wang",
+        "Zhaohui Yang",
+        "Yuhao Zhang",
+        "Zanxin Chen",
+        "Baijun Chen",
+        "Wanxi Dong",
+        "Ziyuan Liu",
+        "Dong Chen",
+        "Tianshuo Yang",
+        "Haibao Yu",
+        "Xiaokang Yang",
+        "Yusen Qin",
+        "Zhiqiang Xie",
+        "Yao Mu",
+        "Ping Luo",
+        "Tian Nian",
+        "Weiliang Deng",
+        "Yiheng Ge",
+        "Yibin Liu",
+        "Zixuan Li",
+        "Dehui Wang",
+        "Zhixuan Liang",
+        "Haohui Xie",
+        "Rijie Zeng",
+        "Yunfei Ge",
+        "Peiqing Cong",
+        "Guannan He",
+        "Zhaoming Han",
+        "Ruocheng Yin",
+        "Jingxiang Guo",
+        "Lunkai Lin",
+        "Tianling Xu",
+        "Hongzhe Bi",
+        "Xuewu Lin",
+        "Tianwei Lin",
+        "Shujie Luo",
+        "Keyu Li",
+        "Ziyan Zhao",
+        "Ke Fan",
+        "Heyang Xu",
+        "Bo Peng",
+        "Wenlong Gao",
+        "Dongjiang Li",
+        "Feng Jin",
+        "Hui Shen",
+        "Jinming Li",
+        "Chaowei Cui",
+        "Yu Chen",
+        "Yaxin Peng",
+        "Lingdong Zeng",
+        "Wenlong Dong",
+        "Tengfei Li",
+        "Weijie Ke",
+        "Jun Chen",
+        "Erdemt Bao",
+        "Tian Lan",
+        "Tenglong Liu",
+        "Jin Yang",
+        "Huiping Zhuang",
+        "Baozhi Jia",
+        "Shuai Zhang",
+        "Zhengfeng Zou",
+        "Fangheng Guan",
+        "Tianyi Jia",
+        "Ke Zhou",
+        "Hongjiu Zhang",
+        "Yating Han",
+        "Cheng Fang",
+        "Yixian Zou",
+        "Chongyang Xu",
+        "Qinglun Zhang",
+        "Shen Cheng",
+        "Xiaohe Wang",
+        "Ping Tan",
+        "Haoqiang Fan",
+        "Shuaicheng Liu",
+        "Jiaheng Chen",
+        "Chuxuan Huang",
+        "Chengliang Lin",
+        "Kaijun Luo",
+        "Boyu Yue",
+        "Yi Liu",
+        "Jinyu Chen",
+        "Zichang Tan",
+        "Liming Deng",
+        "Shuo Xu",
+        "Zijian Cai",
+        "Shilong Yin",
+        "Hao Wang",
+        "Hongshan Liu",
+        "Tianyang Li",
+        "Long Shi",
+        "Ran Xu",
+        "Huilin Xu",
+        "Zhengquan Zhang",
+        "Congsheng Xu",
+        "Jinchang Yang",
+        "Feng Xu"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2506.23351v2",
+      "relevance_score": 4
+    }
+  ],
+  "search_keywords": [
+    "manipulation",
+    "grasp",
+    "grasping",
+    "pick",
+    "place",
+    "dexterous",
+    "robotic arm",
+    "robot hand",
+    "end effector",
+    "object manipulation",
+    "tactile",
+    "force control",
+    "impedance control",
+    "contact",
+    "assembly",
+    "bin picking",
+    "sorting",
+    "stacking"
+  ]
+}
