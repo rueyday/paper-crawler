@@ -84,6 +84,7 @@ doxygen-docs/
 *.rej
 
 ### Anaconda ###
+crawler/
 env/
 .conda/
 *.ipynb_checkpoints/
