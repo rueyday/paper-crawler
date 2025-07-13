@@ -9,7 +9,7 @@ This repo automatically collects the latest robot manipulation-related papers fr
 
 ## 📄 Latest Papers
 
-Check [`robot_papers.json`](robot_papers.json) for the most recent list of papers.
+Check [`robot_manipulation_papers.json`](robot_manipulation_papers.json) for the most recent list of papers.
 
 ## 🚀 Setup Locally
 
