@@ -1,0 +1,40 @@
+
+---
+
+## 🔧 3. `.github/workflows/crawl.yml` — GitHub Actions Workflow
+
+```yaml
+# .github/workflows/crawl.yml
+
+name: Update Robot Papers
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  run-crawler:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Run crawler script
+        run: python crawler.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add robot_papers.json
+          git commit -m "🤖 Auto-update robot papers" || echo "No changes to commit"
+          git push
