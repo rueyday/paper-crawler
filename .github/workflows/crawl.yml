@@ -1,11 +1,3 @@
-
----
-
-## 🔧 3. `.github/workflows/crawl.yml` — GitHub Actions Workflow
-
-```yaml
-# .github/workflows/crawl.yml
-
 name: Update Robot Papers
 
 on:
