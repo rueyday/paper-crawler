@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-13T09:57:33.025552",
+  "last_updated": "2025-07-14T08:33:25.877704",
   "total_papers": 25,
   "papers": [
     {
@@ -322,25 +322,6 @@
       "relevance_score": 6
     },
     {
-      "title": "Self-Closing Suction Grippers for Industrial Grasping via Form-Flexible\n  Design",
-      "link": "https://arxiv.org/abs/2507.01561v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.01561v1.pdf",
-      "summary": "Shape-morphing robots have shown benefits in industrial grasping. We propose\nform-flexible grippers for adaptive grasping. The design is based on the hybrid\njamming and suction mechanism, which deforms to handle objects that vary\nsignificantly in size from the aperture, including both larger and smaller\nparts. Compared with traditional grippers, the gripper achieves self-closing to\nform an airtight seal. Under a vacuum, a wide range of grasping is realized\nthrough the passive morphing mechanism at the interface that harmonizes\npressure and flow rate. This hybrid gripper showcases the capability to\nsecurely grasp an egg, as small as 54.5% of its aperture, while achieving a\nmaximum load-to-mass ratio of 94.3.",
-      "published": "2025-07-02T10:22:28Z",
-      "authors": [
-        "Huijiang Wang",
-        "Holger Kunz",
-        "Timon Adler",
-        "Fumiya Iida"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.01561v1",
-      "relevance_score": 6
-    },
-    {
       "title": "HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM\n  Reasoning",
       "link": "https://arxiv.org/abs/2507.00833v1",
       "pdf_link": "https://arxiv.org/pdf/2507.00833v1.pdf",
@@ -536,6 +517,26 @@
       "source": "ArXiv",
       "arxiv_id": "2507.00435v1",
       "relevance_score": 5
+    },
+    {
+      "title": "Learning human-to-robot handovers through 3D scene reconstruction",
+      "link": "https://arxiv.org/abs/2507.08726v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.08726v1.pdf",
+      "summary": "Learning robot manipulation policies from raw, real-world image data requires\na large number of robot-action trials in the physical environment. Although\ntraining using simulations offers a cost-effective alternative, the visual\ndomain gap between simulation and robot workspace remains a major limitation.\nGaussian Splatting visual reconstruction methods have recently provided new\ndirections for robot manipulation by generating realistic environments. In this\npaper, we propose the first method for learning supervised-based robot\nhandovers solely from RGB images without the need of real-robot training or\nreal-robot data collection. The proposed policy learner, Human-to-Robot\nHandover using Sparse-View Gaussian Splatting (H2RH-SGS), leverages sparse-view\nGaussian Splatting reconstruction of human-to-robot handover scenes to generate\nrobot demonstrations containing image-action pairs captured with a camera\nmounted on the robot gripper. As a result, the simulated camera pose changes in\nthe reconstructed scene can be directly translated into gripper pose changes.\nWe train a robot policy on demonstrations collected with 16 household objects\nand {\\em directly} deploy this policy in the real environment. Experiments in\nboth Gaussian Splatting reconstructed scene and real-world human-to-robot\nhandover experiments demonstrate that H2RH-SGS serves as a new and effective\nrepresentation for the human-to-robot handover task.",
+      "published": "2025-07-11T16:26:31Z",
+      "authors": [
+        "Yuekun Wu",
+        "Yik Lung Pang",
+        "Andrea Cavallaro",
+        "Changjae Oh"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.08726v1",
+      "relevance_score": 4
     },
     {
       "title": "UniTac: Whole-Robot Touch Sensing Without Tactile Sensors",
