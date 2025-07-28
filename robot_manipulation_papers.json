@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-21T08:34:23.394411",
+  "last_updated": "2025-07-28T08:33:49.487278",
   "total_papers": 25,
   "papers": [
     {
@@ -20,6 +20,43 @@
       "source": "ArXiv",
       "arxiv_id": "2507.06822v1",
       "relevance_score": 8
+    },
+    {
+      "title": "Touch in the Wild: Learning Fine-Grained Manipulation with a Portable\n  Visuo-Tactile Gripper",
+      "link": "https://arxiv.org/abs/2507.15062v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.15062v1.pdf",
+      "summary": "Handheld grippers are increasingly used to collect human demonstrations due\nto their ease of deployment and versatility. However, most existing designs\nlack tactile sensing, despite the critical role of tactile feedback in precise\nmanipulation. We present a portable, lightweight gripper with integrated\ntactile sensors that enables synchronized collection of visual and tactile data\nin diverse, real-world, and in-the-wild settings. Building on this hardware, we\npropose a cross-modal representation learning framework that integrates visual\nand tactile signals while preserving their distinct characteristics. The\nlearning procedure allows the emergence of interpretable representations that\nconsistently focus on contacting regions relevant for physical interactions.\nWhen used for downstream manipulation tasks, these representations enable more\nefficient and effective policy learning, supporting precise robotic\nmanipulation based on multimodal feedback. We validate our approach on\nfine-grained tasks such as test tube insertion and pipette-based fluid\ntransfer, demonstrating improved accuracy and robustness under external\ndisturbances. Our project page is available at\nhttps://binghao-huang.github.io/touch_in_the_wild/ .",
+      "published": "2025-07-20T17:53:59Z",
+      "authors": [
+        "Xinyue Zhu",
+        "Binghao Huang",
+        "Yunzhu Li"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.15062v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "Leveraging Extrinsic Dexterity for Occluded Grasping on Grasp\n  Constraining Walls",
+      "link": "https://arxiv.org/abs/2507.14721v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.14721v1.pdf",
+      "summary": "This study addresses the problem of occluded grasping, where primary grasp\nconfigurations of an object are not available due to occlusion with\nenvironment. Simple parallel grippers often struggle with such tasks due to\nlimited dexterity and actuation constraints. Prior works have explored object\npose reorientation such as pivoting by utilizing extrinsic contacts between an\nobject and an environment feature like a wall, to make the object graspable.\nHowever, such works often assume the presence of a short wall, and this\nassumption may not always hold in real-world scenarios. If the wall available\nfor interaction is too large or too tall, the robot may still fail to grasp the\nobject even after pivoting, and the robot must combine different types of\nactions to grasp. To address this, we propose a hierarchical reinforcement\nlearning (RL) framework. We use Q-learning to train a high-level policy that\nselects the type of action expected to yield the highest reward. The selected\nlow-level skill then samples a specific robot action in continuous space. To\nguide the robot to an appropriate location for executing the selected action,\nwe adopt a Conditional Variational Autoencoder (CVAE). We condition the CVAE on\nthe object point cloud and the skill ID, enabling it to infer a suitable\nlocation based on the object geometry and the selected skill. To promote\ngeneralization, we apply domain randomization during the training of low-level\nskills. The RL policy is trained entirely in simulation with a box-like object\nand deployed to six objects in real world. We conduct experiments to evaluate\nour method and demonstrate both its generalizability and robust sim-to-real\ntransfer performance with promising success rates.",
+      "published": "2025-07-19T18:49:47Z",
+      "authors": [
+        "Keita Kobashi",
+        "Masayoshi Tomizuka"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.14721v1",
+      "relevance_score": 7
     },
     {
       "title": "A segmented robot grasping perception neural network for edge AI",
@@ -46,21 +83,66 @@
       "relevance_score": 7
     },
     {
-      "title": "Regrasp Maps for Sequential Manipulation Planning",
-      "link": "https://arxiv.org/abs/2507.12407v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.12407v1.pdf",
-      "summary": "We consider manipulation problems in constrained and cluttered settings,\nwhich require several regrasps at unknown locations. We propose to inform an\noptimization-based task and motion planning (TAMP) solver with possible regrasp\nareas and grasp sequences to speed up the search. Our main idea is to use a\nstate space abstraction, a regrasp map, capturing the combinations of available\ngrasps in different parts of the configuration space, and allowing us to\nprovide the solver with guesses for the mode switches and additional\nconstraints for the object placements. By interleaving the creation of regrasp\nmaps, their adaptation based on failed refinements, and solving TAMP\n(sub)problems, we are able to provide a robust search method for challenging\nregrasp manipulation problems.",
-      "published": "2025-07-16T16:53:07Z",
+      "title": "Foundation Model-Driven Grasping of Unknown Objects via Center of\n  Gravity Estimation",
+      "link": "https://arxiv.org/abs/2507.19242v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.19242v1.pdf",
+      "summary": "This study presents a grasping method for objects with uneven mass\ndistribution by leveraging diffusion models to localize the center of gravity\n(CoG) on unknown objects. In robotic grasping, CoG deviation often leads to\npostural instability, where existing keypoint-based or affordance-driven\nmethods exhibit limitations. We constructed a dataset of 790 images featuring\nunevenly distributed objects with keypoint annotations for CoG localization. A\nvision-driven framework based on foundation models was developed to achieve\nCoG-aware grasping. Experimental evaluations across real-world scenarios\ndemonstrate that our method achieves a 49\\% higher success rate compared to\nconventional keypoint-based approaches and an 11\\% improvement over\nstate-of-the-art affordance-driven methods. The system exhibits strong\ngeneralization with a 76\\% CoG localization accuracy on unseen objects,\nproviding a novel solution for precise and stable grasping tasks.",
+      "published": "2025-07-25T13:09:11Z",
       "authors": [
-        "Svetlana Levit",
-        "Marc Toussaint"
+        "Kang Xiangli",
+        "Yage He",
+        "Xianwu Gong",
+        "Zehan Liu",
+        "Yuru Bai"
       ],
       "categories": [
         "cs.RO"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.12407v1",
-      "relevance_score": 7
+      "arxiv_id": "2507.19242v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "Adaptive Articulated Object Manipulation On The Fly with Foundation\n  Model Reasoning and Part Grounding",
+      "link": "https://arxiv.org/abs/2507.18276v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.18276v1.pdf",
+      "summary": "Articulated objects pose diverse manipulation challenges for robots. Since\ntheir internal structures are not directly observable, robots must adaptively\nexplore and refine actions to generate successful manipulation trajectories.\nWhile existing works have attempted cross-category generalization in adaptive\narticulated object manipulation, two major challenges persist: (1) the\ngeometric diversity of real-world articulated objects complicates visual\nperception and understanding, and (2) variations in object functions and\nmechanisms hinder the development of a unified adaptive manipulation strategy.\nTo address these challenges, we propose AdaRPG, a novel framework that\nleverages foundation models to extract object parts, which exhibit greater\nlocal geometric similarity than entire objects, thereby enhancing visual\naffordance generalization for functional primitive skills. To support this, we\nconstruct a part-level affordance annotation dataset to train the affordance\nmodel. Additionally, AdaRPG utilizes the common knowledge embedded in\nfoundation models to reason about complex mechanisms and generate high-level\ncontrol codes that invoke primitive skill functions based on part affordance\ninference. Simulation and real-world experiments demonstrate AdaRPG's strong\ngeneralization ability across novel articulated object categories.",
+      "published": "2025-07-24T10:25:58Z",
+      "authors": [
+        "Xiaojie Zhang",
+        "Yuanfei Wang",
+        "Ruihai Wu",
+        "Kunqi Xu",
+        "Yu Li",
+        "Liuyu Xiang",
+        "Hao Dong",
+        "Zhaofeng He"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.18276v1",
+      "relevance_score": 6
+    },
+    {
+      "title": "Heterogeneous object manipulation on nonlinear soft surface through\n  linear controller",
+      "link": "https://arxiv.org/abs/2507.14967v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.14967v1.pdf",
+      "summary": "Manipulation surfaces indirectly control and reposition objects by actively\nmodifying their shape or properties rather than directly gripping objects.\nThese surfaces, equipped with dense actuator arrays, generate dynamic\ndeformations. However, a high-density actuator array introduces considerable\ncomplexity due to increased degrees of freedom (DOF), complicating control\ntasks. High DOF restrict the implementation and utilization of manipulation\nsurfaces in real-world applications as the maintenance and control of such\nsystems exponentially increase with array/surface size. Learning-based control\napproaches may ease the control complexity, but they require extensive training\nsamples and struggle to generalize for heterogeneous objects. In this study, we\nintroduce a simple, precise and robust PID-based linear close-loop feedback\ncontrol strategy for heterogeneous object manipulation on MANTA-RAY\n(Manipulation with Adaptive Non-rigid Textile Actuation with Reduced Actuation\ndensity). Our approach employs a geometric transformation-driven PID\ncontroller, directly mapping tilt angle control outputs(1D/2D) to actuator\ncommands to eliminate the need for extensive black-box training. We validate\nthe proposed method through simulations and experiments on a physical system,\nsuccessfully manipulating objects with diverse geometries, weights and\ntextures, including fragile objects like eggs and apples. The outcomes\ndemonstrate that our approach is highly generalized and offers a practical and\nreliable solution for object manipulation on soft robotic manipulation,\nfacilitating real-world implementation without prohibitive training demands.",
+      "published": "2025-07-20T13:53:35Z",
+      "authors": [
+        "Pratik Ingle",
+        "Kasper Støy",
+        "Andres Faiña"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.14967v1",
+      "relevance_score": 6
     },
     {
       "title": "GraspGen: A Diffusion-based Framework for 6-DOF Grasping with\n  On-Generator Training",
@@ -86,27 +168,6 @@
       ],
       "source": "ArXiv",
       "arxiv_id": "2507.13097v1",
-      "relevance_score": 6
-    },
-    {
-      "title": "A Multi-Level Similarity Approach for Single-View Object Grasping:\n  Matching, Planning, and Fine-Tuning",
-      "link": "https://arxiv.org/abs/2507.11938v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.11938v1.pdf",
-      "summary": "Grasping unknown objects from a single view has remained a challenging topic\nin robotics due to the uncertainty of partial observation. Recent advances in\nlarge-scale models have led to benchmark solutions such as GraspNet-1Billion.\nHowever, such learning-based approaches still face a critical limitation in\nperformance robustness for their sensitivity to sensing noise and environmental\nchanges. To address this bottleneck in achieving highly generalized grasping,\nwe abandon the traditional learning framework and introduce a new perspective:\nsimilarity matching, where similar known objects are utilized to guide the\ngrasping of unknown target objects. We newly propose a method that robustly\nachieves unknown-object grasping from a single viewpoint through three key\nsteps: 1) Leverage the visual features of the observed object to perform\nsimilarity matching with an existing database containing various object models,\nidentifying potential candidates with high similarity; 2) Use the candidate\nmodels with pre-existing grasping knowledge to plan imitative grasps for the\nunknown target object; 3) Optimize the grasp quality through a local\nfine-tuning process. To address the uncertainty caused by partial and noisy\nobservation, we propose a multi-level similarity matching framework that\nintegrates semantic, geometric, and dimensional features for comprehensive\nevaluation. Especially, we introduce a novel point cloud geometric descriptor,\nthe C-FPFH descriptor, which facilitates accurate similarity assessment between\npartial point clouds of observed objects and complete point clouds of database\nmodels. In addition, we incorporate the use of large language models, introduce\nthe semi-oriented bounding box, and develop a novel point cloud registration\napproach based on plane detection to enhance matching accuracy under\nsingle-view conditions. Videos are available at https://youtu.be/qQDIELMhQmk.",
-      "published": "2025-07-16T06:07:57Z",
-      "authors": [
-        "Hao Chen",
-        "Takuya Kiyokawa",
-        "Zhengtao Hu",
-        "Weiwei Wan",
-        "Kensuke Harada"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.11938v1",
       "relevance_score": 6
     },
     {
@@ -149,45 +210,65 @@
       "relevance_score": 6
     },
     {
-      "title": "ConViTac: Aligning Visual-Tactile Fusion with Contrastive\n  Representations",
-      "link": "https://arxiv.org/abs/2506.20757v1",
-      "pdf_link": "https://arxiv.org/pdf/2506.20757v1.pdf",
-      "summary": "Vision and touch are two fundamental sensory modalities for robots, offering\ncomplementary information that enhances perception and manipulation tasks.\nPrevious research has attempted to jointly learn visual-tactile representations\nto extract more meaningful information. However, these approaches often rely on\ndirect combination, such as feature addition and concatenation, for modality\nfusion, which tend to result in poor feature integration. In this paper, we\npropose ConViTac, a visual-tactile representation learning network designed to\nenhance the alignment of features during fusion using contrastive\nrepresentations. Our key contribution is a Contrastive Embedding Conditioning\n(CEC) mechanism that leverages a contrastive encoder pretrained through\nself-supervised contrastive learning to project visual and tactile inputs into\nunified latent embeddings. These embeddings are used to couple visual-tactile\nfeature fusion through cross-modal attention, aiming at aligning the unified\nrepresentations and enhancing performance on downstream tasks. We conduct\nextensive experiments to demonstrate the superiority of ConViTac in real world\nover current state-of-the-art methods and the effectiveness of our proposed CEC\nmechanism, which improves accuracy by up to 12.0% in material classification\nand grasping prediction tasks.",
-      "published": "2025-06-25T18:43:35Z",
+      "title": "Equivariant Volumetric Grasping",
+      "link": "https://arxiv.org/abs/2507.18847v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.18847v1.pdf",
+      "summary": "We propose a new volumetric grasp model that is equivariant to rotations\naround the vertical axis, leading to a significant improvement in sample\nefficiency. Our model employs a tri-plane volumetric feature representation --\ni.e., the projection of 3D features onto three canonical planes. We introduce a\nnovel tri-plane feature design in which features on the horizontal plane are\nequivariant to 90{\\deg} rotations, while the sum of features from the other two\nplanes remains invariant to the same transformations. This design is enabled by\na new deformable steerable convolution, which combines the adaptability of\ndeformable convolutions with the rotational equivariance of steerable ones.\nThis allows the receptive field to adapt to local object geometry while\npreserving equivariance properties. We further develop equivariant adaptations\nof two state-of-the-art volumetric grasp planners, GIGA and IGD. Specifically,\nwe derive a new equivariant formulation of IGD's deformable attention mechanism\nand propose an equivariant generative model of grasp orientations based on flow\nmatching. We provide a detailed analytical justification of the proposed\nequivariance properties and validate our approach through extensive simulated\nand real-world experiments. Our results demonstrate that the proposed\nprojection-based design significantly reduces both computational and memory\ncosts. Moreover, the equivariant grasp models built on top of our tri-plane\nfeatures consistently outperform their non-equivariant counterparts, achieving\nhigher performance with only a modest computational overhead. Video and code\ncan be viewed in: https://mousecpn.github.io/evg-page/",
+      "published": "2025-07-24T23:18:32Z",
       "authors": [
-        "Zhiyuan Wu",
-        "Yongqiang Zhao",
-        "Shan Luo"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2506.20757v1",
-      "relevance_score": 6
-    },
-    {
-      "title": "HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM\n  Reasoning",
-      "link": "https://arxiv.org/abs/2507.00833v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.00833v1.pdf",
-      "summary": "For robotic manipulation, existing robotics datasets and simulation\nbenchmarks predominantly cater to robot-arm platforms. However, for humanoid\nrobots equipped with dual arms and dexterous hands, simulation tasks and\nhigh-quality demonstrations are notably lacking. Bimanual dexterous\nmanipulation is inherently more complex, as it requires coordinated arm\nmovements and hand operations, making autonomous data collection challenging.\nThis paper presents HumanoidGen, an automated task creation and demonstration\ncollection framework that leverages atomic dexterous operations and LLM\nreasoning to generate relational constraints. Specifically, we provide spatial\nannotations for both assets and dexterous hands based on the atomic operations,\nand perform an LLM planner to generate a chain of actionable spatial\nconstraints for arm movements based on object affordances and scenes. To\nfurther improve planning ability, we employ a variant of Monte Carlo tree\nsearch to enhance LLM reasoning for long-horizon tasks and insufficient\nannotation. In experiments, we create a novel benchmark with augmented\nscenarios to evaluate the quality of the collected data. The results show that\nthe performance of the 2D and 3D diffusion policies can scale with the\ngenerated dataset. Project page is https://openhumanoidgen.github.io.",
-      "published": "2025-07-01T15:04:38Z",
-      "authors": [
-        "Zhi Jing",
-        "Siyuan Yang",
-        "Jicong Ao",
-        "Ting Xiao",
-        "Yugang Jiang",
-        "Chenjia Bai"
+        "Pinhao Song",
+        "Yutong Hu",
+        "Pengteng Li",
+        "Renaud Detry"
       ],
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.00833v1",
-      "relevance_score": 6
+      "arxiv_id": "2507.18847v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "VLA-Touch: Enhancing Vision-Language-Action Models with Dual-Level\n  Tactile Feedback",
+      "link": "https://arxiv.org/abs/2507.17294v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.17294v1.pdf",
+      "summary": "Tactile feedback is generally recognized to be crucial for effective\ninteraction with the physical world. However, state-of-the-art\nVision-Language-Action (VLA) models lack the ability to interpret and use\ntactile signals, limiting their effectiveness in contact-rich tasks.\nIncorporating tactile feedback into these systems is challenging due to the\nabsence of large multi-modal datasets. We present VLA-Touch, an approach that\nenhances generalist robot policies with tactile sensing \\emph{without\nfine-tuning} the base VLA. Our method introduces two key innovations: (1) a\npipeline that leverages a pretrained tactile-language model that provides\nsemantic tactile feedback for high-level task planning, and (2) a\ndiffusion-based controller that refines VLA-generated actions with tactile\nsignals for contact-rich manipulation. Through real-world experiments, we\ndemonstrate that our dual-level integration of tactile feedback improves task\nplanning efficiency while enhancing execution precision. Code is open-sourced\nat \\href{https://github.com/jxbi1010/VLA-Touch}{this URL}.",
+      "published": "2025-07-23T07:54:10Z",
+      "authors": [
+        "Jianxin Bi",
+        "Kevin Yuchen Ma",
+        "Ce Hao",
+        "Mike Zheng Shou",
+        "Harold Soh"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.17294v1",
+      "relevance_score": 5
+    },
+    {
+      "title": "KGN-Pro: Keypoint-Based Grasp Prediction through Probabilistic 2D-3D\n  Correspondence Learning",
+      "link": "https://arxiv.org/abs/2507.14820v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.14820v1.pdf",
+      "summary": "High-level robotic manipulation tasks demand flexible 6-DoF grasp estimation\nto serve as a basic function. Previous approaches either directly generate\ngrasps from point-cloud data, suffering from challenges with small objects and\nsensor noise, or infer 3D information from RGB images, which introduces\nexpensive annotation requirements and discretization issues. Recent methods\nmitigate some challenges by retaining a 2D representation to estimate grasp\nkeypoints and applying Perspective-n-Point (PnP) algorithms to compute 6-DoF\nposes. However, these methods are limited by their non-differentiable nature\nand reliance solely on 2D supervision, which hinders the full exploitation of\nrich 3D information. In this work, we present KGN-Pro, a novel grasping network\nthat preserves the efficiency and fine-grained object grasping of previous KGNs\nwhile integrating direct 3D optimization through probabilistic PnP layers.\nKGN-Pro encodes paired RGB-D images to generate Keypoint Map, and further\noutputs a 2D confidence map to weight keypoint contributions during\nre-projection error minimization. By modeling the weighted sum of squared\nre-projection errors probabilistically, the network effectively transmits 3D\nsupervision to its 2D keypoint predictions, enabling end-to-end learning.\nExperiments on both simulated and real-world platforms demonstrate that KGN-Pro\noutperforms existing methods in terms of grasp cover rate and success rate.",
+      "published": "2025-07-20T04:35:31Z",
+      "authors": [
+        "Bingran Chen",
+        "Baorun Li",
+        "Jian Yang",
+        "Yong Liu",
+        "Guangyao Zhai"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.14820v1",
+      "relevance_score": 5
     },
     {
       "title": "Few-shot transfer of tool-use skills using human demonstrations with\n  proximity and tactile sensing",
@@ -233,25 +314,6 @@
       "relevance_score": 5
     },
     {
-      "title": "Task-Oriented Human Grasp Synthesis via Context- and Task-Aware\n  Diffusers",
-      "link": "https://arxiv.org/abs/2507.11287v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.11287v1.pdf",
-      "summary": "In this paper, we study task-oriented human grasp synthesis, a new grasp\nsynthesis task that demands both task and context awareness. At the core of our\nmethod is the task-aware contact maps. Unlike traditional contact maps that\nonly reason about the manipulated object and its relation with the hand, our\nenhanced maps take into account scene and task information. This comprehensive\nmap is critical for hand-object interaction, enabling accurate grasping poses\nthat align with the task. We propose a two-stage pipeline that first constructs\na task-aware contact map informed by the scene and task. In the subsequent\nstage, we use this contact map to synthesize task-oriented human grasps. We\nintroduce a new dataset and a metric for the proposed task to evaluate our\napproach. Our experiments validate the importance of modeling both scene and\ntask, demonstrating significant improvements over existing methods in both\ngrasp quality and task performance. See our project page for more details:\nhttps://hcis-lab.github.io/TOHGS/",
-      "published": "2025-07-15T13:11:55Z",
-      "authors": [
-        "An-Lun Liu",
-        "Yu-Wei Chao",
-        "Yi-Ting Chen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.11287v1",
-      "relevance_score": 5
-    },
-    {
       "title": "Object-Centric Mobile Manipulation through SAM2-Guided Perception and\n  Imitation Learning",
       "link": "https://arxiv.org/abs/2507.10899v1",
       "pdf_link": "https://arxiv.org/pdf/2507.10899v1.pdf",
@@ -271,67 +333,22 @@
       "relevance_score": 5
     },
     {
-      "title": "Hierarchical Vision-Language Planning for Multi-Step Humanoid\n  Manipulation",
-      "link": "https://arxiv.org/abs/2506.22827v3",
-      "pdf_link": "https://arxiv.org/pdf/2506.22827v3.pdf",
-      "summary": "Enabling humanoid robots to reliably execute complex multi-step manipulation\ntasks is crucial for their effective deployment in industrial and household\nenvironments. This paper presents a hierarchical planning and control framework\ndesigned to achieve reliable multi-step humanoid manipulation. The proposed\nsystem comprises three layers: (1) a low-level RL-based controller responsible\nfor tracking whole-body motion targets; (2) a mid-level set of skill policies\ntrained via imitation learning that produce motion targets for different steps\nof a task; and (3) a high-level vision-language planning module that determines\nwhich skills should be executed and also monitors their completion in real-time\nusing pretrained vision-language models (VLMs). Experimental validation is\nperformed on a Unitree G1 humanoid robot executing a non-prehensile\npick-and-place task. Over 40 real-world trials, the hierarchical system\nachieved a 73% success rate in completing the full manipulation sequence. These\nexperiments confirm the feasibility of the proposed hierarchical system,\nhighlighting the benefits of VLM-based skill planning and monitoring for\nmulti-step manipulation scenarios. See https://vlp-humanoid.github.io/ for\nvideo demonstrations of the policy rollout.",
-      "published": "2025-06-28T09:39:37Z",
+      "title": "Task-Oriented Human Grasp Synthesis via Context- and Task-Aware\n  Diffusers",
+      "link": "https://arxiv.org/abs/2507.11287v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.11287v1.pdf",
+      "summary": "In this paper, we study task-oriented human grasp synthesis, a new grasp\nsynthesis task that demands both task and context awareness. At the core of our\nmethod is the task-aware contact maps. Unlike traditional contact maps that\nonly reason about the manipulated object and its relation with the hand, our\nenhanced maps take into account scene and task information. This comprehensive\nmap is critical for hand-object interaction, enabling accurate grasping poses\nthat align with the task. We propose a two-stage pipeline that first constructs\na task-aware contact map informed by the scene and task. In the subsequent\nstage, we use this contact map to synthesize task-oriented human grasps. We\nintroduce a new dataset and a metric for the proposed task to evaluate our\napproach. Our experiments validate the importance of modeling both scene and\ntask, demonstrating significant improvements over existing methods in both\ngrasp quality and task performance. See our project page for more details:\nhttps://hcis-lab.github.io/TOHGS/",
+      "published": "2025-07-15T13:11:55Z",
       "authors": [
-        "André Schakkal",
-        "Ben Zandonati",
-        "Zhutian Yang",
-        "Navid Azizan"
+        "An-Lun Liu",
+        "Yu-Wei Chao",
+        "Yi-Ting Chen"
       ],
       "categories": [
+        "cs.CV",
         "cs.RO"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2506.22827v3",
-      "relevance_score": 5
-    },
-    {
-      "title": "EquiContact: A Hierarchical SE(3) Vision-to-Force Equivariant Policy for\n  Spatially Generalizable Contact-rich Tasks",
-      "link": "https://arxiv.org/abs/2507.10961v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.10961v1.pdf",
-      "summary": "This paper presents a framework for learning vision-based robotic policies\nfor contact-rich manipulation tasks that generalize spatially across task\nconfigurations. We focus on achieving robust spatial generalization of the\npolicy for the peg-in-hole (PiH) task trained from a small number of\ndemonstrations. We propose EquiContact, a hierarchical policy composed of a\nhigh-level vision planner (Diffusion Equivariant Descriptor Field, Diff-EDF)\nand a novel low-level compliant visuomotor policy (Geometric Compliant ACT,\nG-CompACT). G-CompACT operates using only localized observations (geometrically\nconsistent error vectors (GCEV), force-torque readings, and wrist-mounted RGB\nimages) and produces actions defined in the end-effector frame. Through these\ndesign choices, we show that the entire EquiContact pipeline is\nSE(3)-equivariant, from perception to force control. We also outline three key\ncomponents for spatially generalizable contact-rich policies: compliance,\nlocalized policies, and induced equivariance. Real-world experiments on PiH\ntasks demonstrate a near-perfect success rate and robust generalization to\nunseen spatial configurations, validating the proposed framework and\nprinciples. The experimental videos can be found on the project website:\nhttps://sites.google.com/berkeley.edu/equicontact",
-      "published": "2025-07-15T03:45:26Z",
-      "authors": [
-        "Joohwan Seo",
-        "Arvind Kruthiventy",
-        "Soomi Lee",
-        "Megan Teng",
-        "Xiang Zhang",
-        "Seoyeon Choi",
-        "Jongeun Choi",
-        "Roberto Horowitz"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.10961v1",
-      "relevance_score": 5
-    },
-    {
-      "title": "Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge\n  for Tactile Generalization",
-      "link": "https://arxiv.org/abs/2507.09160v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.09160v1.pdf",
-      "summary": "Vision-Language-Action (VLA) models have shown remarkable achievements,\ndriven by the rich implicit knowledge of their vision-language components.\nHowever, achieving generalist robotic agents demands precise grounding into\nphysical interactions, especially in contact-rich scenarios where fine-grained\nforce control is essential. We advance VLAs' implicit knowledge beyond\nidentifying what to do, towards guiding how to physically interact with real\nworld. This paper introduces Tactile-VLA, a novel framework that deeply fuses\nvision, language, action, and tactile sensing. This framework incorporates a\nhybrid position-force controller to translate the model's intentions into\nprecise physical actions and a reasoning module that allows the robot to adapt\nits strategy based on tactile feedback. Experiments demonstrate Tactile-VLA's\neffectiveness and generalizability in three key aspects: (1) enabling\ntactile-aware instruction following, (2) utilizing tactile-relevant\ncommonsense, and (3) facilitating adaptive tactile-involved reasoning. A key\nfinding is that the VLM's prior knowledge already contains semantic\nunderstanding of physical interaction; by connecting it to the robot's tactile\nsensors with only a few demonstrations, we can activate this prior knowledge to\nachieve zero-shot generalization in contact-rich tasks.",
-      "published": "2025-07-12T06:44:37Z",
-      "authors": [
-        "Jialei Huang",
-        "Shuo Wang",
-        "Fanqi Lin",
-        "Yihang Hu",
-        "Chuan Wen",
-        "Yang Gao"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.09160v1",
+      "arxiv_id": "2507.11287v1",
       "relevance_score": 5
     },
     {
@@ -407,6 +424,46 @@
       "relevance_score": 5
     },
     {
+      "title": "PinchBot: Long-Horizon Deformable Manipulation with Guided Diffusion\n  Policy",
+      "link": "https://arxiv.org/abs/2507.17846v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.17846v1.pdf",
+      "summary": "Pottery creation is a complicated art form that requires dexterous, precise\nand delicate actions to slowly morph a block of clay to a meaningful, and often\nuseful 3D goal shape. In this work, we aim to create a robotic system that can\ncreate simple pottery goals with only pinch-based actions. This pinch pottery\ntask allows us to explore the challenges of a highly multi-modal and\nlong-horizon deformable manipulation task. To this end, we present PinchBot, a\ngoal-conditioned diffusion policy model that when combined with pre-trained 3D\npoint cloud embeddings, task progress prediction and collision-constrained\naction projection, is able to successfully create a variety of simple pottery\ngoals. For experimental videos and access to the demonstration dataset, please\nvisit our project website:\nhttps://sites.google.com/andrew.cmu.edu/pinchbot/home.",
+      "published": "2025-07-23T18:13:41Z",
+      "authors": [
+        "Alison Bartsch",
+        "Arvind Car",
+        "Amir Barati Farimani"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.17846v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Deformable Cluster Manipulation via Whole-Arm Policy Learning",
+      "link": "https://arxiv.org/abs/2507.17085v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.17085v1.pdf",
+      "summary": "Manipulating clusters of deformable objects presents a substantial challenge\nwith widespread applicability, but requires contact-rich whole-arm\ninteractions. A potential solution must address the limited capacity for\nrealistic model synthesis, high uncertainty in perception, and the lack of\nefficient spatial abstractions, among others. We propose a novel framework for\nlearning model-free policies integrating two modalities: 3D point clouds and\nproprioceptive touch indicators, emphasising manipulation with full body\ncontact awareness, going beyond traditional end-effector modes. Our\nreinforcement learning framework leverages a distributional state\nrepresentation, aided by kernel mean embeddings, to achieve improved training\nefficiency and real-time inference. Furthermore, we propose a novel\ncontext-agnostic occlusion heuristic to clear deformables from a target region\nfor exposure tasks. We deploy the framework in a power line clearance scenario\nand observe that the agent generates creative strategies leveraging multiple\narm links for de-occlusion. Finally, we perform zero-shot sim-to-real policy\ntransfer, allowing the arm to clear real branches with unknown occlusion\npatterns, unseen topology, and uncertain dynamics.",
+      "published": "2025-07-22T23:58:30Z",
+      "authors": [
+        "Jayadeep Jacob",
+        "Wenzheng Zhang",
+        "Houston Warren",
+        "Paulo Borges",
+        "Tirthankar Bandyopadhyay",
+        "Fabio Ramos"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.17085v1",
+      "relevance_score": 4
+    },
+    {
       "title": "Generalist Bimanual Manipulation via Foundation Video Diffusion Models",
       "link": "https://arxiv.org/abs/2507.12898v1",
       "pdf_link": "https://arxiv.org/pdf/2507.12898v1.pdf",
@@ -430,46 +487,6 @@
       ],
       "source": "ArXiv",
       "arxiv_id": "2507.12898v1",
-      "relevance_score": 4
-    },
-    {
-      "title": "Learning human-to-robot handovers through 3D scene reconstruction",
-      "link": "https://arxiv.org/abs/2507.08726v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.08726v1.pdf",
-      "summary": "Learning robot manipulation policies from raw, real-world image data requires\na large number of robot-action trials in the physical environment. Although\ntraining using simulations offers a cost-effective alternative, the visual\ndomain gap between simulation and robot workspace remains a major limitation.\nGaussian Splatting visual reconstruction methods have recently provided new\ndirections for robot manipulation by generating realistic environments. In this\npaper, we propose the first method for learning supervised-based robot\nhandovers solely from RGB images without the need of real-robot training or\nreal-robot data collection. The proposed policy learner, Human-to-Robot\nHandover using Sparse-View Gaussian Splatting (H2RH-SGS), leverages sparse-view\nGaussian Splatting reconstruction of human-to-robot handover scenes to generate\nrobot demonstrations containing image-action pairs captured with a camera\nmounted on the robot gripper. As a result, the simulated camera pose changes in\nthe reconstructed scene can be directly translated into gripper pose changes.\nWe train a robot policy on demonstrations collected with 16 household objects\nand {\\em directly} deploy this policy in the real environment. Experiments in\nboth Gaussian Splatting reconstructed scene and real-world human-to-robot\nhandover experiments demonstrate that H2RH-SGS serves as a new and effective\nrepresentation for the human-to-robot handover task.",
-      "published": "2025-07-11T16:26:31Z",
-      "authors": [
-        "Yuekun Wu",
-        "Yik Lung Pang",
-        "Andrea Cavallaro",
-        "Changjae Oh"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.08726v1",
-      "relevance_score": 4
-    },
-    {
-      "title": "UniTac: Whole-Robot Touch Sensing Without Tactile Sensors",
-      "link": "https://arxiv.org/abs/2507.07980v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.07980v1.pdf",
-      "summary": "Robots can better interact with humans and unstructured environments through\ntouch sensing. However, most commercial robots are not equipped with tactile\nskins, making it challenging to achieve even basic touch-sensing functions,\nsuch as contact localization. We present UniTac, a data-driven whole-body\ntouch-sensing approach that uses only proprioceptive joint sensors and does not\nrequire the installation of additional sensors. Our approach enables a robot\nequipped solely with joint sensors to localize contacts. Our goal is to\ndemocratize touch sensing and provide an off-the-shelf tool for HRI researchers\nto provide their robots with touch-sensing capabilities. We validate our\napproach on two platforms: the Franka robot arm and the Spot quadruped. On\nFranka, we can localize contact to within 8.0 centimeters, and on Spot, we can\nlocalize to within 7.2 centimeters at around 2,000 Hz on an RTX 3090 GPU\nwithout adding any additional sensors to the robot. Project website:\nhttps://ivl.cs.brown.edu/research/unitac.",
-      "published": "2025-07-10T17:55:05Z",
-      "authors": [
-        "Wanjia Fu",
-        "Hongyu Li",
-        "Ivy X. He",
-        "Stefanie Tellex",
-        "Srinath Sridhar"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.07980v1",
       "relevance_score": 4
     },
     {
@@ -510,28 +527,6 @@
       ],
       "source": "ArXiv",
       "arxiv_id": "2507.10776v1",
-      "relevance_score": 4
-    },
-    {
-      "title": "Probabilistic Human Intent Prediction for Mobile Manipulation: An\n  Evaluation with Human-Inspired Constraints",
-      "link": "https://arxiv.org/abs/2507.10131v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.10131v1.pdf",
-      "summary": "Accurate inference of human intent enables human-robot collaboration without\nconstraining human control or causing conflicts between humans and robots. We\npresent GUIDER (Global User Intent Dual-phase Estimation for Robots), a\nprobabilistic framework that enables a robot to estimate the intent of human\noperators. GUIDER maintains two coupled belief layers, one tracking navigation\ngoals and the other manipulation goals. In the Navigation phase, a Synergy Map\nblends controller velocity with an occupancy grid to rank interaction areas.\nUpon arrival at a goal, an autonomous multi-view scan builds a local 3D cloud.\nThe Manipulation phase combines U2Net saliency, FastSAM instance saliency, and\nthree geometric grasp-feasibility tests, with an end-effector kinematics-aware\nupdate rule that evolves object probabilities in real-time. GUIDER can\nrecognize areas and objects of intent without predefined goals. We evaluated\nGUIDER on 25 trials (five participants x five task variants) in Isaac Sim, and\ncompared it with two baselines, one for navigation and one for manipulation.\nAcross the 25 trials, GUIDER achieved a median stability of 93-100% during\nnavigation, compared with 60-100% for the BOIR baseline, with an improvement of\n39.5% in a redirection scenario (T5). During manipulation, stability reached\n94-100% (versus 69-100% for Trajectron), with a 31.4% difference in a\nredirection task (T3). In geometry-constrained trials (manipulation), GUIDER\nrecognized the object intent three times earlier than Trajectron (median\nremaining time to confident prediction 23.6 s vs 7.8 s). These results validate\nour dual-phase framework and show improvements in intent inference in both\nphases of mobile manipulation tasks.",
-      "published": "2025-07-14T10:21:27Z",
-      "authors": [
-        "Cesar Alan Contreras",
-        "Manolis Chiou",
-        "Alireza Rastegarpanah",
-        "Michal Szulik",
-        "Rustam Stolkin"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.CV",
-        "cs.HC"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.10131v1",
       "relevance_score": 4
     }
   ],
