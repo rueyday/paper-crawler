@@ -1,25 +1,102 @@
 {
-  "last_updated": "2025-07-28T08:33:49.487278",
+  "last_updated": "2025-08-04T08:33:47.174416",
   "total_papers": 25,
   "papers": [
     {
-      "title": "Hierarchical Reinforcement Learning for Articulated Tool Manipulation\n  with Multifingered Hand",
-      "link": "https://arxiv.org/abs/2507.06822v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.06822v1.pdf",
-      "summary": "Manipulating articulated tools, such as tweezers or scissors, has rarely been\nexplored in previous research. Unlike rigid tools, articulated tools change\ntheir shape dynamically, creating unique challenges for dexterous robotic\nhands. In this work, we present a hierarchical, goal-conditioned reinforcement\nlearning (GCRL) framework to improve the manipulation capabilities of\nanthropomorphic robotic hands using articulated tools. Our framework comprises\ntwo policy layers: (1) a low-level policy that enables the dexterous hand to\nmanipulate the tool into various configurations for objects of different sizes,\nand (2) a high-level policy that defines the tool's goal state and controls the\nrobotic arm for object-picking tasks. We employ an encoder, trained on\nsynthetic pointclouds, to estimate the tool's affordance states--specifically,\nhow different tool configurations (e.g., tweezer opening angles) enable\ngrasping of objects of varying sizes--from input point clouds, thereby enabling\nprecise tool manipulation. We also utilize a privilege-informed heuristic\npolicy to generate replay buffer, improving the training efficiency of the\nhigh-level policy. We validate our approach through real-world experiments,\nshowing that the robot can effectively manipulate a tweezer-like tool to grasp\nobjects of diverse shapes and sizes with a 70.8 % success rate. This study\nhighlights the potential of RL to advance dexterous robotic manipulation of\narticulated tools.",
-      "published": "2025-07-09T13:11:12Z",
+      "title": "HannesImitation: Grasping with the Hannes Prosthetic Hand via Imitation\n  Learning",
+      "link": "https://arxiv.org/abs/2508.00491v1",
+      "pdf_link": "https://arxiv.org/pdf/2508.00491v1.pdf",
+      "summary": "Recent advancements in control of prosthetic hands have focused on increasing\nautonomy through the use of cameras and other sensory inputs. These systems aim\nto reduce the cognitive load on the user by automatically controlling certain\ndegrees of freedom. In robotics, imitation learning has emerged as a promising\napproach for learning grasping and complex manipulation tasks while simplifying\ndata collection. Its application to the control of prosthetic hands remains,\nhowever, largely unexplored. Bridging this gap could enhance dexterity\nrestoration and enable prosthetic devices to operate in more unconstrained\nscenarios, where tasks are learned from demonstrations rather than relying on\nmanually annotated sequences. To this end, we present HannesImitationPolicy, an\nimitation learning-based method to control the Hannes prosthetic hand, enabling\nobject grasping in unstructured environments. Moreover, we introduce the\nHannesImitationDataset comprising grasping demonstrations in table, shelf, and\nhuman-to-prosthesis handover scenarios. We leverage such data to train a single\ndiffusion policy and deploy it on the prosthetic hand to predict the wrist\norientation and hand closure for grasping. Experimental evaluation demonstrates\nsuccessful grasps across diverse objects and conditions. Finally, we show that\nthe policy outperforms a segmentation-based visual servo controller in\nunstructured scenarios. Additional material is provided on our project page:\nhttps://hsp-iit.github.io/HannesImitation",
+      "published": "2025-08-01T10:09:38Z",
       "authors": [
-        "Wei Xu",
-        "Yanchao Zhao",
-        "Weichao Guo",
-        "Xinjun Sheng"
+        "Carlo Alessi",
+        "Federico Vasile",
+        "Federico Ceola",
+        "Giulia Pasquale",
+        "Nicolò Boccardo",
+        "Lorenzo Natale"
       ],
       "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2508.00491v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "RAGNet: Large-scale Reasoning-based Affordance Segmentation Benchmark\n  towards General Grasping",
+      "link": "https://arxiv.org/abs/2507.23734v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.23734v1.pdf",
+      "summary": "General robotic grasping systems require accurate object affordance\nperception in diverse open-world scenarios following human instructions.\nHowever, current studies suffer from the problem of lacking reasoning-based\nlarge-scale affordance prediction data, leading to considerable concern about\nopen-world effectiveness. To address this limitation, we build a large-scale\ngrasping-oriented affordance segmentation benchmark with human-like\ninstructions, named RAGNet. It contains 273k images, 180 categories, and 26k\nreasoning instructions. The images cover diverse embodied data domains, such as\nwild, robot, ego-centric, and even simulation data. They are carefully\nannotated with an affordance map, while the difficulty of language instructions\nis largely increased by removing their category name and only providing\nfunctional descriptions. Furthermore, we propose a comprehensive\naffordance-based grasping framework, named AffordanceNet, which consists of a\nVLM pre-trained on our massive affordance data and a grasping network that\nconditions an affordance map to grasp the target. Extensive experiments on\naffordance segmentation benchmarks and real-robot manipulation tasks show that\nour model has a powerful open-world generalization ability. Our data and code\nis available at https://github.com/wudongming97/AffordanceNet.",
+      "published": "2025-07-31T17:17:05Z",
+      "authors": [
+        "Dongming Wu",
+        "Yanping Fu",
+        "Saike Huang",
+        "Yingfei Liu",
+        "Fan Jia",
+        "Nian Liu",
+        "Feng Dai",
+        "Tiancai Wang",
+        "Rao Muhammad Anwer",
+        "Fahad Shahbaz Khan",
+        "Jianbing Shen"
+      ],
+      "categories": [
+        "cs.CV",
         "cs.RO"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.06822v1",
-      "relevance_score": 8
+      "arxiv_id": "2507.23734v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "Fluidically Innervated Lattices Make Versatile and Durable Tactile\n  Sensors",
+      "link": "https://arxiv.org/abs/2507.21225v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.21225v1.pdf",
+      "summary": "Tactile sensing plays a fundamental role in enabling robots to navigate\ndynamic and unstructured environments, particularly in applications such as\ndelicate object manipulation, surface exploration, and human-robot interaction.\nIn this paper, we introduce a passive soft robotic fingertip with integrated\ntactile sensing, fabricated using a 3D-printed elastomer lattice with embedded\nair channels. This sensorization approach, termed fluidic innervation,\ntransforms the lattice into a tactile sensor by detecting pressure changes\nwithin sealed air channels, providing a simple yet robust solution to tactile\nsensing in robotics. Unlike conventional methods that rely on complex materials\nor designs, fluidic innervation offers a simple, scalable, single-material\nfabrication process. We characterize the sensors' response, develop a geometric\nmodel to estimate tip displacement, and train a neural network to accurately\npredict contact location and contact force. Additionally, we integrate the\nfingertip with an admittance controller to emulate spring-like behavior,\ndemonstrate its capability for environment exploration through tactile\nfeedback, and validate its durability under high impact and cyclic loading\nconditions. This tactile sensing technique offers advantages in terms of\nsimplicity, adaptability, and durability and opens up new opportunities for\nversatile robotic manipulation.",
+      "published": "2025-07-28T18:00:04Z",
+      "authors": [
+        "Annan Zhang",
+        "Miguel Flores-Acton",
+        "Andy Yu",
+        "Anshul Gupta",
+        "Maggie Yao",
+        "Daniela Rus"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "cs.SY",
+        "eess.SY"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.21225v1",
+      "relevance_score": 7
+    },
+    {
+      "title": "RAKOMO: Reachability-Aware K-Order Markov Path Optimization for\n  Quadrupedal Loco-Manipulation",
+      "link": "https://arxiv.org/abs/2507.19652v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.19652v1.pdf",
+      "summary": "Legged manipulators, such as quadrupeds equipped with robotic arms, require\nmotion planning techniques that account for their complex kinematic constraints\nin order to perform manipulation tasks both safely and effectively. However,\ntrajectory optimization methods often face challenges due to the hybrid\ndynamics introduced by contact discontinuities, and tend to neglect leg\nlimitations during planning for computational reasons. In this work, we propose\nRAKOMO, a path optimization technique that integrates the strengths of K-Order\nMarkov Optimization (KOMO) with a kinematically-aware criterion based on the\nreachable region defined as reachability margin. We leverage a neural-network\nto predict the margin and optimize it by incorporating it in the standard KOMO\nformulation. This approach enables rapid convergence of gradient-based motion\nplanning -- commonly tailored for continuous systems -- while adapting it\neffectively to legged manipulators, successfully executing loco-manipulation\ntasks. We benchmark RAKOMO against a baseline KOMO approach through a set of\nsimulations for pick-and-place tasks with the HyQReal quadruped robot equipped\nwith a Kinova Gen3 robotic arm.",
+      "published": "2025-07-25T19:55:35Z",
+      "authors": [
+        "Mattia Risiglione",
+        "Abdelrahman Abdalla",
+        "Victor Barasuol",
+        "Kim Tien Ly",
+        "Ioannis Havoutis",
+        "Claudio Semini"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.SY",
+        "eess.SY"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.19652v1",
+      "relevance_score": 7
     },
     {
       "title": "Touch in the Wild: Learning Fine-Grained Manipulation with a Portable\n  Visuo-Tactile Gripper",
@@ -42,26 +119,9 @@
       "relevance_score": 7
     },
     {
-      "title": "Leveraging Extrinsic Dexterity for Occluded Grasping on Grasp\n  Constraining Walls",
-      "link": "https://arxiv.org/abs/2507.14721v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.14721v1.pdf",
-      "summary": "This study addresses the problem of occluded grasping, where primary grasp\nconfigurations of an object are not available due to occlusion with\nenvironment. Simple parallel grippers often struggle with such tasks due to\nlimited dexterity and actuation constraints. Prior works have explored object\npose reorientation such as pivoting by utilizing extrinsic contacts between an\nobject and an environment feature like a wall, to make the object graspable.\nHowever, such works often assume the presence of a short wall, and this\nassumption may not always hold in real-world scenarios. If the wall available\nfor interaction is too large or too tall, the robot may still fail to grasp the\nobject even after pivoting, and the robot must combine different types of\nactions to grasp. To address this, we propose a hierarchical reinforcement\nlearning (RL) framework. We use Q-learning to train a high-level policy that\nselects the type of action expected to yield the highest reward. The selected\nlow-level skill then samples a specific robot action in continuous space. To\nguide the robot to an appropriate location for executing the selected action,\nwe adopt a Conditional Variational Autoencoder (CVAE). We condition the CVAE on\nthe object point cloud and the skill ID, enabling it to infer a suitable\nlocation based on the object geometry and the selected skill. To promote\ngeneralization, we apply domain randomization during the training of low-level\nskills. The RL policy is trained entirely in simulation with a box-like object\nand deployed to six objects in real world. We conduct experiments to evaluate\nour method and demonstrate both its generalizability and robust sim-to-real\ntransfer performance with promising success rates.",
-      "published": "2025-07-19T18:49:47Z",
-      "authors": [
-        "Keita Kobashi",
-        "Masayoshi Tomizuka"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.14721v1",
-      "relevance_score": 7
-    },
-    {
-      "title": "A segmented robot grasping perception neural network for edge AI",
-      "link": "https://arxiv.org/abs/2507.13970v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.13970v1.pdf",
+      "title": "A Segmented Robot Grasping Perception Neural Network for Edge AI",
+      "link": "https://arxiv.org/abs/2507.13970v2",
+      "pdf_link": "https://arxiv.org/pdf/2507.13970v2.pdf",
       "summary": "Robotic grasping, the ability of robots to reliably secure and manipulate\nobjects of varying shapes, sizes and orientations, is a complex task that\nrequires precise perception and control. Deep neural networks have shown\nremarkable success in grasp synthesis by learning rich and abstract\nrepresentations of objects. When deployed at the edge, these models can enable\nlow-latency, low-power inference, making real-time grasping feasible in\nresource-constrained environments. This work implements Heatmap-Guided Grasp\nDetection, an end-to-end framework for the detection of 6-Dof grasp poses, on\nthe GAP9 RISC-V System-on-Chip. The model is optimised using hardware-aware\ntechniques, including input dimensionality reduction, model partitioning, and\nquantisation. Experimental evaluation on the GraspNet-1Billion benchmark\nvalidates the feasibility of fully on-chip inference, highlighting the\npotential of low-power MCUs for real-time, autonomous manipulation.",
       "published": "2025-07-18T14:32:45Z",
       "authors": [
@@ -79,28 +139,8 @@
         "I.2; I.2.9; I.2.10"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.13970v1",
+      "arxiv_id": "2507.13970v2",
       "relevance_score": 7
-    },
-    {
-      "title": "Foundation Model-Driven Grasping of Unknown Objects via Center of\n  Gravity Estimation",
-      "link": "https://arxiv.org/abs/2507.19242v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.19242v1.pdf",
-      "summary": "This study presents a grasping method for objects with uneven mass\ndistribution by leveraging diffusion models to localize the center of gravity\n(CoG) on unknown objects. In robotic grasping, CoG deviation often leads to\npostural instability, where existing keypoint-based or affordance-driven\nmethods exhibit limitations. We constructed a dataset of 790 images featuring\nunevenly distributed objects with keypoint annotations for CoG localization. A\nvision-driven framework based on foundation models was developed to achieve\nCoG-aware grasping. Experimental evaluations across real-world scenarios\ndemonstrate that our method achieves a 49\\% higher success rate compared to\nconventional keypoint-based approaches and an 11\\% improvement over\nstate-of-the-art affordance-driven methods. The system exhibits strong\ngeneralization with a 76\\% CoG localization accuracy on unseen objects,\nproviding a novel solution for precise and stable grasping tasks.",
-      "published": "2025-07-25T13:09:11Z",
-      "authors": [
-        "Kang Xiangli",
-        "Yage He",
-        "Xianwu Gong",
-        "Zehan Liu",
-        "Yuru Bai"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.19242v1",
-      "relevance_score": 6
     },
     {
       "title": "Adaptive Articulated Object Manipulation On The Fly with Foundation\n  Model Reasoning and Part Grounding",
@@ -127,70 +167,6 @@
       "relevance_score": 6
     },
     {
-      "title": "Heterogeneous object manipulation on nonlinear soft surface through\n  linear controller",
-      "link": "https://arxiv.org/abs/2507.14967v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.14967v1.pdf",
-      "summary": "Manipulation surfaces indirectly control and reposition objects by actively\nmodifying their shape or properties rather than directly gripping objects.\nThese surfaces, equipped with dense actuator arrays, generate dynamic\ndeformations. However, a high-density actuator array introduces considerable\ncomplexity due to increased degrees of freedom (DOF), complicating control\ntasks. High DOF restrict the implementation and utilization of manipulation\nsurfaces in real-world applications as the maintenance and control of such\nsystems exponentially increase with array/surface size. Learning-based control\napproaches may ease the control complexity, but they require extensive training\nsamples and struggle to generalize for heterogeneous objects. In this study, we\nintroduce a simple, precise and robust PID-based linear close-loop feedback\ncontrol strategy for heterogeneous object manipulation on MANTA-RAY\n(Manipulation with Adaptive Non-rigid Textile Actuation with Reduced Actuation\ndensity). Our approach employs a geometric transformation-driven PID\ncontroller, directly mapping tilt angle control outputs(1D/2D) to actuator\ncommands to eliminate the need for extensive black-box training. We validate\nthe proposed method through simulations and experiments on a physical system,\nsuccessfully manipulating objects with diverse geometries, weights and\ntextures, including fragile objects like eggs and apples. The outcomes\ndemonstrate that our approach is highly generalized and offers a practical and\nreliable solution for object manipulation on soft robotic manipulation,\nfacilitating real-world implementation without prohibitive training demands.",
-      "published": "2025-07-20T13:53:35Z",
-      "authors": [
-        "Pratik Ingle",
-        "Kasper Støy",
-        "Andres Faiña"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.14967v1",
-      "relevance_score": 6
-    },
-    {
-      "title": "GraspGen: A Diffusion-based Framework for 6-DOF Grasping with\n  On-Generator Training",
-      "link": "https://arxiv.org/abs/2507.13097v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.13097v1.pdf",
-      "summary": "Grasping is a fundamental robot skill, yet despite significant research\nadvancements, learning-based 6-DOF grasping approaches are still not turnkey\nand struggle to generalize across different embodiments and in-the-wild\nsettings. We build upon the recent success on modeling the object-centric grasp\ngeneration process as an iterative diffusion process. Our proposed framework,\nGraspGen, consists of a DiffusionTransformer architecture that enhances grasp\ngeneration, paired with an efficient discriminator to score and filter sampled\ngrasps. We introduce a novel and performant on-generator training recipe for\nthe discriminator. To scale GraspGen to both objects and grippers, we release a\nnew simulated dataset consisting of over 53 million grasps. We demonstrate that\nGraspGen outperforms prior methods in simulations with singulated objects\nacross different grippers, achieves state-of-the-art performance on the\nFetchBench grasping benchmark, and performs well on a real robot with noisy\nvisual observations.",
-      "published": "2025-07-17T13:09:28Z",
-      "authors": [
-        "Adithyavairavan Murali",
-        "Balakumar Sundaralingam",
-        "Yu-Wei Chao",
-        "Wentao Yuan",
-        "Jun Yamada",
-        "Mark Carlson",
-        "Fabio Ramos",
-        "Stan Birchfield",
-        "Dieter Fox",
-        "Clemens Eppner"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.13097v1",
-      "relevance_score": 6
-    },
-    {
-      "title": "The Developments and Challenges towards Dexterous and Embodied Robotic\n  Manipulation: A Survey",
-      "link": "https://arxiv.org/abs/2507.11840v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.11840v1.pdf",
-      "summary": "Achieving human-like dexterous robotic manipulation remains a central goal\nand a pivotal challenge in robotics. The development of Artificial Intelligence\n(AI) has allowed rapid progress in robotic manipulation. This survey summarizes\nthe evolution of robotic manipulation from mechanical programming to embodied\nintelligence, alongside the transition from simple grippers to multi-fingered\ndexterous hands, outlining key characteristics and main challenges. Focusing on\nthe current stage of embodied dexterous manipulation, we highlight recent\nadvances in two critical areas: dexterous manipulation data collection (via\nsimulation, human demonstrations, and teleoperation) and skill-learning\nframeworks (imitation and reinforcement learning). Then, based on the overview\nof the existing data collection paradigm and learning framework, three key\nchallenges restricting the development of dexterous robotic manipulation are\nsummarized and discussed.",
-      "published": "2025-07-16T02:09:31Z",
-      "authors": [
-        "Gaofeng Li",
-        "Ruize Wang",
-        "Peisen Xu",
-        "Qi Ye",
-        "Jiming Chen"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.11840v1",
-      "relevance_score": 6
-    },
-    {
       "title": "Demonstrating the Octopi-1.5 Visual-Tactile-Language Model",
       "link": "https://arxiv.org/abs/2507.09985v1",
       "pdf_link": "https://arxiv.org/pdf/2507.09985v1.pdf",
@@ -208,85 +184,6 @@
       "source": "ArXiv",
       "arxiv_id": "2507.09985v1",
       "relevance_score": 6
-    },
-    {
-      "title": "Equivariant Volumetric Grasping",
-      "link": "https://arxiv.org/abs/2507.18847v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.18847v1.pdf",
-      "summary": "We propose a new volumetric grasp model that is equivariant to rotations\naround the vertical axis, leading to a significant improvement in sample\nefficiency. Our model employs a tri-plane volumetric feature representation --\ni.e., the projection of 3D features onto three canonical planes. We introduce a\nnovel tri-plane feature design in which features on the horizontal plane are\nequivariant to 90{\\deg} rotations, while the sum of features from the other two\nplanes remains invariant to the same transformations. This design is enabled by\na new deformable steerable convolution, which combines the adaptability of\ndeformable convolutions with the rotational equivariance of steerable ones.\nThis allows the receptive field to adapt to local object geometry while\npreserving equivariance properties. We further develop equivariant adaptations\nof two state-of-the-art volumetric grasp planners, GIGA and IGD. Specifically,\nwe derive a new equivariant formulation of IGD's deformable attention mechanism\nand propose an equivariant generative model of grasp orientations based on flow\nmatching. We provide a detailed analytical justification of the proposed\nequivariance properties and validate our approach through extensive simulated\nand real-world experiments. Our results demonstrate that the proposed\nprojection-based design significantly reduces both computational and memory\ncosts. Moreover, the equivariant grasp models built on top of our tri-plane\nfeatures consistently outperform their non-equivariant counterparts, achieving\nhigher performance with only a modest computational overhead. Video and code\ncan be viewed in: https://mousecpn.github.io/evg-page/",
-      "published": "2025-07-24T23:18:32Z",
-      "authors": [
-        "Pinhao Song",
-        "Yutong Hu",
-        "Pengteng Li",
-        "Renaud Detry"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.18847v1",
-      "relevance_score": 5
-    },
-    {
-      "title": "VLA-Touch: Enhancing Vision-Language-Action Models with Dual-Level\n  Tactile Feedback",
-      "link": "https://arxiv.org/abs/2507.17294v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.17294v1.pdf",
-      "summary": "Tactile feedback is generally recognized to be crucial for effective\ninteraction with the physical world. However, state-of-the-art\nVision-Language-Action (VLA) models lack the ability to interpret and use\ntactile signals, limiting their effectiveness in contact-rich tasks.\nIncorporating tactile feedback into these systems is challenging due to the\nabsence of large multi-modal datasets. We present VLA-Touch, an approach that\nenhances generalist robot policies with tactile sensing \\emph{without\nfine-tuning} the base VLA. Our method introduces two key innovations: (1) a\npipeline that leverages a pretrained tactile-language model that provides\nsemantic tactile feedback for high-level task planning, and (2) a\ndiffusion-based controller that refines VLA-generated actions with tactile\nsignals for contact-rich manipulation. Through real-world experiments, we\ndemonstrate that our dual-level integration of tactile feedback improves task\nplanning efficiency while enhancing execution precision. Code is open-sourced\nat \\href{https://github.com/jxbi1010/VLA-Touch}{this URL}.",
-      "published": "2025-07-23T07:54:10Z",
-      "authors": [
-        "Jianxin Bi",
-        "Kevin Yuchen Ma",
-        "Ce Hao",
-        "Mike Zheng Shou",
-        "Harold Soh"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.17294v1",
-      "relevance_score": 5
-    },
-    {
-      "title": "KGN-Pro: Keypoint-Based Grasp Prediction through Probabilistic 2D-3D\n  Correspondence Learning",
-      "link": "https://arxiv.org/abs/2507.14820v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.14820v1.pdf",
-      "summary": "High-level robotic manipulation tasks demand flexible 6-DoF grasp estimation\nto serve as a basic function. Previous approaches either directly generate\ngrasps from point-cloud data, suffering from challenges with small objects and\nsensor noise, or infer 3D information from RGB images, which introduces\nexpensive annotation requirements and discretization issues. Recent methods\nmitigate some challenges by retaining a 2D representation to estimate grasp\nkeypoints and applying Perspective-n-Point (PnP) algorithms to compute 6-DoF\nposes. However, these methods are limited by their non-differentiable nature\nand reliance solely on 2D supervision, which hinders the full exploitation of\nrich 3D information. In this work, we present KGN-Pro, a novel grasping network\nthat preserves the efficiency and fine-grained object grasping of previous KGNs\nwhile integrating direct 3D optimization through probabilistic PnP layers.\nKGN-Pro encodes paired RGB-D images to generate Keypoint Map, and further\noutputs a 2D confidence map to weight keypoint contributions during\nre-projection error minimization. By modeling the weighted sum of squared\nre-projection errors probabilistically, the network effectively transmits 3D\nsupervision to its 2D keypoint predictions, enabling end-to-end learning.\nExperiments on both simulated and real-world platforms demonstrate that KGN-Pro\noutperforms existing methods in terms of grasp cover rate and success rate.",
-      "published": "2025-07-20T04:35:31Z",
-      "authors": [
-        "Bingran Chen",
-        "Baorun Li",
-        "Jian Yang",
-        "Yong Liu",
-        "Guangyao Zhai"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.14820v1",
-      "relevance_score": 5
-    },
-    {
-      "title": "Few-shot transfer of tool-use skills using human demonstrations with\n  proximity and tactile sensing",
-      "link": "https://arxiv.org/abs/2507.13200v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.13200v1.pdf",
-      "summary": "Tools extend the manipulation abilities of robots, much like they do for\nhumans. Despite human expertise in tool manipulation, teaching robots these\nskills faces challenges. The complexity arises from the interplay of two\nsimultaneous points of contact: one between the robot and the tool, and another\nbetween the tool and the environment. Tactile and proximity sensors play a\ncrucial role in identifying these complex contacts. However, learning tool\nmanipulation using these sensors remains challenging due to limited real-world\ndata and the large sim-to-real gap. To address this, we propose a few-shot\ntool-use skill transfer framework using multimodal sensing. The framework\ninvolves pre-training the base policy to capture contact states common in\ntool-use skills in simulation and fine-tuning it with human demonstrations\ncollected in the real-world target domain to bridge the domain gap. We validate\nthat this framework enables teaching surface-following tasks using tools with\ndiverse physical and geometric properties with a small number of demonstrations\non the Franka Emika robot arm. Our analysis suggests that the robot acquires\nnew tool-use skills by transferring the ability to recognise tool-environment\ncontact relationships from pre-trained to fine-tuned policies. Additionally,\ncombining proximity and tactile sensors enhances the identification of contact\nstates and environmental geometry.",
-      "published": "2025-07-17T15:10:12Z",
-      "authors": [
-        "Marina Y. Aoyama",
-        "Sethu Vijayakumar",
-        "Tetsuya Narita"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.13200v1",
-      "relevance_score": 5
     },
     {
       "title": "AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation",
@@ -333,6 +230,27 @@
       "relevance_score": 5
     },
     {
+      "title": "VLA-Touch: Enhancing Vision-Language-Action Models with Dual-Level\n  Tactile Feedback",
+      "link": "https://arxiv.org/abs/2507.17294v2",
+      "pdf_link": "https://arxiv.org/pdf/2507.17294v2.pdf",
+      "summary": "Tactile feedback is generally recognized to be crucial for effective\ninteraction with the physical world. However, state-of-the-art\nVision-Language-Action (VLA) models lack the ability to interpret and use\ntactile signals, limiting their effectiveness in contact-rich tasks.\nIncorporating tactile feedback into these systems is challenging due to the\nabsence of large multi-modal datasets. We present VLA-Touch, an approach that\nenhances generalist robot policies with tactile sensing \\emph{without\nfine-tuning} the base VLA. Our method introduces two key innovations: (1) a\npipeline that leverages a pretrained tactile-language model that provides\nsemantic tactile feedback for high-level task planning, and (2) a\ndiffusion-based controller that refines VLA-generated actions with tactile\nsignals for contact-rich manipulation. Through real-world experiments, we\ndemonstrate that our dual-level integration of tactile feedback improves task\nplanning efficiency while enhancing execution precision. Code is open-sourced\nat \\href{https://github.com/jxbi1010/VLA-Touch}{this URL}.",
+      "published": "2025-07-23T07:54:10Z",
+      "authors": [
+        "Jianxin Bi",
+        "Kevin Yuchen Ma",
+        "Ce Hao",
+        "Mike Zheng Shou",
+        "Harold Soh"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.17294v2",
+      "relevance_score": 5
+    },
+    {
       "title": "Task-Oriented Human Grasp Synthesis via Context- and Task-Aware\n  Diffusers",
       "link": "https://arxiv.org/abs/2507.11287v1",
       "pdf_link": "https://arxiv.org/pdf/2507.11287v1.pdf",
@@ -372,73 +290,92 @@
       "relevance_score": 5
     },
     {
-      "title": "RoboEval: Where Robotic Manipulation Meets Structured and Scalable\n  Evaluation",
-      "link": "https://arxiv.org/abs/2507.00435v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.00435v1.pdf",
-      "summary": "We present RoboEval, a simulation benchmark and structured evaluation\nframework designed to reveal the limitations of current bimanual manipulation\npolicies. While prior benchmarks report only binary task success, we show that\nsuch metrics often conceal critical weaknesses in policy behavior -- such as\npoor coordination, slipping during grasping, or asymmetric arm usage. RoboEval\nintroduces a suite of tiered, semantically grounded tasks decomposed into\nskill-specific stages, with variations that systematically challenge spatial,\nphysical, and coordination capabilities. Tasks are paired with fine-grained\ndiagnostic metrics and 3000+ human demonstrations to support imitation\nlearning. Our experiments reveal that policies with similar success rates\ndiverge in how tasks are executed -- some struggle with alignment, others with\ntemporally consistent bimanual control. We find that behavioral metrics\ncorrelate with success in over half of task-metric pairs, and remain\ninformative even when binary success saturates. By pinpointing when and how\npolicies fail, RoboEval enables a deeper, more actionable understanding of\nrobotic manipulation -- and highlights the need for evaluation tools that go\nbeyond success alone.",
-      "published": "2025-07-01T05:33:16Z",
+      "title": "Human-Exoskeleton Kinematic Calibration to Improve Hand Tracking for\n  Dexterous Teleoperation",
+      "link": "https://arxiv.org/abs/2507.23592v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.23592v1.pdf",
+      "summary": "Hand exoskeletons are critical tools for dexterous teleoperation and\nimmersive manipulation interfaces, but achieving accurate hand tracking remains\na challenge due to user-specific anatomical variability and donning\ninconsistencies. These issues lead to kinematic misalignments that degrade\ntracking performance and limit applicability in precision tasks. We propose a\nsubject-specific calibration framework for exoskeleton-based hand tracking that\nuses redundant joint sensing and a residual-weighted optimization strategy to\nestimate virtual link parameters. Implemented on the Maestro exoskeleton, our\nmethod improves joint angle and fingertip position estimation across users with\nvarying hand geometries. We introduce a data-driven approach to empirically\ntune cost function weights using motion capture ground truth, enabling more\naccurate and consistent calibration across participants. Quantitative results\nfrom seven subjects show substantial reductions in joint and fingertip tracking\nerrors compared to uncalibrated and evenly weighted models. Qualitative\nvisualizations using a Unity-based virtual hand further confirm improvements in\nmotion fidelity. The proposed framework generalizes across exoskeleton designs\nwith closed-loop kinematics and minimal sensing, and lays the foundation for\nhigh-fidelity teleoperation and learning-from-demonstration applications.",
+      "published": "2025-07-31T14:29:38Z",
       "authors": [
-        "Yi Ru Wang",
-        "Carter Ung",
-        "Grant Tannert",
-        "Jiafei Duan",
-        "Josephine Li",
-        "Amy Le",
-        "Rishabh Oswal",
-        "Markus Grotz",
-        "Wilbert Pumacay",
-        "Yuquan Deng",
-        "Ranjay Krishna",
-        "Dieter Fox",
-        "Siddhartha Srinivasa"
+        "Haiyun Zhang",
+        "Stefano Dalla Gasperina",
+        "Saad N. Yousaf",
+        "Toshimitsu Tsuboi",
+        "Tetsuya Narita",
+        "Ashish D. Deshpande"
       ],
       "categories": [
         "cs.RO",
-        "cs.AI",
-        "cs.CV"
+        "cs.HC",
+        "cs.SY",
+        "eess.SY"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.00435v1",
-      "relevance_score": 5
+      "arxiv_id": "2507.23592v1",
+      "relevance_score": 4
     },
     {
-      "title": "EC-Flow: Enabling Versatile Robotic Manipulation from Action-Unlabeled\n  Videos via Embodiment-Centric Flow",
-      "link": "https://arxiv.org/abs/2507.06224v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.06224v1.pdf",
-      "summary": "Current language-guided robotic manipulation systems often require low-level\naction-labeled datasets for imitation learning. While object-centric flow\nprediction methods mitigate this issue, they remain limited to scenarios\ninvolving rigid objects with clear displacement and minimal occlusion. In this\nwork, we present Embodiment-Centric Flow (EC-Flow), a framework that directly\nlearns manipulation from action-unlabeled videos by predicting\nembodiment-centric flow. Our key insight is that incorporating the embodiment's\ninherent kinematics significantly enhances generalization to versatile\nmanipulation scenarios, including deformable object handling, occlusions, and\nnon-object-displacement tasks. To connect the EC-Flow with language\ninstructions and object interactions, we further introduce a goal-alignment\nmodule by jointly optimizing movement consistency and goal-image prediction.\nMoreover, translating EC-Flow to executable robot actions only requires a\nstandard robot URDF (Unified Robot Description Format) file to specify\nkinematic constraints across joints, which makes it easy to use in practice. We\nvalidate EC-Flow on both simulation (Meta-World) and real-world tasks,\ndemonstrating its state-of-the-art performance in occluded object handling (62%\nimprovement), deformable object manipulation (45% improvement), and\nnon-object-displacement tasks (80% improvement) than prior state-of-the-art\nobject-centric flow methods. For more information, see our project website at\nhttps://ec-flow1.github.io .",
-      "published": "2025-07-08T17:57:03Z",
+      "title": "Quadratic Programming-Based Posture Manipulation and Thrust-vectoring\n  for Agile Dynamic Walking on Narrow Pathways",
+      "link": "https://arxiv.org/abs/2507.23203v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.23203v1.pdf",
+      "summary": "There has been significant advancement in legged robot's agility where they\ncan show impressive acrobatic maneuvers, such as parkour. These maneuvers rely\nheavily on posture manipulation. To expand the stability and locomotion\nplasticity, we use the multi-modal ability in our legged-aerial platform, the\nHusky Beta, to perform thruster-assisted walking. This robot has thrusters on\neach of its sagittal knee joints which can be used to stabilize its frontal\ndynamic as it walks. In this work, we perform a simulation study of quadruped\nnarrow-path walking with Husky $\\beta$, where the robot will utilize its\nthrusters to stably walk on a narrow path. The controller is designed based on\na centroidal dynamics model with thruster and foot ground contact forces as\ninputs. These inputs are regulated using a QP solver to be used in a model\npredictive control framework. In addition to narrow-path walking, we also\nperform a lateral push-recovery simulation to study how the thrusters can be\nused to stabilize the frontal dynamics.",
+      "published": "2025-07-31T02:57:26Z",
       "authors": [
-        "Yixiang Chen",
-        "Peiyan Li",
-        "Yan Huang",
-        "Jiabing Yang",
-        "Kehan Chen",
-        "Liang Wang"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.06224v1",
-      "relevance_score": 5
-    },
-    {
-      "title": "PinchBot: Long-Horizon Deformable Manipulation with Guided Diffusion\n  Policy",
-      "link": "https://arxiv.org/abs/2507.17846v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.17846v1.pdf",
-      "summary": "Pottery creation is a complicated art form that requires dexterous, precise\nand delicate actions to slowly morph a block of clay to a meaningful, and often\nuseful 3D goal shape. In this work, we aim to create a robotic system that can\ncreate simple pottery goals with only pinch-based actions. This pinch pottery\ntask allows us to explore the challenges of a highly multi-modal and\nlong-horizon deformable manipulation task. To this end, we present PinchBot, a\ngoal-conditioned diffusion policy model that when combined with pre-trained 3D\npoint cloud embeddings, task progress prediction and collision-constrained\naction projection, is able to successfully create a variety of simple pottery\ngoals. For experimental videos and access to the demonstration dataset, please\nvisit our project website:\nhttps://sites.google.com/andrew.cmu.edu/pinchbot/home.",
-      "published": "2025-07-23T18:13:41Z",
-      "authors": [
-        "Alison Bartsch",
-        "Arvind Car",
-        "Amir Barati Farimani"
+        "Chenghao Wang",
+        "Eric Sihite",
+        "Kaushik Venkatesh Krishnamurthy",
+        "Shreyansh Pitroda",
+        "Adarsh Salagame",
+        "Alireza Ramezani",
+        "Morteza Gharib"
       ],
       "categories": [
         "cs.RO"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.17846v1",
+      "arxiv_id": "2507.23203v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Whisker-based Active Tactile Perception for Contour Reconstruction",
+      "link": "https://arxiv.org/abs/2507.23305v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.23305v1.pdf",
+      "summary": "Perception using whisker-inspired tactile sensors currently faces a major\nchallenge: the lack of active control in robots based on direct contact\ninformation from the whisker. To accurately reconstruct object contours, it is\ncrucial for the whisker sensor to continuously follow and maintain an\nappropriate relative touch pose on the surface. This is especially important\nfor localization based on tip contact, which has a low tolerance for sharp\nsurfaces and must avoid slipping into tangential contact. In this paper, we\nfirst construct a magnetically transduced whisker sensor featuring a compact\nand robust suspension system composed of three flexible spiral arms. We develop\na method that leverages a characterized whisker deflection profile to directly\nextract the tip contact position using gradient descent, with a Bayesian filter\napplied to reduce fluctuations. We then propose an active motion control policy\nto maintain the optimal relative pose of the whisker sensor against the object\nsurface. A B-Spline curve is employed to predict the local surface curvature\nand determine the sensor orientation. Results demonstrate that our algorithm\ncan effectively track objects and reconstruct contours with sub-millimeter\naccuracy. Finally, we validate the method in simulations and real-world\nexperiments where a robot arm drives the whisker sensor to follow the surfaces\nof three different objects.",
+      "published": "2025-07-31T07:38:42Z",
+      "authors": [
+        "Yixuan Dang",
+        "Qinyang Xu",
+        "Yu Zhang",
+        "Xiangtong Yao",
+        "Liding Zhang",
+        "Zhenshan Bing",
+        "Florian Roehrbein",
+        "Alois Knoll"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.23305v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Skin-Machine Interface with Multimodal Contact Motion Classifier",
+      "link": "https://arxiv.org/abs/2507.19760v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.19760v1.pdf",
+      "summary": "This paper proposes a novel framework for utilizing skin sensors as a new\noperation interface of complex robots. The skin sensors employed in this study\npossess the capability to quantify multimodal tactile information at multiple\ncontact points. The time-series data generated from these sensors is\nanticipated to facilitate the classification of diverse contact motions\nexhibited by an operator. By mapping the classification results with robot\nmotion primitives, a diverse range of robot motions can be generated by\naltering the manner in which the skin sensors are interacted with. In this\npaper, we focus on a learning-based contact motion classifier employing\nrecurrent neural networks. This classifier is a pivotal factor in the success\nof this framework. Furthermore, we elucidate the requisite conditions for\nsoftware-hardware designs. Firstly, multimodal sensing and its comprehensive\nencoding significantly contribute to the enhancement of classification accuracy\nand learning stability. Utilizing all modalities simultaneously as inputs to\nthe classifier proves to be an effective approach. Secondly, it is essential to\nmount the skin sensors on a flexible and compliant support to enable the\nactivation of three-axis accelerometers. These accelerometers are capable of\nmeasuring horizontal tactile information, thereby enhancing the correlation\nwith other modalities. Furthermore, they serve to absorb the noises generated\nby the robot's movements during deployment. Through these discoveries, the\naccuracy of the developed classifier surpassed 95 %, enabling the dual-arm\nmobile manipulator to execute a diverse range of tasks via the Skin-Machine\nInterface. https://youtu.be/UjUXT4Z4BC8",
+      "published": "2025-07-26T03:26:20Z",
+      "authors": [
+        "Alberto Confente",
+        "Takanori Jin",
+        "Taisuke Kobayashi",
+        "Julio Rogelio Guadarrama-Olvera",
+        "Gordon Cheng"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.19760v1",
       "relevance_score": 4
     },
     {
@@ -464,10 +401,51 @@
       "relevance_score": 4
     },
     {
-      "title": "Generalist Bimanual Manipulation via Foundation Video Diffusion Models",
-      "link": "https://arxiv.org/abs/2507.12898v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.12898v1.pdf",
-      "summary": "Bimanual robotic manipulation, which involves the coordinated control of two\nrobotic arms, is foundational for solving challenging tasks. Despite recent\nprogress in general-purpose manipulation, data scarcity and embodiment\nheterogeneity remain serious obstacles to further scaling up in bimanual\nsettings. In this paper, we introduce VIdeo Diffusion for Action Reasoning\n(VIDAR), a two-stage framework that leverages large-scale, diffusion-based\nvideo pre-training and a novel masked inverse dynamics model for action\nprediction. We pre-train the video diffusion model on 750K multi-view videos\nfrom three real-world bimanual robot platforms, utilizing a unified observation\nspace that encodes robot, camera, task, and scene contexts. Our masked inverse\ndynamics model learns masks to extract action-relevant information from\ngenerated trajectories without requiring pixel-level labels, and the masks can\neffectively generalize to unseen backgrounds. Our experiments demonstrate that\nwith only 20 minutes of human demonstrations on an unseen robot platform (only\n1% of typical data requirements), VIDAR generalizes to unseen tasks and\nbackgrounds with strong semantic understanding, surpassing state-of-the-art\nmethods. Our findings highlight the potential of video foundation models,\ncoupled with masked action prediction, to enable scalable and generalizable\nrobotic manipulation in diverse real-world settings.",
+      "title": "SuperMag: Vision-based Tactile Data Guided High-resolution Tactile Shape\n  Reconstruction for Magnetic Tactile Sensors",
+      "link": "https://arxiv.org/abs/2507.20002v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.20002v1.pdf",
+      "summary": "Magnetic-based tactile sensors (MBTS) combine the advantages of compact\ndesign and high-frequency operation but suffer from limited spatial resolution\ndue to their sparse taxel arrays. This paper proposes SuperMag, a tactile shape\nreconstruction method that addresses this limitation by leveraging\nhigh-resolution vision-based tactile sensor (VBTS) data to supervise MBTS\nsuper-resolution. Co-designed, open-source VBTS and MBTS with identical contact\nmodules enable synchronized data collection of high-resolution shapes and\nmagnetic signals via a symmetric calibration setup. We frame tactile shape\nreconstruction as a conditional generative problem, employing a conditional\nvariational auto-encoder to infer high-resolution shapes from low-resolution\nMBTS inputs. The MBTS achieves a sampling frequency of 125 Hz, whereas the\nshape reconstruction sustains an inference time within 2.5 ms. This\ncross-modality synergy advances tactile perception of the MBTS, potentially\nunlocking its new capabilities in high-precision robotic tasks.",
+      "published": "2025-07-26T16:44:25Z",
+      "authors": [
+        "Peiyao Hou",
+        "Danning Sun",
+        "Meng Wang",
+        "Yuzhe Huang",
+        "Zeyu Zhang",
+        "Hangxin Liu",
+        "Wanlin Li",
+        "Ziyuan Jiao"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.20002v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "PinchBot: Long-Horizon Deformable Manipulation with Guided Diffusion\n  Policy",
+      "link": "https://arxiv.org/abs/2507.17846v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.17846v1.pdf",
+      "summary": "Pottery creation is a complicated art form that requires dexterous, precise\nand delicate actions to slowly morph a block of clay to a meaningful, and often\nuseful 3D goal shape. In this work, we aim to create a robotic system that can\ncreate simple pottery goals with only pinch-based actions. This pinch pottery\ntask allows us to explore the challenges of a highly multi-modal and\nlong-horizon deformable manipulation task. To this end, we present PinchBot, a\ngoal-conditioned diffusion policy model that when combined with pre-trained 3D\npoint cloud embeddings, task progress prediction and collision-constrained\naction projection, is able to successfully create a variety of simple pottery\ngoals. For experimental videos and access to the demonstration dataset, please\nvisit our project website:\nhttps://sites.google.com/andrew.cmu.edu/pinchbot/home.",
+      "published": "2025-07-23T18:13:41Z",
+      "authors": [
+        "Alison Bartsch",
+        "Arvind Car",
+        "Amir Barati Farimani"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.17846v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Vidar: Embodied Video Diffusion Model for Generalist Bimanual\n  Manipulation",
+      "link": "https://arxiv.org/abs/2507.12898v2",
+      "pdf_link": "https://arxiv.org/pdf/2507.12898v2.pdf",
+      "summary": "Bimanual robotic manipulation, which involves the coordinated control of two\nrobotic arms, is foundational for solving challenging tasks. Despite recent\nprogress in general-purpose manipulation, data scarcity and embodiment\nheterogeneity remain serious obstacles to further scaling up in bimanual\nsettings. In this paper, we introduce Video Diffusion for Action Reasoning\n(Vidar), a two-stage framework that leverages large-scale, diffusion-based\nvideo pre-training and a novel masked inverse dynamics model for action\nprediction. We pre-train the video diffusion model on 750K multi-view videos\nfrom three real-world bimanual robot platforms, utilizing a unified observation\nspace that encodes robot, camera, task, and scene contexts. Our masked inverse\ndynamics model learns masks to extract action-relevant information from\ngenerated trajectories without requiring pixel-level labels, and the masks can\neffectively generalize to unseen backgrounds. Our experiments demonstrate that\nwith only 20 minutes of human demonstrations on an unseen robot platform (only\n1% of typical data requirements), Vidar generalizes to unseen tasks and\nbackgrounds with strong semantic understanding, surpassing state-of-the-art\nmethods. Our findings highlight the potential of video foundation models,\ncoupled with masked action prediction, to enable scalable and generalizable\nrobotic manipulation in diverse real-world settings.",
       "published": "2025-07-17T08:31:55Z",
       "authors": [
         "Yao Feng",
@@ -486,26 +464,7 @@
         "cs.RO"
       ],
       "source": "ArXiv",
-      "arxiv_id": "2507.12898v1",
-      "relevance_score": 4
-    },
-    {
-      "title": "Accurate Pose Estimation Using Contact Manifold Sampling for Safe\n  Peg-in-Hole Insertion of Complex Geometries",
-      "link": "https://arxiv.org/abs/2507.03925v1",
-      "pdf_link": "https://arxiv.org/pdf/2507.03925v1.pdf",
-      "summary": "Robotic assembly of complex, non-convex geometries with tight clearances\nremains a challenging problem, demanding precise state estimation for\nsuccessful insertion. In this work, we propose a novel framework that relies\nsolely on contact states to estimate the full SE(3) pose of a peg relative to a\nhole. Our method constructs an online submanifold of contact states through\nprimitive motions with just 6 seconds of online execution, subsequently mapping\nit to an offline contact manifold for precise pose estimation. We demonstrate\nthat without such state estimation, robots risk jamming and excessive force\napplication, potentially causing damage. We evaluate our approach on five\nindustrially relevant, complex geometries with 0.1 to 1.0 mm clearances,\nachieving a 96.7% success rate - a 6x improvement over primitive-based\ninsertion without state estimation. Additionally, we analyze insertion forces,\nand overall insertion times, showing our method significantly reduces the\naverage wrench, enabling safer and more efficient assembly.",
-      "published": "2025-07-05T07:18:07Z",
-      "authors": [
-        "Abhay Negi",
-        "Omey M. Manyar",
-        "Dhanush K. Penmetsa",
-        "Satyandra K. Gupta"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "ArXiv",
-      "arxiv_id": "2507.03925v1",
+      "arxiv_id": "2507.12898v2",
       "relevance_score": 4
     },
     {
@@ -528,6 +487,70 @@
       "source": "ArXiv",
       "arxiv_id": "2507.10776v1",
       "relevance_score": 4
+    },
+    {
+      "title": "Probabilistic Human Intent Prediction for Mobile Manipulation: An\n  Evaluation with Human-Inspired Constraints",
+      "link": "https://arxiv.org/abs/2507.10131v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.10131v1.pdf",
+      "summary": "Accurate inference of human intent enables human-robot collaboration without\nconstraining human control or causing conflicts between humans and robots. We\npresent GUIDER (Global User Intent Dual-phase Estimation for Robots), a\nprobabilistic framework that enables a robot to estimate the intent of human\noperators. GUIDER maintains two coupled belief layers, one tracking navigation\ngoals and the other manipulation goals. In the Navigation phase, a Synergy Map\nblends controller velocity with an occupancy grid to rank interaction areas.\nUpon arrival at a goal, an autonomous multi-view scan builds a local 3D cloud.\nThe Manipulation phase combines U2Net saliency, FastSAM instance saliency, and\nthree geometric grasp-feasibility tests, with an end-effector kinematics-aware\nupdate rule that evolves object probabilities in real-time. GUIDER can\nrecognize areas and objects of intent without predefined goals. We evaluated\nGUIDER on 25 trials (five participants x five task variants) in Isaac Sim, and\ncompared it with two baselines, one for navigation and one for manipulation.\nAcross the 25 trials, GUIDER achieved a median stability of 93-100% during\nnavigation, compared with 60-100% for the BOIR baseline, with an improvement of\n39.5% in a redirection scenario (T5). During manipulation, stability reached\n94-100% (versus 69-100% for Trajectron), with a 31.4% difference in a\nredirection task (T3). In geometry-constrained trials (manipulation), GUIDER\nrecognized the object intent three times earlier than Trajectron (median\nremaining time to confident prediction 23.6 s vs 7.8 s). These results validate\nour dual-phase framework and show improvements in intent inference in both\nphases of mobile manipulation tasks.",
+      "published": "2025-07-14T10:21:27Z",
+      "authors": [
+        "Cesar Alan Contreras",
+        "Manolis Chiou",
+        "Alireza Rastegarpanah",
+        "Michal Szulik",
+        "Rustam Stolkin"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.HC"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.10131v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Learning human-to-robot handovers through 3D scene reconstruction",
+      "link": "https://arxiv.org/abs/2507.08726v1",
+      "pdf_link": "https://arxiv.org/pdf/2507.08726v1.pdf",
+      "summary": "Learning robot manipulation policies from raw, real-world image data requires\na large number of robot-action trials in the physical environment. Although\ntraining using simulations offers a cost-effective alternative, the visual\ndomain gap between simulation and robot workspace remains a major limitation.\nGaussian Splatting visual reconstruction methods have recently provided new\ndirections for robot manipulation by generating realistic environments. In this\npaper, we propose the first method for learning supervised-based robot\nhandovers solely from RGB images without the need of real-robot training or\nreal-robot data collection. The proposed policy learner, Human-to-Robot\nHandover using Sparse-View Gaussian Splatting (H2RH-SGS), leverages sparse-view\nGaussian Splatting reconstruction of human-to-robot handover scenes to generate\nrobot demonstrations containing image-action pairs captured with a camera\nmounted on the robot gripper. As a result, the simulated camera pose changes in\nthe reconstructed scene can be directly translated into gripper pose changes.\nWe train a robot policy on demonstrations collected with 16 household objects\nand {\\em directly} deploy this policy in the real environment. Experiments in\nboth Gaussian Splatting reconstructed scene and real-world human-to-robot\nhandover experiments demonstrate that H2RH-SGS serves as a new and effective\nrepresentation for the human-to-robot handover task.",
+      "published": "2025-07-11T16:26:31Z",
+      "authors": [
+        "Yuekun Wu",
+        "Yik Lung Pang",
+        "Andrea Cavallaro",
+        "Changjae Oh"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2507.08726v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "On-Device Diffusion Transformer Policy for Efficient Robot Manipulation",
+      "link": "https://arxiv.org/abs/2508.00697v1",
+      "pdf_link": "https://arxiv.org/pdf/2508.00697v1.pdf",
+      "summary": "Diffusion Policies have significantly advanced robotic manipulation tasks via\nimitation learning, but their application on resource-constrained mobile\nplatforms remains challenging due to computational inefficiency and extensive\nmemory footprint. In this paper, we propose LightDP, a novel framework\nspecifically designed to accelerate Diffusion Policies for real-time deployment\non mobile devices. LightDP addresses the computational bottleneck through two\ncore strategies: network compression of the denoising modules and reduction of\nthe required sampling steps. We first conduct an extensive computational\nanalysis on existing Diffusion Policy architectures, identifying the denoising\nnetwork as the primary contributor to latency. To overcome performance\ndegradation typically associated with conventional pruning methods, we\nintroduce a unified pruning and retraining pipeline, optimizing the model's\npost-pruning recoverability explicitly. Furthermore, we combine pruning\ntechniques with consistency distillation to effectively reduce sampling steps\nwhile maintaining action prediction accuracy. Experimental evaluations on the\nstandard datasets, \\ie, PushT, Robomimic, CALVIN, and LIBERO, demonstrate that\nLightDP achieves real-time action prediction on mobile devices with competitive\nperformance, marking an important step toward practical deployment of\ndiffusion-based policies in resource-limited environments. Extensive real-world\nexperiments also show the proposed LightDP can achieve performance comparable\nto state-of-the-art Diffusion Policies.",
+      "published": "2025-08-01T15:14:39Z",
+      "authors": [
+        "Yiming Wu",
+        "Huan Wang",
+        "Zhenghao Chen",
+        "Jianxin Pang",
+        "Dong Xu"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "source": "ArXiv",
+      "arxiv_id": "2508.00697v1",
+      "relevance_score": 3
     }
   ],
   "search_keywords": [
