@@ -1,6 +1,6 @@
-# 🤖 Robot Manipulation Paper Crawler
+# Paper Crawler
 
-This repo automatically collects the latest robot manipulation-related papers from arXiv (category: cs.RO), filters them by relevant keywords like "manipulation" or "grasp", and updates the results weekly.
+This repo automatically collects the latest topic(currently robot manipulation)-related papers from arXiv (category: cs.RO), filters them by relevant keywords like "manipulation" or "grasp", and updates the results weekly.
 
 ## 🔄 Automation
 
