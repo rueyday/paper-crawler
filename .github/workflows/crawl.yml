@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add robot_manipulation_papers.json
+          git add robot_manipulation_papers.json adaptive_robotics_papers.json
           git commit -m "🤖 Auto-update robot papers" || echo "No changes to commit"
           git push
         env:
