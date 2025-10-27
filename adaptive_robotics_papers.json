@@ -1,134 +1,44 @@
 {
-  "last_updated": "2025-10-21T17:42:10.463220",
-  "total_papers": 5,
+  "last_updated": "2025-10-27T08:30:09.304054",
+  "total_papers": 2,
   "papers": [
     {
-      "title": "Adaptive Invariant Extended Kalman Filter for Legged Robot State\n  Estimation",
-      "summary": "State estimation is crucial for legged robots as it directly affects control\nperformance and locomotion stability. In this paper, we propose an Adaptive\nInvariant Extended Kalman Filter to improve proprioceptive state estimation for\nlegged robots. The proposed method adaptively adjusts the noise level of the\ncontact foot model based on online covariance estimation, leading to improved\nstate estimation under varying contact conditions. It effectively handles small\nslips that traditional slip rejection fails to address, as overly sensitive\nslip rejection settings risk causing filter divergence. Our approach employs a\ncontact detection algorithm instead of contact sensors, reducing the reliance\non additional hardware. The proposed method is validated through real-world\nexperiments on the quadruped robot LeoQuad, demonstrating enhanced state\nestimation performance in dynamic locomotion scenarios.",
-      "published": "2025-10-19T08:45:36Z",
+      "title": "Remote Autonomy for Multiple Small Lowcost UAVs in GNSS-denied Search\n  and Rescue Operations",
+      "summary": "In recent years, consumer-grade UAVs have been widely adopted by first\nresponders. In general, they are operated manually, which requires trained\npilots, especially in unknown GNSS-denied environments and in the vicinity of\nstructures. Autonomous flight can facilitate the application of UAVs and reduce\noperator strain. However, autonomous systems usually require special\nprogramming interfaces, custom sensor setups, and strong onboard computers,\nwhich limits a broader deployment.\n  We present a system for autonomous flight using lightweight consumer-grade\nDJI drones. They are controlled by an Android app for state estimation and\nobstacle avoidance directly running on the UAV's remote control. Our ground\ncontrol station enables a single operator to configure and supervise multiple\nheterogeneous UAVs at once. Furthermore, it combines the observations of all\nUAVs into a joint 3D environment model for improved situational awareness.",
+      "published": "2025-10-24T11:36:07Z",
       "authors": [
-        "Kyung-Hwan Kim",
-        "DongHyun Ahn",
-        "Dong-hyun Lee",
-        "JuYoung Yoon",
-        "Dong Jin Hyun"
+        "Daniel Schleich",
+        "Jan Quenzel",
+        "Sven Behnke"
       ],
       "categories": [
-        "cs.RO",
-        "cs.SY",
-        "eess.SY"
+        "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2510.16755v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.16755v1.pdf",
+      "link": "https://arxiv.org/abs/2510.21357v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.21357v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2510.16755v1",
-      "relevance_score": 4
-    },
-    {
-      "title": "Linear State Estimation in Presence of Bounded Uncertainties: A\n  Comparative Analysis",
-      "summary": "A variety of algorithms have been proposed to address the power system state\nestimation problem in the presence of uncertainties in the data. However, less\nemphasis has been given to handling perturbations in the model. In the context\nof linear state estimation (LSE), which is the focus of this paper,\nperturbations in the model come from variations in the line parameters. Since\nthe actual values of the line parameters can be different from the values\nstored in a power utility's database, we investigate three approaches in this\npaper to estimate the states in the presence of bounded uncertainties in the\ndata and the model. The first approach is based on interval arithmetic, the\nsecond is based on convex optimization, and the third is based on generalized\nlinear fractional programming. The three algorithms are applied to multiple\nIEEE test systems and compared in terms of their speed and accuracy. The\nresults indicate that the first two algorithms are extremely fast and give\nexpected results, while the third suffers from scalability issues and is\nunsuitable for LSE.",
-      "published": "2025-10-19T03:20:40Z",
-      "authors": [
-        "Ayan Das",
-        "Anushka Sharma",
-        "Anamitra Pal"
-      ],
-      "categories": [
-        "eess.SY",
-        "cs.SY"
-      ],
-      "link": "https://arxiv.org/abs/2510.16693v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.16693v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2510.16693v1",
-      "relevance_score": 3
-    },
-    {
-      "title": "Differentiating Through Power Flow Solutions for Admittance and Topology\n  Control",
-      "summary": "The power flow equations relate bus voltage phasors to power injections via\nthe network admittance matrix. These equations are central to the key\noperational and protection functions of power systems (e.g., optimal power flow\nscheduling and control, state estimation, protection, and fault location, among\nothers). As control, optimization, and estimation of network admittance\nparameters are central to multiple avenues of research in electric power\nsystems, we propose a linearization of power flow solutions obtained by\nimplicitly differentiating them with respect to the network admittance\nparameters. This is achieved by utilizing the implicit function theorem, in\nwhich we show that such a differentiation is guaranteed to exist under mild\nconditions and is applicable to generic power systems (radial or meshed). The\nproposed theory is applied to derive sensitivities of complex voltages, line\ncurrents, and power flows. The developed theory of linearizing the power flow\nequations around changes in the complex network admittance parameters has\nnumerous applications. We demonstrate several of these applications, such as\npredicting the nodal voltages when the network topology changes without solving\nthe power flow equations. We showcase the application for continuous admittance\ncontrol, which is used to increase the hosting capacity of a given distribution\nnetwork.",
-      "published": "2025-10-20T00:56:31Z",
-      "authors": [
-        "Samuel Talkington",
-        "Daniel Turizo",
-        "Sergio A. Dorado-Rojas",
-        "Rahul K. Gupta",
-        "Daniel K. Molzahn"
-      ],
-      "categories": [
-        "eess.SY",
-        "cs.SY",
-        "math.OC"
-      ],
-      "link": "https://arxiv.org/abs/2510.17071v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.17071v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2510.17071v1",
+      "arxiv_id": "2510.21357v1",
       "relevance_score": 1
     },
     {
-      "title": "Safe Payload Transfer with Ship-Mounted Cranes: A Robust Model\n  Predictive Control Approach",
-      "summary": "Ensuring safe real-time control of ship-mounted cranes in unstructured\ntransportation environments requires handling multiple safety constraints while\nmaintaining effective payload transfer performance. Unlike traditional crane\nsystems, ship-mounted cranes are consistently subjected to significant external\ndisturbances affecting underactuated crane dynamics due to the ship's dynamic\nmotion response to harsh sea conditions, which can lead to robustness issues.\nTo tackle these challenges, we propose a robust and safe model predictive\ncontrol (MPC) framework and demonstrate it on a 5-DOF crane system, where a\nStewart platform simulates the external disturbances that ocean surface motions\nwould have on the supporting ship. The crane payload transfer operation must\navoid obstacles and accurately place the payload within a designated target\narea. We use a robust zero-order control barrier function (R-ZOCBF)-based\nsafety constraint in the nonlinear MPC to ensure safe payload positioning,\nwhile time-varying bounding boxes are utilized for collision avoidance. We\nintroduce a new optimization-based online robustness parameter adaptation\nscheme to reduce the conservativeness of R-ZOCBFs. Experimental trials on a\ncrane prototype demonstrate the overall performance of our safe control\napproach under significant perturbing motions of the crane base. While our\nfocus is on crane-facilitated transfer, the methods more generally apply to\nsafe robotically-assisted parts mating and parts insertion.",
-      "published": "2025-10-19T18:13:33Z",
+      "title": "Track-to-Track Association for Collective Perception based on Stochastic\n  Optimization",
+      "summary": "Collective perception is a key aspect for autonomous driving in smart cities\nas it aims to combine the local environment models of multiple intelligent\nvehicles in order to overcome sensor limitations. A crucial part of\nmulti-sensor fusion is track-to-track association. Previous works often suffer\nfrom high computational complexity or are based on heuristics. We propose an\nassociation algorithms based on stochastic optimization, which leverages a\nmultidimensional likelihood incorporating the number of tracks and their\nspatial distribution and furthermore computes several association hypotheses.\nWe demonstrate the effectiveness of our approach in Monte Carlo simulations and\na realistic collective perception scenario computing high-likelihood\nassociations in ambiguous settings.",
+      "published": "2025-10-24T09:24:14Z",
       "authors": [
-        "Ersin Das",
-        "William A. Welch",
-        "Patrick Spieler",
-        "Keenan Albee",
-        "Aurelio Noca",
-        "Jeffrey Edlund",
-        "Jonathan Becktor",
-        "Thomas Touma",
-        "Jessica Todd",
-        "Sriramya Bhamidipati",
-        "Stella Kombo",
-        "Maira Saboia",
-        "Anna Sabel",
-        "Grace Lim",
-        "Rohan Thakker",
-        "Amir Rahmani",
-        "Joel W. Burdick"
+        "Laura M. Wolf",
+        "Vincent Albert Wolff",
+        "Simon Steuernagel",
+        "Kolja Thormann",
+        "Marcus Baum"
       ],
       "categories": [
-        "eess.SY",
-        "cs.RO",
-        "cs.SY"
+        "eess.SP",
+        "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2510.16953v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.16953v1.pdf",
+      "link": "https://arxiv.org/abs/2510.21278v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.21278v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2510.16953v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment\n  Vision-Language-Action Model",
-      "summary": "Successful generalist Vision-Language-Action (VLA) models rely on effective\ntraining across diverse robotic platforms with large-scale, cross-embodiment,\nheterogeneous datasets. To facilitate and leverage the heterogeneity in rich,\ndiverse robotic data sources, we propose a novel Soft Prompt approach with\nminimally added parameters, by infusing prompt learning concepts into\ncross-embodiment robot learning and introducing separate sets of learnable\nembeddings for each distinct data source. These embeddings serve as\nembodiment-specific prompts, which in unity empower VLA models with effective\nexploitation of varying cross-embodiment features. Our new X-VLA, a neat\nflow-matching-based VLA architecture, relies exclusively on soft-prompted\nstandard Transformer encoders, enjoying both scalability and simplicity.\nEvaluated across 6 simulations as well as 3 real-world robots, our 0.9B\ninstantiation-X-VLA-0.9B simultaneously achieves SOTA performance over a sweep\nof benchmarks, demonstrating superior results on a wide axes of capabilities,\nfrom flexible dexterity to quick adaptation across embodiments, environments,\nand tasks. Website: https://thu-air-dream.github.io/X-VLA/",
-      "published": "2025-10-11T16:20:17Z",
-      "authors": [
-        "Jinliang Zheng",
-        "Jianxiong Li",
-        "Zhihao Wang",
-        "Dongxiu Liu",
-        "Xirui Kang",
-        "Yuchun Feng",
-        "Yinan Zheng",
-        "Jiayin Zou",
-        "Yilun Chen",
-        "Jia Zeng",
-        "Ya-Qin Zhang",
-        "Jiangmiao Pang",
-        "Jingjing Liu",
-        "Tai Wang",
-        "Xianyuan Zhan"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "link": "https://arxiv.org/abs/2510.10274v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.10274v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2510.10274v1",
+      "arxiv_id": "2510.21278v1",
       "relevance_score": 1
     }
   ],
