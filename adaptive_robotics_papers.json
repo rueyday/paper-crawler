@@ -1,44 +1,132 @@
 {
-  "last_updated": "2025-10-27T08:30:09.304054",
-  "total_papers": 2,
+  "last_updated": "2025-11-03T08:30:18.306615",
+  "total_papers": 6,
   "papers": [
     {
-      "title": "Remote Autonomy for Multiple Small Lowcost UAVs in GNSS-denied Search\n  and Rescue Operations",
-      "summary": "In recent years, consumer-grade UAVs have been widely adopted by first\nresponders. In general, they are operated manually, which requires trained\npilots, especially in unknown GNSS-denied environments and in the vicinity of\nstructures. Autonomous flight can facilitate the application of UAVs and reduce\noperator strain. However, autonomous systems usually require special\nprogramming interfaces, custom sensor setups, and strong onboard computers,\nwhich limits a broader deployment.\n  We present a system for autonomous flight using lightweight consumer-grade\nDJI drones. They are controlled by an Android app for state estimation and\nobstacle avoidance directly running on the UAV's remote control. Our ground\ncontrol station enables a single operator to configure and supervise multiple\nheterogeneous UAVs at once. Furthermore, it combines the observations of all\nUAVs into a joint 3D environment model for improved situational awareness.",
-      "published": "2025-10-24T11:36:07Z",
+      "title": "Adaptive Control for a Physics-Informed Model of a Thermal Energy\n  Distribution System: Qualitative Analysis",
+      "summary": "Integrated energy systems (IES) are complex heterogeneous architectures that\ntypically encompass power sources, hydrogen electrolyzers, energy storage, and\nheat exchangers. This integration is achieved through operating control\nstrategy optimization. However, the lack of physical understanding as to how\nthese systems evolve over time introduces uncertainties that hinder reliable\napplication thereof. Techniques that can accommodate such uncertainties are\nfundamental for ensuring proper operation of these systems. Unfortunately, no\nunifying methodology exists for accommodating uncertainties in this regard.\nThat being said, adaptive control (AC) is a discipline that may allow for\naccommodating such uncertainties in real-time. In the present work, we derive\nan AC formulation for linear systems in which all states are observable and\napply it to the control of a glycol heat exchanger (GHX) in an IES. Based on\nprior research in which we quantified the uncertainties of the GHXs system\ndynamics, we introduced an error of 50% on four terms of the nominal model. In\nthe case where a linear quadratic regulator is used as the nominal control for\nthe reference system, we found that employing AC can reduce the mean absolute\nerror and integral time absolute error by a factor of 30%-75%. This reduction\nis achieved with minimal computing overhead and control infrastructure, thus\nunderscoring the strength of AC. However, the control effort induced is\nsignificant, therefore warranting further study in order to estimate its impact\non a physical system. To address further challenges, including partially\nobservable and non-linear dynamics, enhancements of the linear formulation are\ncurrently being developed.",
+      "published": "2025-10-30T19:36:10Z",
       "authors": [
-        "Daniel Schleich",
-        "Jan Quenzel",
-        "Sven Behnke"
+        "Paul Seurin",
+        "Auradha Annaswamy",
+        "Linyu Lin"
       ],
       "categories": [
-        "cs.RO"
+        "eess.SY",
+        "cs.CE",
+        "cs.SY"
       ],
-      "link": "https://arxiv.org/abs/2510.21357v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.21357v1.pdf",
+      "link": "https://arxiv.org/abs/2510.26959v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.26959v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2510.21357v1",
+      "arxiv_id": "2510.26959v1",
+      "relevance_score": 3
+    },
+    {
+      "title": "e1: Learning Adaptive Control of Reasoning Effort",
+      "summary": "Increasing the thinking budget of AI models can significantly improve\naccuracy, but not all questions warrant the same amount of reasoning. Users may\nprefer to allocate different amounts of reasoning effort depending on how they\nvalue output quality versus latency and cost. To leverage this tradeoff\neffectively, users need fine-grained control over the amount of thinking used\nfor a particular query, but few approaches enable such control. Existing\nmethods require users to specify the absolute number of desired tokens, but\nthis requires knowing the difficulty of the problem beforehand to appropriately\nset the token budget for a query. To address these issues, we propose Adaptive\nEffort Control, a self-adaptive reinforcement learning method that trains\nmodels to use a user-specified fraction of tokens relative to the current\naverage chain-of-thought length for each query. This approach eliminates\ndataset- and phase-specific tuning while producing better cost-accuracy\ntradeoff curves compared to standard methods. Users can dynamically adjust the\ncost-accuracy trade-off through a continuous effort parameter specified at\ninference time. We observe that the model automatically learns to allocate\nresources proportionally to the task difficulty and, across model scales\nranging from 1.5B to 32B parameters, our approach enables approximately 3x\nreduction in chain-of-thought length while maintaining or improving performance\nrelative to the base model used for RL training.",
+      "published": "2025-10-30T23:12:21Z",
+      "authors": [
+        "Michael Kleinman",
+        "Matthew Trager",
+        "Alessandro Achille",
+        "Wei Xia",
+        "Stefano Soatto"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2510.27042v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.27042v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2510.27042v1",
+      "relevance_score": 2
+    },
+    {
+      "title": "Learning Generalizable Visuomotor Policy through Dynamics-Alignment",
+      "summary": "Behavior cloning methods for robot learning suffer from poor generalization\ndue to limited data support beyond expert demonstrations. Recent approaches\nleveraging video prediction models have shown promising results by learning\nrich spatiotemporal representations from large-scale datasets. However, these\nmodels learn action-agnostic dynamics that cannot distinguish between different\ncontrol inputs, limiting their utility for precise manipulation tasks and\nrequiring large pretraining datasets. We propose a Dynamics-Aligned Flow\nMatching Policy (DAP) that integrates dynamics prediction into policy learning.\nOur method introduces a novel architecture where policy and dynamics models\nprovide mutual corrective feedback during action generation, enabling\nself-correction and improved generalization. Empirical validation demonstrates\ngeneralization performance superior to baseline methods on real-world robotic\nmanipulation tasks, showing particular robustness in OOD scenarios including\nvisual distractions and lighting variations.",
+      "published": "2025-10-31T02:29:33Z",
+      "authors": [
+        "Dohyeok Lee",
+        "Jung Min Lee",
+        "Munkyung Kim",
+        "Seokhun Ju",
+        "Jin Woo Koo",
+        "Kyungjae Lee",
+        "Dohyeong Kim",
+        "TaeHyun Cho",
+        "Jungwoo Lee"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2510.27114v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.27114v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2510.27114v1",
       "relevance_score": 1
     },
     {
-      "title": "Track-to-Track Association for Collective Perception based on Stochastic\n  Optimization",
-      "summary": "Collective perception is a key aspect for autonomous driving in smart cities\nas it aims to combine the local environment models of multiple intelligent\nvehicles in order to overcome sensor limitations. A crucial part of\nmulti-sensor fusion is track-to-track association. Previous works often suffer\nfrom high computational complexity or are based on heuristics. We propose an\nassociation algorithms based on stochastic optimization, which leverages a\nmultidimensional likelihood incorporating the number of tracks and their\nspatial distribution and furthermore computes several association hypotheses.\nWe demonstrate the effectiveness of our approach in Monte Carlo simulations and\na realistic collective perception scenario computing high-likelihood\nassociations in ambiguous settings.",
-      "published": "2025-10-24T09:24:14Z",
+      "title": "Heterogeneous Robot Collaboration in Unstructured Environments with\n  Grounded Generative Intelligence",
+      "summary": "Heterogeneous robot teams operating in realistic settings often must\naccomplish complex missions requiring collaboration and adaptation to\ninformation acquired online. Because robot teams frequently operate in\nunstructured environments -- uncertain, open-world settings without prior maps\n-- subtasks must be grounded in robot capabilities and the physical world.\nWhile heterogeneous teams have typically been designed for fixed\nspecifications, generative intelligence opens the possibility of teams that can\naccomplish a wide range of missions described in natural language. However,\ncurrent large language model (LLM)-enabled teaming methods typically assume\nwell-structured and known environments, limiting deployment in unstructured\nenvironments. We present SPINE-HT, a framework that addresses these limitations\nby grounding the reasoning abilities of LLMs in the context of a heterogeneous\nrobot team through a three-stage process. Given language specifications\ndescribing mission goals and team capabilities, an LLM generates grounded\nsubtasks which are validated for feasibility. Subtasks are then assigned to\nrobots based on capabilities such as traversability or perception and refined\ngiven feedback collected during online operation. In simulation experiments\nwith closed-loop perception and control, our framework achieves nearly twice\nthe success rate compared to prior LLM-enabled heterogeneous teaming\napproaches. In real-world experiments with a Clearpath Jackal, a Clearpath\nHusky, a Boston Dynamics Spot, and a high-altitude UAV, our method achieves an\n87\\% success rate in missions requiring reasoning about robot capabilities and\nrefining subtasks with online feedback. More information is provided at\nhttps://zacravichandran.github.io/SPINE-HT.",
+      "published": "2025-10-30T18:24:38Z",
       "authors": [
-        "Laura M. Wolf",
-        "Vincent Albert Wolff",
-        "Simon Steuernagel",
-        "Kolja Thormann",
-        "Marcus Baum"
+        "Zachary Ravichandran",
+        "Fernando Cladera",
+        "Ankit Prabhu",
+        "Jason Hughes",
+        "Varun Murali",
+        "Camillo Taylor",
+        "George J. Pappas",
+        "Vijay Kumar"
       ],
       "categories": [
-        "eess.SP",
-        "cs.RO"
+        "cs.RO",
+        "cs.AI"
       ],
-      "link": "https://arxiv.org/abs/2510.21278v1",
-      "pdf_link": "https://arxiv.org/pdf/2510.21278v1.pdf",
+      "link": "https://arxiv.org/abs/2510.26915v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.26915v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2510.21278v1",
+      "arxiv_id": "2510.26915v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Graph approach for observability analysis in power system dynamic state\n  estimation",
+      "summary": "The proposed approach yields a numerical method that provably executes in\nlinear time with respect to the number of nodes and edges in a graph. The\ngraph, constructed from the power system model, requires only knowledge of the\ndependencies between state-to-state and output-to-state variables within a\nstate-space framework. While graph-based observability analysis methods exist\nfor power system static-state estimation, the approach presented here is the\nfirst for dynamic-state estimation (DSE). We examine decentralized and\ncentralized DSE scenarios and compare our findings with a well-established,\nalbeit non-scalable, observability analysis method in the literature. When\ncompared to the latter in a centralized DSE setting, our method reduced\ncomputation time by 1440x.",
+      "published": "2025-10-30T17:06:14Z",
+      "authors": [
+        "Akhila Kandivalasa",
+        "Marcos Netto"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.SY"
+      ],
+      "link": "https://arxiv.org/abs/2510.26701v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.26701v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2510.26701v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Optimal Bidding and Coordinated Dispatch of Hybrid Energy Systems in\n  Regulation Markets",
+      "summary": "The increasing integration of renewable energy sources and distributed energy\nresources (DER) into modern power systems introduces significant uncertainty,\nposing challenges for maintaining grid flexibility and reliability. Hybrid\nenergy systems (HES), composed of controllable generators, flexible loads, and\nbattery storage, offer a decentralized solution to enhance flexibility compared\nto single centralized resources. This paper presents a two-level framework to\nenable HES participation in frequency regulation markets. The upper level\nperforms a chance-constrained optimization to choose capacity bids based on\nhistorical regulation signals. At the lower level, a real-time control strategy\ndisaggregates the regulation power among the constituent resources. This\nreal-time control strategy is then benchmarked against an offline optimal\ndispatch to evaluate flexibility performance. Additionally, the framework\nevaluates the profitability of overbidding strategies and identifies thresholds\nbeyond which performance degradation may lead to market penalties or\ndisqualification. The proposed framework also compare the impact of imbalance\nof power capacities on performance and battery state of charge (SoC) through\nasymmetric HES configurations.",
+      "published": "2025-10-30T15:30:23Z",
+      "authors": [
+        "Tanmay Mishra",
+        "Dakota Hamilton",
+        "Mads R. Almassalkhi"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.SY"
+      ],
+      "link": "https://arxiv.org/abs/2510.26602v1",
+      "pdf_link": "https://arxiv.org/pdf/2510.26602v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2510.26602v1",
       "relevance_score": 1
     }
   ],
