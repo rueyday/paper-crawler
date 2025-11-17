@@ -1,329 +1,341 @@
 {
-  "last_updated": "2025-11-10T08:31:08.276615",
-  "total_papers": 10,
+  "last_updated": "2025-11-17T08:31:23.349199",
+  "total_papers": 17,
   "papers": [
     {
-      "title": "Adversarially Robust Multitask Adaptive Control",
-      "summary": "We study adversarially robust multitask adaptive linear quadratic control; a\nsetting where multiple systems collaboratively learn control policies under\nmodel uncertainty and adversarial corruption. We propose a clustered multitask\napproach that integrates clustering and system identification with resilient\naggregation to mitigate corrupted model updates. Our analysis characterizes how\nclustering accuracy, intra-cluster heterogeneity, and adversarial behavior\naffect the expected regret of certainty-equivalent (CE) control across LQR\ntasks. We establish non-asymptotic bounds demonstrating that the regret\ndecreases inversely with the number of honest systems per cluster and that this\nreduction is preserved under a bounded fraction of adversarial systems within\neach cluster.",
-      "published": "2025-11-07T17:25:21Z",
+      "title": "LODESTAR: Degeneracy-Aware LiDAR-Inertial Odometry with Adaptive Schmidt-Kalman Filter and Data Exploitation",
+      "summary": "LiDAR-inertial odometry (LIO) has been widely used in robotics due to its high accuracy. However, its performance degrades in degenerate environments, such as long corridors and high-altitude flights, where LiDAR measurements are imbalanced or sparse, leading to ill-posed state estimation. In this letter, we present LODESTAR, a novel LIO method that addresses these degeneracies through two key modules: degeneracy-aware adaptive Schmidt-Kalman filter (DA-ASKF) and degeneracy-aware data exploitation (DA-DE). DA-ASKF employs a sliding window to utilize past states and measurements as additional constraints. Specifically, it introduces degeneracy-aware sliding modes that adaptively classify states as active or fixed based on their degeneracy level. Using Schmidt-Kalman update, it partially optimizes active states while preserving fixed states. These fixed states influence the update of active states via their covariances, serving as reference anchors--akin to a lodestar. Additionally, DA-DE prunes less-informative measurements from active states and selectively exploits measurements from fixed states, based on their localizability contribution and the condition number of the Jacobian matrix. Consequently, DA-ASKF enables degeneracy-aware constrained optimization and mitigates measurement sparsity, while DA-DE addresses measurement imbalance. Experimental results show that LODESTAR outperforms existing LiDAR-based odometry methods and degeneracy-aware modules in terms of accuracy and robustness under various degenerate conditions.",
+      "published": "2025-11-12T09:29:37Z",
       "authors": [
-        "Kasra Fallah",
-        "Leonardo F. Toso",
-        "James Anderson"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.SY",
-        "eess.SY",
-        "math.OC"
-      ],
-      "link": "https://arxiv.org/abs/2511.05444v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.05444v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.05444v1",
-      "relevance_score": 2
-    },
-    {
-      "title": "Epically Powerful: An open-source software and mechatronics\n  infrastructure for wearable robotic systems",
-      "summary": "Epically Powerful is an open-source robotics infrastructure that streamlines\nthe underlying framework of wearable robotic systems - managing communication\nprotocols, clocking, actuator commands, visualization, sensor data acquisition,\ndata logging, and more - while also providing comprehensive guides for hardware\nselection, system assembly, and controller implementation. Epically Powerful\ncontains a code base enabling simplified user implementation via Python that\nseamlessly interfaces with various commercial state-of-the-art quasi-direct\ndrive (QDD) actuators, single-board computers, and common sensors, provides\nexample controllers, and enables real-time visualization. To further support\ndevice development, the package also includes a recommended parts list and\ncompatibility guide and detailed documentation on hardware and software\nimplementation. The goal of Epically Powerful is to lower the barrier to\ndeveloping and deploying custom wearable robotic systems without a\npre-specified form factor, enabling researchers to go from raw hardware to\nmodular, robust devices quickly and effectively. Though originally designed\nwith wearable robotics in mind, Epically Powerful is broadly applicable to\nother robotic domains that utilize QDD actuators, single-board computers, and\nsensors for closed-loop control.",
-      "published": "2025-11-07T07:11:55Z",
-      "authors": [
-        "Jennifer K. Leestma",
-        "Siddharth R. Nathella",
-        "Christoph P. O. Nuesslein",
-        "Snehil Mathur",
-        "Gregory S. Sawicki",
-        "Aaron J. Young"
+        "Eungchang Mason Lee",
+        "Kevin Christiansen Marsim",
+        "Hyun Myung"
       ],
       "categories": [
         "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2511.05033v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.05033v1.pdf",
+      "link": "https://arxiv.org/abs/2511.09142v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.09142v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.05033v1",
+      "arxiv_id": "2511.09142v1",
+      "relevance_score": 4
+    },
+    {
+      "title": "Causal Model-Based Reinforcement Learning for Sample-Efficient IoT Channel Access",
+      "summary": "Despite the advantages of multi-agent reinforcement learning (MARL) for wireless use case such as medium access control (MAC), their real-world deployment in Internet of Things (IoT) is hindered by their sample inefficiency. To alleviate this challenge, one can leverage model-based reinforcement learning (MBRL) solutions, however, conventional MBRL approaches rely on black-box models that are not interpretable and cannot reason. In contrast, in this paper, a novel causal model-based MARL framework is developed by leveraging tools from causal learn- ing. In particular, the proposed model can explicitly represent causal dependencies between network variables using structural causal models (SCMs) and attention-based inference networks. Interpretable causal models are then developed to capture how MAC control messages influence observations, how transmission actions determine outcomes, and how channel observations affect rewards. Data augmentation techniques are then used to generate synthetic rollouts using the learned causal model for policy optimization via proximal policy optimization (PPO). Analytical results demonstrate exponential sample complexity gains of causal MBRL over black-box approaches. Extensive simulations demonstrate that, on average, the proposed approach can reduce environment interactions by 58%, and yield faster convergence compared to model-free baselines. The proposed approach inherently is also shown to provide interpretable scheduling decisions via attention-based causal attribution, revealing which network conditions drive the policy. The resulting combination of sample efficiency and interpretability establishes causal MBRL as a practical approach for resource-constrained wireless systems.",
+      "published": "2025-11-13T13:26:33Z",
+      "authors": [
+        "Aswin Arun",
+        "Christo Kurisummoottil Thomas",
+        "Rimalpudi Sarvendranath",
+        "Walid Saad"
+      ],
+      "categories": [
+        "cs.IT",
+        "cs.LG",
+        "cs.NI"
+      ],
+      "link": "https://arxiv.org/abs/2511.10291v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.10291v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.10291v1",
+      "relevance_score": 3
+    },
+    {
+      "title": "Language-Aided State Estimation",
+      "summary": "Natural language data, such as text and speech, have become readily available through social networking services and chat platforms. By leveraging human observations expressed in natural language, this paper addresses the problem of state estimation for physical systems, in which humans act as sensing agents. To this end, we propose a Language-Aided Particle Filter (LAPF), a particle filter framework that structures human observations via natural language processing and incorporates them into the update step of the state estimation. Finally, the LAPF is applied to the water level estimation problem in an irrigation canal and its effectiveness is demonstrated.",
+      "published": "2025-11-14T13:18:37Z",
+      "authors": [
+        "Yuki Miyoshi",
+        "Masaki Inoue",
+        "Yusuke Fujimoto"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.CL"
+      ],
+      "link": "https://arxiv.org/abs/2511.11285v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.11285v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.11285v1",
+      "relevance_score": 3
+    },
+    {
+      "title": "From Fold to Function: Dynamic Modeling and Simulation-Driven Design of Origami Mechanisms",
+      "summary": "Origami-inspired mechanisms can transform flat sheets into functional three-dimensional dynamic structures that are lightweight, compact, and capable of complex motion. These properties make origami increasingly valuable in robotic and deployable systems. However, accurately simulating their folding behavior and interactions with the environment remains challenging. To address this, we present a design framework for origami mechanism simulation that utilizes MuJoCo's deformable-body capabilities. In our approach, origami sheets are represented as graphs of interconnected deformable elements with user-specified constraints such as creases and actuation, defined through an intuitive graphical user interface (GUI). This framework allows users to generate physically consistent simulations that capture both the geometric structure of origami mechanisms and their interactions with external objects and surfaces. We demonstrate our method's utility through a case study on an origami catapult, where design parameters are optimized in simulation using the Covariance Matrix Adaptation Evolution Strategy (CMA-ES) and validated experimentally on physical prototypes. The optimized structure achieves improved throwing performance, illustrating how our system enables rapid, simulation-driven origami design, optimization, and analysis.",
+      "published": "2025-11-13T18:19:41Z",
+      "authors": [
+        "Tianhui Han",
+        "Shashwat Singh",
+        "Sarvesh Patil",
+        "Zeynep Temel"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2511.10580v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.10580v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.10580v1",
+      "relevance_score": 2
+    },
+    {
+      "title": "Opinion: Towards Unified Expressive Policy Optimization for Robust Robot Learning",
+      "summary": "Offline-to-online reinforcement learning (O2O-RL) has emerged as a promising paradigm for safe and efficient robotic policy deployment but suffers from two fundamental challenges: limited coverage of multimodal behaviors and distributional shifts during online adaptation. We propose UEPO, a unified generative framework inspired by large language model pretraining and fine-tuning strategies. Our contributions are threefold: (1) a multi-seed dynamics-aware diffusion policy that efficiently captures diverse modalities without training multiple models; (2) a dynamic divergence regularization mechanism that enforces physically meaningful policy diversity; and (3) a diffusion-based data augmentation module that enhances dynamics model generalization. On the D4RL benchmark, UEPO achieves +5.9\\% absolute improvement over Uni-O4 on locomotion tasks and +12.4\\% on dexterous manipulation, demonstrating strong generalization and scalability.",
+      "published": "2025-11-13T08:42:20Z",
+      "authors": [
+        "Haidong Huang",
+        "Haiyue Zhu. Jiayu Song",
+        "Xixin Zhao",
+        "Yaohua Zhou",
+        "Jiayi Zhang",
+        "Yuze Zhai",
+        "Xiaocong Li"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2511.10087v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.10087v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.10087v1",
+      "relevance_score": 2
+    },
+    {
+      "title": "Privacy protection under the exposure of systems' prior information",
+      "summary": "For systems whose states implicate sensitive information, their privacy is of great concern. While notions like differential privacy have been successfully introduced to dynamical systems, it is still unclear how a system's privacy can be properly protected when facing the challenging yet frequently-encountered scenario where an adversary possesses prior knowledge, e.g., the steady state, of the system. This paper presents a new systematic approach to protect the privacy of a discrete-time linear time-invariant system against adversaries knowledgeable of the system's prior information. We employ a tailored \\emph{pointwise maximal leakage (PML) privacy} criterion. PML characterizes the worst-case privacy performance, which is sharply different from that of the better-known mutual-information privacy. We derive necessary and sufficient conditions for PML privacy and construct tractable design procedures. Furthermore, our analysis leads to insight into how PML privacy, differential privacy, and mutual-information privacy are related. We then revisit Kalman filters from the perspective of PML privacy and derive a lower bound on the steady-state estimation-error covariance in terms of the PML parameters. Finally, the derived results are illustrated in a case study of privacy protection for distributed sensing in smart buildings.",
+      "published": "2025-11-13T19:47:40Z",
+      "authors": [
+        "Le Liu",
+        "Yu Kawano",
+        "Ming Cao"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.IT",
+        "eess.SP"
+      ],
+      "link": "https://arxiv.org/abs/2511.10771v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.10771v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.10771v1",
+      "relevance_score": 2
+    },
+    {
+      "title": "Drone Swarm Energy Management",
+      "summary": "This note presents an analytical framework for decision-making in drone swarm systems operating under uncertainty, based on the integration of Partially Observable Markov Decision Processes (POMDP) with Deep Deterministic Policy Gradient (DDPG) reinforcement learning. The proposed approach enables adaptive control and cooperative behavior of unmanned aerial vehicles (UAVs) within a cognitive AI platform, where each agent learns optimal energy management and navigation policies from dynamic environmental states. We extend the standard DDPG architecture with a belief-state representation derived from Bayesian filtering, allowing for robust decision-making in partially observable environments. In this paper, for the Gaussian case, we numerically compare the performance of policies derived from DDPG to optimal policies for discretized versions of the original continuous problem. Simulation results demonstrate that the POMDP-DDPG-based swarm control model significantly improves mission success rates and energy efficiency compared to baseline methods. The developed framework supports distributed learning and decision coordination across multiple agents, providing a foundation for scalable cognitive swarm autonomy. The outcomes of this research contribute to the advancement of energy-aware control algorithms for intelligent multi-agent systems and can be applied in security, environmental monitoring, and infrastructure inspection scenarios.",
+      "published": "2025-11-14T18:47:30Z",
+      "authors": [
+        "Michael Z. Zgurovsky",
+        "Pavlo O. Kasyanov",
+        "Liliia S. Paliichuk"
+      ],
+      "categories": [
+        "math.OC",
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2511.11557v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.11557v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.11557v1",
       "relevance_score": 1
     },
     {
-      "title": "Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot\n  Learning",
-      "summary": "We present Isaac Lab, the natural successor to Isaac Gym, which extends the\nparadigm of GPU-native robotics simulation into the era of large-scale\nmulti-modal learning. Isaac Lab combines high-fidelity GPU parallel physics,\nphotorealistic rendering, and a modular, composable architecture for designing\nenvironments and training robot policies. Beyond physics and rendering, the\nframework integrates actuator models, multi-frequency sensor simulation, data\ncollection pipelines, and domain randomization tools, unifying best practices\nfor reinforcement and imitation learning at scale within a single extensible\nplatform. We highlight its application to a diverse set of challenges,\nincluding whole-body control, cross-embodiment mobility, contact-rich and\ndexterous manipulation, and the integration of human demonstrations for skill\nacquisition. Finally, we discuss upcoming integration with the differentiable,\nGPU-accelerated Newton physics engine, which promises new opportunities for\nscalable, data-efficient, and gradient-based approaches to robot learning. We\nbelieve Isaac Lab's combination of advanced simulation capabilities, rich\nsensing, and data-center scale execution will help unlock the next generation\nof breakthroughs in robotics research.",
-      "published": "2025-11-06T21:43:02Z",
+      "title": "Volumetric Ergodic Control",
+      "summary": "Ergodic control synthesizes optimal coverage behaviors over spatial distributions for nonlinear systems. However, existing formulations model the robot as a non-volumetric point, but in practice a robot interacts with the environment through its body and sensors with physical volume. In this work, we introduce a new ergodic control formulation that optimizes spatial coverage using a volumetric state representation. Our method preserves the asymptotic coverage guarantees of ergodic control, adds minimal computational overhead for real-time control, and supports arbitrary sample-based volumetric models. We evaluate our method across search and manipulation tasks -- with multiple robot dynamics and end-effector geometries or sensor models -- and show that it improves coverage efficiency by more than a factor of two while maintaining a 100% task completion rate across all experiments, outperforming the standard ergodic control method. Finally, we demonstrate the effectiveness of our method on a robot arm performing mechanical erasing tasks.",
+      "published": "2025-11-14T18:10:40Z",
       "authors": [
-        " NVIDIA",
-        " :",
-        "Mayank Mittal",
-        "Pascal Roth",
-        "James Tigue",
-        "Antoine Richard",
-        "Octi Zhang",
-        "Peter Du",
-        "Antonio Serrano-Muñoz",
-        "Xinjie Yao",
-        "René Zurbrügg",
-        "Nikita Rudin",
-        "Lukasz Wawrzyniak",
-        "Milad Rakhsha",
-        "Alain Denzler",
-        "Eric Heiden",
-        "Ales Borovicka",
-        "Ossama Ahmed",
-        "Iretiayo Akinola",
-        "Abrar Anwar",
-        "Mark T. Carlson",
-        "Ji Yuan Feng",
-        "Animesh Garg",
-        "Renato Gasoto",
-        "Lionel Gulich",
-        "Yijie Guo",
-        "M. Gussert",
-        "Alex Hansen",
-        "Mihir Kulkarni",
-        "Chenran Li",
-        "Wei Liu",
-        "Viktor Makoviychuk",
-        "Grzegorz Malczyk",
-        "Hammad Mazhar",
-        "Masoud Moghani",
-        "Adithyavairavan Murali",
-        "Michael Noseworthy",
-        "Alexander Poddubny",
-        "Nathan Ratliff",
-        "Welf Rehberg",
-        "Clemens Schwarke",
-        "Ritvik Singh",
-        "James Latham Smith",
-        "Bingjie Tang",
-        "Ruchik Thaker",
-        "Matthew Trepte",
-        "Karl Van Wyk",
-        "Fangzhou Yu",
-        "Alex Millane",
-        "Vikram Ramasamy",
-        "Remo Steiner",
-        "Sangeeta Subramanian",
-        "Clemens Volk",
-        "CY Chen",
-        "Neel Jawale",
-        "Ashwin Varghese Kuruttukulam",
-        "Michael A. Lin",
-        "Ajay Mandlekar",
-        "Karsten Patzwaldt",
-        "John Welsh",
-        "Huihua Zhao",
-        "Fatima Anes",
-        "Jean-Francois Lafleche",
-        "Nicolas Moënne-Loccoz",
-        "Soowan Park",
-        "Rob Stepinski",
-        "Dirk Van Gelder",
-        "Chris Amevor",
-        "Jan Carius",
-        "Jumyung Chang",
-        "Anka He Chen",
-        "Pablo de Heras Ciechomski",
-        "Gilles Daviet",
-        "Mohammad Mohajerani",
-        "Julia von Muralt",
-        "Viktor Reutskyy",
-        "Michael Sauter",
-        "Simon Schirm",
-        "Eric L. Shi",
-        "Pierre Terdiman",
-        "Kenny Vilella",
-        "Tobias Widmer",
-        "Gordon Yeoman",
-        "Tiffany Chen",
-        "Sergey Grizan",
-        "Cathy Li",
-        "Lotus Li",
-        "Connor Smith",
-        "Rafael Wiltz",
-        "Kostas Alexis",
-        "Yan Chang",
-        "David Chu",
-        "Linxi \"Jim\" Fan",
-        "Farbod Farshidian",
-        "Ankur Handa",
-        "Spencer Huang",
-        "Marco Hutter",
-        "Yashraj Narang",
-        "Soha Pouya",
-        "Shiwei Sheng",
-        "Yuke Zhu",
-        "Miles Macklin",
-        "Adam Moravanszky",
-        "Philipp Reist",
-        "Yunrong Guo",
-        "David Hoeller",
-        "Gavriel State"
+        "Jueun Kwon",
+        "Max M. Sun",
+        "Todd Murphey"
       ],
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
-      "link": "https://arxiv.org/abs/2511.04831v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.04831v1.pdf",
+      "link": "https://arxiv.org/abs/2511.11533v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.11533v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.04831v1",
+      "arxiv_id": "2511.11533v1",
       "relevance_score": 1
     },
     {
-      "title": "ReGen: Generative Robot Simulation via Inverse Design",
-      "summary": "Simulation plays a key role in scaling robot learning and validating\npolicies, but constructing simulations remains a labor-intensive process. This\npaper introduces ReGen, a generative simulation framework that automates\nsimulation design via inverse design. Given a robot's behavior -- such as a\nmotion trajectory or an objective function -- and its textual description,\nReGen infers plausible scenarios and environments that could have caused the\nbehavior. ReGen leverages large language models to synthesize scenarios by\nexpanding a directed graph that encodes cause-and-effect relationships,\nrelevant entities, and their properties. This structured graph is then\ntranslated into a symbolic program, which configures and executes a robot\nsimulation environment. Our framework supports (i) augmenting simulations based\non ego-agent behaviors, (ii) controllable, counterfactual scenario generation,\n(iii) reasoning about agent cognition and mental states, and (iv) reasoning\nwith distinct sensing modalities, such as braking due to faulty GPS signals. We\ndemonstrate ReGen in autonomous driving and robot manipulation tasks,\ngenerating more diverse, complex simulated environments compared to existing\nsimulations with high success rates, and enabling controllable generation for\ncorner cases. This approach enhances the validation of robot policies and\nsupports data or simulation augmentation, advancing scalable robot learning for\nimproved generalization and robustness. We provide code and example videos at:\nhttps://regen-sim.github.io/",
-      "published": "2025-11-06T19:41:05Z",
+      "title": "Humanoid Whole-Body Badminton via Multi-Stage Reinforcement Learning",
+      "summary": "Humanoid robots have demonstrated strong capability for interacting with deterministic scenes across locomotion, manipulation, and more challenging loco-manipulation tasks. Yet the real world is dynamic, quasi-static interactions are insufficient to cope with the various environmental conditions. As a step toward more dynamic interaction scenario, we present a reinforcement-learning-based training pipeline that produces a unified whole-body controller for humanoid badminton, enabling coordinated lower-body footwork and upper-body striking without any motion priors or expert demonstrations. Training follows a three-stage curriculum: first footwork acquisition, then precision-guided racket swing generation, and finally task-focused refinement, yielding motions in which both legs and arms serve the hitting objective. For deployment, we incorporate an Extended Kalman Filter (EKF) to estimate and predict shuttlecock trajectories for target striking. We also introduce a prediction-free variant that dispenses with EKF and explicit trajectory prediction. To validate the framework, we conduct five sets of experiment in both simulation and the real world. In simulation, two robots sustain a rally of 21 consecutive hits. Moreover, the prediction-free variant achieves successful hits with comparable performance relative to the target-known policy. In real-world tests, both the prediction and controller module exhibit high accuracy, and on-court hitting achieves an outgoing shuttle speed up to 10 m/s with a mean return landing distance of 3.5 m. These experiment results show that our humanoid robot can deliver highly dynamic while precise goal striking in badminton, and can be adapted to more dynamism critical domains.",
+      "published": "2025-11-14T12:22:19Z",
       "authors": [
-        "Phat Nguyen",
-        "Tsun-Hsuan Wang",
-        "Zhang-Wei Hong",
-        "Erfan Aasi",
-        "Andrew Silva",
-        "Guy Rosman",
-        "Sertac Karaman",
-        "Daniela Rus"
+        "Chenhao Liu",
+        "Leyun Jiang",
+        "Yibo Wang",
+        "Kairan Yao",
+        "Jinchen Fu",
+        "Xiaoyu Ren"
       ],
       "categories": [
         "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2511.04769v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.04769v1.pdf",
+      "link": "https://arxiv.org/abs/2511.11218v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.11218v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.04769v1",
+      "arxiv_id": "2511.11218v1",
       "relevance_score": 1
     },
     {
-      "title": "GentleHumanoid: Learning Upper-body Compliance for Contact-rich Human\n  and Object Interaction",
-      "summary": "Humanoid robots are expected to operate in human-centered environments where\nsafe and natural physical interaction is essential. However, most recent\nreinforcement learning (RL) policies emphasize rigid tracking and suppress\nexternal forces. Existing impedance-augmented approaches are typically\nrestricted to base or end-effector control and focus on resisting extreme\nforces rather than enabling compliance. We introduce GentleHumanoid, a\nframework that integrates impedance control into a whole-body motion tracking\npolicy to achieve upper-body compliance. At its core is a unified spring-based\nformulation that models both resistive contacts (restoring forces when pressing\nagainst surfaces) and guiding contacts (pushes or pulls sampled from human\nmotion data). This formulation ensures kinematically consistent forces across\nthe shoulder, elbow, and wrist, while exposing the policy to diverse\ninteraction scenarios. Safety is further supported through task-adjustable\nforce thresholds. We evaluate our approach in both simulation and on the\nUnitree G1 humanoid across tasks requiring different levels of compliance,\nincluding gentle hugging, sit-to-stand assistance, and safe object\nmanipulation. Compared to baselines, our policy consistently reduces peak\ncontact forces while maintaining task success, resulting in smoother and more\nnatural interactions. These results highlight a step toward humanoid robots\nthat can safely and effectively collaborate with humans and handle objects in\nreal-world environments.",
-      "published": "2025-11-06T18:59:33Z",
+      "title": "WetExplorer: Automating Wetland Greenhouse-Gas Surveys with an Autonomous Mobile Robot",
+      "summary": "Quantifying greenhouse-gases (GHG) in wetlands is critical for climate modeling and restoration assessment, yet manual sampling is labor-intensive, and time demanding. We present WetExplorer, an autonomous tracked robot that automates the full GHG-sampling workflow. The robot system integrates low-ground-pressure locomotion, centimeter-accurate lift placement, dual-RTK sensor fusion, obstacle avoidance planning, and deep-learning perception in a containerized ROS2 stack. Outdoor trials verified that the sensor-fusion stack maintains a mean localization error of 1.71 cm, the vision module estimates object pose with 7 mm translational and 3° rotational accuracy, while indoor trials demonstrated that the full motion-planning pipeline positions the sampling chamber within a global tolerance of 70 mm while avoiding obstacles, all without human intervention. By eliminating the manual bottleneck, WetExplorer enables high-frequency, multi-site GHG measurements and opens the door for dense, long-duration datasets in saturated wetland terrain.",
+      "published": "2025-11-14T00:19:45Z",
       "authors": [
-        "Qingzhou Lu",
-        "Yao Feng",
-        "Baiyu Shi",
-        "Michael Piseno",
-        "Zhenan Bao",
-        "C. Karen Liu"
+        "Jose Vasquez",
+        "Xuping Zhang"
       ],
       "categories": [
         "cs.RO",
-        "cs.CV",
-        "cs.HC"
+        "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2511.04679v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.04679v1.pdf",
+      "link": "https://arxiv.org/abs/2511.10864v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.10864v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.04679v1",
+      "arxiv_id": "2511.10864v1",
       "relevance_score": 1
     },
     {
-      "title": "Enhancing Fault-Tolerant Space Computing: Guidance Navigation and\n  Control (GNC) and Landing Vision System (LVS) Implementations on Next-Gen\n  Multi-Core Processors",
-      "summary": "Future planetary exploration missions demand high-performance, fault-tolerant\ncomputing to enable autonomous Guidance, Navigation, and Control (GNC) and\nLander Vision System (LVS) operations during Entry, Descent, and Landing (EDL).\nThis paper evaluates the deployment of GNC and LVS algorithms on\nnext-generation multi-core processors--HPSC, Snapdragon VOXL2, and AMD Xilinx\nVersal--demonstrating up to 15x speedup for LVS image processing and over 250x\nspeedup for Guidance for Fuel-Optimal Large Divert (GFOLD) trajectory\noptimization compared to legacy spaceflight hardware. To ensure computational\nreliability, we present ARBITER (Asynchronous Redundant Behavior Inspection for\nTrusted Execution and Recovery), a Multi-Core Voting (MV) mechanism that\nperforms real-time fault detection and correction across redundant cores.\nARBITER is validated in both static optimization tasks (GFOLD) and dynamic\nclosed-loop control (Attitude Control System). A fault injection study further\nidentifies the gradient computation stage in GFOLD as the most sensitive to\nbit-level errors, motivating selective protection strategies and vector-based\noutput arbitration. This work establishes a scalable and energy-efficient\narchitecture for future missions, including Mars Sample Return, Enceladus\nOrbilander, and Ceres Sample Return, where onboard autonomy, low latency, and\nfault resilience are critical.",
-      "published": "2025-11-06T04:45:44Z",
+      "title": "A Robust Task-Level Control Architecture for Learned Dynamical Systems",
+      "summary": "Dynamical system (DS)-based learning from demonstration (LfD) is a powerful tool for generating motion plans in the operation (`task') space of robotic systems. However, the realization of the generated motion plans is often compromised by a ''task-execution mismatch'', where unmodeled dynamics, persistent disturbances, and system latency cause the robot's actual task-space state to diverge from the desired motion trajectory. We propose a novel task-level robust control architecture, L1-augmented Dynamical Systems (L1-DS), that explicitly handles the task-execution mismatch in tracking a nominal motion plan generated by any DS-based LfD scheme. Our framework augments any DS-based LfD model with a nominal stabilizing controller and an L1 adaptive controller. Furthermore, we introduce a windowed Dynamic Time Warping (DTW)-based target selector, which enables the nominal stabilizing controller to handle temporal misalignment for improved phase-consistent tracking. We demonstrate the efficacy of our architecture on the LASA and IROS handwriting datasets.",
+      "published": "2025-11-12T22:45:32Z",
       "authors": [
-        "Kyongsik Yun",
-        "David Bayard",
-        "Gerik Kubiak",
-        "Austin Owens",
-        "Andrew Johnson",
-        "Ryan Johnson",
-        "Dan Scharf",
-        "Thomas Lu"
+        "Eshika Pathak",
+        "Ahmed Aboudonia",
+        "Sandeep Banik",
+        "Naira Hovakimyan"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "link": "https://arxiv.org/abs/2511.09790v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.09790v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.09790v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Unveiling the Impact of Data and Model Scaling on High-Level Control for Humanoid Robots",
+      "summary": "Data scaling has long remained a critical bottleneck in robot learning. For humanoid robots, human videos and motion data are abundant and widely available, offering a free and large-scale data source. Besides, the semantics related to the motions enable modality alignment and high-level robot control learning. However, how to effectively mine raw video, extract robot-learnable representations, and leverage them for scalable learning remains an open problem. To address this, we introduce Humanoid-Union, a large-scale dataset generated through an autonomous pipeline, comprising over 260 hours of diverse, high-quality humanoid robot motion data with semantic annotations derived from human motion videos. The dataset can be further expanded via the same pipeline. Building on this data resource, we propose SCHUR, a scalable learning framework designed to explore the impact of large-scale data on high-level control in humanoid robots. Experimental results demonstrate that SCHUR achieves high robot motion generation quality and strong text-motion alignment under data and model scaling, with 37\\% reconstruction improvement under MPJPE and 25\\% alignment improvement under FID comparing with previous methods. Its effectiveness is further validated through deployment in real-world humanoid robot.",
+      "published": "2025-11-12T12:02:05Z",
+      "authors": [
+        "Yuxi Wei",
+        "Zirui Wang",
+        "Kangning Yin",
+        "Yue Hu",
+        "Jingbo Wang",
+        "Siheng Chen"
       ],
       "categories": [
         "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2511.04052v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.04052v1.pdf",
+      "link": "https://arxiv.org/abs/2511.09241v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.09241v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.04052v1",
+      "arxiv_id": "2511.09241v1",
       "relevance_score": 1
     },
     {
-      "title": "Integrating Ergonomics and Manipulability for Upper Limb Postural\n  Optimization in Bimanual Human-Robot Collaboration",
-      "summary": "This paper introduces an upper limb postural optimization method for\nenhancing physical ergonomics and force manipulability during bimanual\nhuman-robot co-carrying tasks. Existing research typically emphasizes human\nsafety or manipulative efficiency, whereas our proposed method uniquely\nintegrates both aspects to strengthen collaboration across diverse conditions\n(e.g., different grasping postures of humans, and different shapes of objects).\nSpecifically, the joint angles of a simplified human skeleton model are\noptimized by minimizing the cost function to prioritize safety and manipulative\ncapability. To guide humans towards the optimized posture, the reference\nend-effector poses of the robot are generated through a transformation module.\nA bimanual model predictive impedance controller (MPIC) is proposed for our\nhuman-like robot, CURI, to recalibrate the end effector poses through planned\ntrajectories. The proposed method has been validated through various subjects\nand objects during human-human collaboration (HHC) and human-robot\ncollaboration (HRC). The experimental results demonstrate significant\nimprovement in muscle conditions by comparing the activation of target muscles\nbefore and after optimization.",
-      "published": "2025-11-06T03:16:39Z",
+      "title": "Decoupling Torque and Stiffness: A Unified Modeling and Control Framework for Antagonistic Artificial Muscles",
+      "summary": "Antagonistic soft actuators built from artificial muscles (PAMs, HASELs, DEAs) promise plant-level torque-stiffness decoupling, yet existing controllers for soft muscles struggle to maintain independent control through dynamic contact transients. We present a unified framework enabling independent torque and stiffness commands in real-time for diverse soft actuator types. Our unified force law captures diverse soft muscle physics in a single model with sub-ms computation, while our cascaded controller with analytical inverse dynamics maintains decoupling despite model errors and disturbances. Using co-contraction/bias coordinates, the controller independently modulates torque via bias and stiffness via co-contraction-replicating biological impedance strategies. Simulation-based validation through contact experiments demonstrates maintained independence: 200x faster settling on soft surfaces, 81% force reduction on rigid surfaces, and stable interaction vs 22-54% stability for fixed policies. This framework provides a foundation for enabling musculoskeletal antagonistic systems to execute adaptive impedance control for safe human-robot interaction.",
+      "published": "2025-11-12T08:23:57Z",
       "authors": [
-        "Chenzui Li",
-        "Yiming Chen",
-        "Xi Wu",
-        "Giacinto Barresi",
-        "Fei Chen"
+        "Amirhossein Kazemipour",
+        "Robert K. Katzschmann"
       ],
       "categories": [
         "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2511.04009v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.04009v1.pdf",
+      "link": "https://arxiv.org/abs/2511.09104v2",
+      "pdf_link": "https://arxiv.org/pdf/2511.09104v2.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.04009v1",
+      "arxiv_id": "2511.09104v2",
       "relevance_score": 1
     },
     {
-      "title": "Learning Vision-Driven Reactive Soccer Skills for Humanoid Robots",
-      "summary": "Humanoid soccer poses a representative challenge for embodied intelligence,\nrequiring robots to operate within a tightly coupled perception-action loop.\nHowever, existing systems typically rely on decoupled modules, resulting in\ndelayed responses and incoherent behaviors in dynamic environments, while\nreal-world perceptual limitations further exacerbate these issues. In this\nwork, we present a unified reinforcement learning-based controller that enables\nhumanoid robots to acquire reactive soccer skills through the direct\nintegration of visual perception and motion control. Our approach extends\nAdversarial Motion Priors to perceptual settings in real-world dynamic\nenvironments, bridging motion imitation and visually grounded dynamic control.\nWe introduce an encoder-decoder architecture combined with a virtual perception\nsystem that models real-world visual characteristics, allowing the policy to\nrecover privileged states from imperfect observations and establish active\ncoordination between perception and action. The resulting controller\ndemonstrates strong reactivity, consistently executing coherent and robust\nsoccer behaviors across various scenarios, including real RoboCup matches.",
-      "published": "2025-11-06T02:40:48Z",
+      "title": "Region of Attraction Estimate Learning and Verification for Nonlinear Systems using Neural-Network-based Lyapunov Functions",
+      "summary": "Estimating the Region of Attraction (RoA) for nonlinear dynamical systems is a fundamental problem in control theory, with direct implications for stability analysis and safe controller design. Traditional approaches rely on analytically derived Lyapunov functions, which are often conservative and challenging to construct for high-dimensional or highly nonlinear systems. In this work, we propose a data-driven framework for learning and verifying RoA estimates for nonlinear systems using neural-network-based Lyapunov functions. Our method employs a composite Lyapunov function that combines a quadratic term with a neural-network-based component, providing both structure and flexibility. We introduce a novel homogeneous loss function for training, which removes the imbalance typically caused by the two non-homogeneous Lyapunov conditions. Together, these two aspects enable efficient training of the Lyapunov candidate. To guarantee the correctness of the learned Lyapunov function, we employ a Satisfiability Modulo Theories (SMT) solver to formally verify the stability results. Lastly, we perform a deeper analysis near the origin to overcome numerical artifacts, ensuring strict asymptotic stability. We demonstrate the effectiveness of our approach on benchmark nonlinear systems, showing that it significantly reduces conservatism compared to traditional Lyapunov methods while maintaining verifiability. This framework bridges the gap between function approximation and stability certification, paving the way for scalable safety analysis in learning-based control and safety-critical applications.",
+      "published": "2025-11-14T07:23:08Z",
       "authors": [
-        "Yushi Wang",
-        "Changsheng Luo",
-        "Penghui Chen",
-        "Jianran Liu",
-        "Weijian Sun",
-        "Tong Guo",
-        "Kechang Yang",
-        "Biao Hu",
-        "Yangang Zhang",
-        "Mingguo Zhao"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2511.03996v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.03996v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.03996v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Neural Operators for Power Systems: A Physics-Informed Framework for\n  Modeling Power System Components",
-      "summary": "Modern power systems require fast and accurate dynamic simulations for\nstability assessment, digital twins, and real-time control, but classical ODE\nsolvers are often too slow for large-scale or online applications. We propose a\nneural-operator framework for surrogate modeling of power system components,\nusing Deep Operator Networks (DeepONets) to learn mappings from system states\nand time-varying inputs to full trajectories without step-by-step integration.\nTo enhance generalization and data efficiency, we introduce Physics-Informed\nDeepONets (PI-DeepONets), which embed the residuals of governing equations into\nthe training loss. Our results show that DeepONets, and especially\nPI-DeepONets, achieve accurate predictions under diverse scenarios, providing\nover 30 times speedup compared to high-order ODE solvers. Benchmarking against\nPhysics-Informed Neural Networks (PINNs) highlights superior stability and\nscalability. Our results demonstrate neural operators as a promising path\ntoward real-time, physics-aware simulation of power system dynamics.",
-      "published": "2025-11-07T13:15:26Z",
-      "authors": [
-        "Ioannis Karampinis",
-        "Petros Ellinas",
-        "Johanna Vorwerk",
-        "Spyros Chatzivasileiadis"
+        "Adel Bechihi",
+        "Aristotelis Kapnopoulos"
       ],
       "categories": [
         "eess.SY",
-        "cs.SY"
+        "math.DS"
       ],
-      "link": "https://arxiv.org/abs/2511.05216v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.05216v1.pdf",
+      "link": "https://arxiv.org/abs/2511.11026v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.11026v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.05216v1",
+      "arxiv_id": "2511.11026v1",
       "relevance_score": 1
     },
     {
-      "title": "X-Diffusion: Training Diffusion Policies on Cross-Embodiment Human\n  Demonstrations",
-      "summary": "Human videos can be recorded quickly and at scale, making them an appealing\nsource of training data for robot learning. However, humans and robots differ\nfundamentally in embodiment, resulting in mismatched action execution. Direct\nkinematic retargeting of human hand motion can therefore produce actions that\nare physically infeasible for robots. Despite these low-level differences,\nhuman demonstrations provide valuable motion cues about how to manipulate and\ninteract with objects. Our key idea is to exploit the forward diffusion\nprocess: as noise is added to actions, low-level execution differences fade\nwhile high-level task guidance is preserved. We present X-Diffusion, a\nprincipled framework for training diffusion policies that maximally leverages\nhuman data without learning dynamically infeasible motions. X-Diffusion first\ntrains a classifier to predict whether a noisy action is executed by a human or\nrobot. Then, a human action is incorporated into policy training only after\nadding sufficient noise such that the classifier cannot discern its embodiment.\nActions consistent with robot execution supervise fine-grained denoising at low\nnoise levels, while mismatched human actions provide only coarse guidance at\nhigher noise levels. Our experiments show that naive co-training under\nexecution mismatches degrades policy performance, while X-Diffusion\nconsistently improves it. Across five manipulation tasks, X-Diffusion achieves\na 16% higher average success rate than the best baseline. The project website\nis available at https://portal-cornell.github.io/X-Diffusion/.",
-      "published": "2025-11-06T18:56:30Z",
+      "title": "Closed Form Modelling and Identification of Banking Effects in Confined Waters",
+      "summary": "Vessels navigating in confined waters are subject to banking effects, which are hydrodynamic forces and moments arising from pressure differentials between the vessel sides, significantly affecting manoeuvrability and safety. Existing numerical approaches such as computational fluid dynamics (CFD) can accurately capture these effects but are computationally expensive and unsuitable for real-time control or estimation. This paper presents a closed-form, first-principles model of banking effects. The model coefficients are identified using physics-informed regression on towing tank experiment data for a scaled container vessel. Validation through Shapley value analysis confirms the significance of the banking terms in reproducing the measured forces and moments. Lastly, the derived coefficients are shown to be non-dimensional, making the model applicable across different scales that preserve vessel geometry.",
+      "published": "2025-11-13T10:14:52Z",
       "authors": [
-        "Maximus A. Pace",
-        "Prithwish Dan",
-        "Chuanruo Ning",
-        "Atiksh Bhardwaj",
-        "Audrey Du",
-        "Edward W. Duan",
-        "Wei-Chiu Ma",
-        "Kushal Kedia"
+        "Jeppe H. Mikkelsen",
+        "Thomas T. Enevoldsen",
+        "Bugge T. Jensen",
+        "Michael Jeppesen",
+        "Roberto Galeazzi",
+        "Dimitrios Papageorgiou"
+      ],
+      "categories": [
+        "eess.SY"
+      ],
+      "link": "https://arxiv.org/abs/2511.10158v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.10158v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.10158v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Fundamentals of Physical AI",
+      "summary": "This work will elaborate the fundamental principles of physical artificial intelligence (Physical AI) from a scientific and systemic perspective. The aim is to create a theoretical foundation that describes the physical embodiment, sensory perception, ability to act, learning processes, and context sensitivity of intelligent systems within a coherent framework. While classical AI approaches rely on symbolic processing and data driven models, Physical AI understands intelligence as an emergent phenomenon of real interaction between body, environment, and experience. The six fundamentals presented here are embodiment, sensory perception, motor action, learning, autonomy, and context sensitivity, and form the conceptual basis for designing and evaluating physically intelligent systems. Theoretically, it is shown that these six principles do not represent loose functional modules but rather act as a closed control loop in which energy, information, control, and context are in constant interaction. This circular interaction enables a system to generate meaning not from databases, but from physical experience, a paradigm shift that understands intelligence as an physical embodied process. Physical AI understands learning not as parameter adjustment, but as a change in the structural coupling between agents and the environment. To illustrate this, the theoretical model is explained using a practical scenario: An adaptive assistant robot supports patients in a rehabilitation clinic. This example illustrates that physical intelligence does not arise from abstract calculation, but from immediate, embodied experience. It shows how the six fundamentals interact in a real system: embodiment as a prerequisite, perception as input, movement as expression, learning as adaptation, autonomy as regulation, and context as orientation.",
+      "published": "2025-11-12T17:16:14Z",
+      "authors": [
+        "Vahid Salehi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "link": "https://arxiv.org/abs/2511.09497v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.09497v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.09497v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "ViPRA: Video Prediction for Robot Actions",
+      "summary": "Can we turn a video prediction model into a robot policy? Videos, including those of humans or teleoperated robots, capture rich physical interactions. However, most of them lack labeled actions, which limits their use in robot learning. We present Video Prediction for Robot Actions (ViPRA), a simple pretraining-finetuning framework that learns continuous robot control from these actionless videos. Instead of directly predicting actions, we train a video-language model to predict both future visual observations and motion-centric latent actions, which serve as intermediate representations of scene dynamics. We train these latent actions using perceptual losses and optical flow consistency to ensure they reflect physically grounded behavior. For downstream control, we introduce a chunked flow matching decoder that maps latent actions to robot-specific continuous action sequences, using only 100 to 200 teleoperated demonstrations. This approach avoids expensive action annotation, supports generalization across embodiments, and enables smooth, high-frequency continuous control upto 22 Hz via chunked action decoding. Unlike prior latent action works that treat pretraining as autoregressive policy learning, explicitly models both what changes and how. Our method outperforms strong baselines, with a 16% gain on the SIMPLER benchmark and a 13% improvement across real world manipulation tasks. We will release models and code at https://vipra-project.github.io",
+      "published": "2025-11-11T01:33:03Z",
+      "authors": [
+        "Sandeep Routray",
+        "Hengkai Pan",
+        "Unnat Jain",
+        "Shikhar Bahl",
+        "Deepak Pathak"
       ],
       "categories": [
         "cs.RO",
         "cs.AI",
-        "cs.CV"
+        "cs.CL",
+        "cs.CV",
+        "cs.LG"
       ],
-      "link": "https://arxiv.org/abs/2511.04671v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.04671v1.pdf",
+      "link": "https://arxiv.org/abs/2511.07732v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.07732v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.04671v1",
+      "arxiv_id": "2511.07732v1",
       "relevance_score": 1
     }
   ],
