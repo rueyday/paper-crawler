@@ -1,207 +1,228 @@
 {
-  "last_updated": "2025-11-24T08:31:49.813896",
-  "total_papers": 10,
+  "last_updated": "2025-12-01T08:34:22.398228",
+  "total_papers": 11,
   "papers": [
     {
-      "title": "Safe and Optimal Variable Impedance Control via Certified Reinforcement Learning",
-      "summary": "Reinforcement learning (RL) offers a powerful approach for robots to learn complex, collaborative skills by combining Dynamic Movement Primitives (DMPs) for motion and Variable Impedance Control (VIC) for compliant interaction. However, this model-free paradigm often risks instability and unsafe exploration due to the time-varying nature of impedance gains. This work introduces Certified Gaussian Manifold Sampling (C-GMS), a novel trajectory-centric RL framework that learns combined DMP and VIC policies while guaranteeing Lyapunov stability and actuator feasibility by construction. Our approach reframes policy exploration as sampling from a mathematically defined manifold of stable gain schedules. This ensures every policy rollout is guaranteed to be stable and physically realizable, thereby eliminating the need for reward penalties or post-hoc validation. Furthermore, we provide a theoretical guarantee that our approach ensures bounded tracking error even in the presence of bounded model errors and deployment-time uncertainties. We demonstrate the effectiveness of C-GMS in simulation and verify its efficacy on a real robot, paving the way for reliable autonomous interaction in complex environments.",
-      "published": "2025-11-20T13:10:42Z",
+      "title": "An AI-Enabled Hybrid Cyber-Physical Framework for Adaptive Control in Smart Grids",
+      "summary": "Evolving smart grids require flexible and adaptive control methods. A harmonized hybrid cyber-physical framework, which considers both physical and cyber layers and ensures adaptability, is one of the critical challenges to enable sustainable and scalable smart grids. This paper proposes a three-layer (physical, cyber, control) architecture, with an energy management system as the core of the system. Adaptive Dynamic Programming(ADP) and Artificial Intelligence-based optimization techniques are used for sustainability and scalability. The deployment is considered under two contingencies: Cloud Independent and cloud-assisted. They allow us to test the proposed model under a low-latency localized decision scenario and also under a centralized control scenario. The architecture is simulated on a standard IEEE 33-Bus system, yielding positive results. The proposed framework can ensure grid stability, optimize dispatch, and respond to ever-changing grid dynamics.",
+      "published": "2025-11-26T17:08:06Z",
       "authors": [
-        "Shreyas Kumar",
-        "Ravi Prakash"
+        "Muhammad Siddique",
+        "Sohaib Zafar"
       ],
       "categories": [
-        "cs.RO"
+        "cs.LG"
       ],
-      "link": "https://arxiv.org/abs/2511.16330v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.16330v1.pdf",
+      "link": "https://arxiv.org/abs/2511.21590v2",
+      "pdf_link": "https://arxiv.org/pdf/2511.21590v2.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.16330v1",
+      "arxiv_id": "2511.21590v2",
       "relevance_score": 3
     },
     {
-      "title": "DynaMimicGen: A Data Generation Framework for Robot Learning of Dynamic Tasks",
-      "summary": "Learning robust manipulation policies typically requires large and diverse datasets, the collection of which is time-consuming, labor-intensive, and often impractical for dynamic environments. In this work, we introduce DynaMimicGen (D-MG), a scalable dataset generation framework that enables policy training from minimal human supervision while uniquely supporting dynamic task settings. Given only a few human demonstrations, D-MG first segments the demonstrations into meaningful sub-tasks, then leverages Dynamic Movement Primitives (DMPs) to adapt and generalize the demonstrated behaviors to novel and dynamically changing environments. Improving prior methods that rely on static assumptions or simplistic trajectory interpolation, D-MG produces smooth, realistic, and task-consistent Cartesian trajectories that adapt in real time to changes in object poses, robot states, or scene geometry during task execution. Our method supports different scenarios - including scene layouts, object instances, and robot configurations - making it suitable for both static and highly dynamic manipulation tasks. We show that robot agents trained via imitation learning on D-MG-generated data achieve strong performance across long-horizon and contact-rich benchmarks, including tasks like cube stacking and placing mugs in drawers, even under unpredictable environment changes. By eliminating the need for extensive human demonstrations and enabling generalization in dynamic settings, D-MG offers a powerful and efficient alternative to manual data collection, paving the way toward scalable, autonomous robot learning.",
-      "published": "2025-11-20T10:47:57Z",
+      "title": "Power System Robust State Estimation As a Layer: A Novel End-to-end Learning Approach",
+      "summary": "Serving as an essential prerequisite for modern power system operation, robust state estimation (RSE) could effectively resist noises and outliers in measurements. The emerging neural network (NN) based end-to-end (E2E) learning framework enables real-time application of RSE but cannot strictly enforce the physical constraints involved, potentially yielding solutions that are statistically accurate yet physically inconsistent. To bridge this gap, this work proposes a novel E2E learning based RSE framework, where the RSE problem is innovatively constructed as an explicit differentiable layer of NN for the first time, ensuring physics alignments with rigors. Also, the measurement weights are treated as learnable parameters of NN to enhance estimation robustness. A hybrid loss function is formulated to pursue accurate and physically consistent solutions. To realize the proposed NN structure, the original non-convex RSE problem is specially relaxed. Extensive numerical simulations have been carried out to demonstrate that the proposed framework can significantly improve the SE performance while fulfilling physical consistency on six testing systems, in comparisons to the classical E2E learning based approach and the physics-informed neural network (PINN) approach.",
+      "published": "2025-11-28T02:02:29Z",
       "authors": [
-        "Vincenzo Pomponi",
-        "Paolo Franceschi",
-        "Stefano Baraldo",
-        "Loris Roveda",
-        "Oliver Avram",
-        "Luca Maria Gambardella",
-        "Anna Valente"
+        "Yibo Ding",
+        "Wenzhuo Shi",
+        "Mengzhao Duan",
+        "Yuhong Zhao",
+        "Jiaqi Ruan",
+        "Jian Zhao",
+        "Zhao Xu"
       ],
       "categories": [
-        "cs.RO"
+        "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2511.16223v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.16223v1.pdf",
+      "link": "https://arxiv.org/abs/2511.22836v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.22836v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.16223v1",
+      "arxiv_id": "2511.22836v1",
       "relevance_score": 3
     },
     {
-      "title": "InEKFormer: A Hybrid State Estimator for Humanoid Robots",
-      "summary": "Humanoid robots have great potential for a wide range of applications, including industrial and domestic use, healthcare, and search and rescue missions. However, bipedal locomotion in different environments is still a challenge when it comes to performing stable and dynamic movements. This is where state estimation plays a crucial role, providing fast and accurate feedback of the robot's floating base state to the motion controller. Although classical state estimation methods such as Kalman filters are widely used in robotics, they require expert knowledge to fine-tune the noise parameters. Due to recent advances in the field of machine learning, deep learning methods are increasingly used for state estimation tasks. In this work, we propose the InEKFormer, a novel hybrid state estimation method that incorporates an invariant extended Kalman filter (InEKF) and a Transformer network. We compare our method with the InEKF and the KalmanNet approaches on datasets obtained from the humanoid robot RH5. The results indicate the potential of Transformers in humanoid state estimation, but also highlight the need for robust autoregressive training in these high-dimensional problems.",
-      "published": "2025-11-20T12:35:56Z",
+      "title": "Closed-Loop Control Law for Low Thrust Orbit Transfer with Guaranteed Stability",
+      "summary": "Electric propulsion is used to maximize payload capacity in communication satellites. These orbit raising maneuvers span several months and hundreds of revolutions, making trajectory design a complex challenge. The literature typically addresses this problem using feedback laws, with Q-law being one of the most prominent approaches. However, Q-law suffers from closed-loop stability issues, limiting its suitability for real-time on-board implementation. In this work, we focus on closed-loop orbit raising rather than offline trajectory planning and address the stability limitations of the Q-law through a Lyapunov based control design. A Lyapunov-guided modification of the classical Q-law is proposed to ensure closed-loop stability and enable real-time implementation. The effectiveness of the proposed method is demonstrated through closed-loop orbit transfers across various scenarios, including co-planar transfers, equatorial to polar orbit transfers, and geostationary transfer orbit (GTO) to geostationary earth orbit (GEO) transfers.",
+      "published": "2025-11-28T09:28:51Z",
       "authors": [
-        "Lasse Hohmeyer",
-        "Mihaela Popescu",
-        "Ivan Bergonzani",
-        "Dennis Mronga",
-        "Frank Kirchner"
+        "Suraj Kumar",
+        "Aditya Rallapalli",
+        "Nivriti Priyadarshini",
+        "Bharat Kumar GVP",
+        "Ravi Kumar L"
       ],
       "categories": [
-        "cs.RO"
+        "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2511.16306v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.16306v1.pdf",
+      "link": "https://arxiv.org/abs/2511.23014v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.23014v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.16306v1",
+      "arxiv_id": "2511.23014v1",
       "relevance_score": 2
     },
     {
-      "title": "UltraDP: Generalizable Carotid Ultrasound Scanning with Force-Aware Diffusion Policy",
-      "summary": "Ultrasound scanning is a critical imaging technique for real-time, non-invasive diagnostics. However, variations in patient anatomy and complex human-in-the-loop interactions pose significant challenges for autonomous robotic scanning. Existing ultrasound scanning robots are commonly limited to relatively low generalization and inefficient data utilization. To overcome these limitations, we present UltraDP, a Diffusion-Policy-based method that receives multi-sensory inputs (ultrasound images, wrist camera images, contact wrench, and probe pose) and generates actions that are fit for multi-modal action distributions in autonomous ultrasound scanning of carotid artery. We propose a specialized guidance module to enable the policy to output actions that center the artery in ultrasound images. To ensure stable contact and safe interaction between the robot and the human subject, a hybrid force-impedance controller is utilized to drive the robot to track such trajectories. Also, we have built a large-scale training dataset for carotid scanning comprising 210 scans with 460k sample pairs from 21 volunteers of both genders. By exploring our guidance module and DP's strong generalization ability, UltraDP achieves a 95% success rate in transverse scanning on previously unseen subjects, demonstrating its effectiveness.",
-      "published": "2025-11-19T15:40:22Z",
+      "title": "SafeHumanoid: VLM-RAG-driven Control of Upper Body Impedance for Humanoid Robot",
+      "summary": "Safe and trustworthy Human Robot Interaction (HRI) requires robots not only to complete tasks but also to regulate impedance and speed according to scene context and human proximity. We present SafeHumanoid, an egocentric vision pipeline that links Vision Language Models (VLMs) with Retrieval-Augmented Generation (RAG) to schedule impedance and velocity parameters for a humanoid robot. Egocentric frames are processed by a structured VLM prompt, embedded and matched against a curated database of validated scenarios, and mapped to joint-level impedance commands via inverse kinematics. We evaluate the system on tabletop manipulation tasks with and without human presence, including wiping, object handovers, and liquid pouring. The results show that the pipeline adapts stiffness, damping, and speed profiles in a context-aware manner, maintaining task success while improving safety. Although current inference latency (up to 1.4 s) limits responsiveness in highly dynamic settings, SafeHumanoid demonstrates that semantic grounding of impedance control is a viable path toward safer, standard-compliant humanoid collaboration.",
+      "published": "2025-11-28T15:58:26Z",
       "authors": [
-        "Ruoqu Chen",
-        "Xiangjie Yan",
-        "Kangchen Lv",
-        "Gao Huang",
-        "Zheng Li",
-        "Xiang Li"
+        "Yara Mahmoud",
+        "Jeffrin Sam",
+        "Nguyen Khang",
+        "Marcelino Fernando",
+        "Issatay Tokmurziyev",
+        "Miguel Altamirano Cabrera",
+        "Muhammad Haris Khan",
+        "Artem Lykov",
+        "Dzmitry Tsetserukou"
       ],
       "categories": [
         "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2511.15550v2",
-      "pdf_link": "https://arxiv.org/pdf/2511.15550v2.pdf",
+      "link": "https://arxiv.org/abs/2511.23300v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.23300v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.15550v2",
+      "arxiv_id": "2511.23300v1",
       "relevance_score": 1
     },
     {
-      "title": "Harnessing Data from Clustered LQR Systems: Personalized and Collaborative Policy Optimization",
-      "summary": "It is known that reinforcement learning (RL) is data-hungry. To improve sample-efficiency of RL, it has been proposed that the learning algorithm utilize data from 'approximately similar' processes. However, since the process models are unknown, identifying which other processes are similar poses a challenge. In this work, we study this problem in the context of the benchmark Linear Quadratic Regulator (LQR) setting. Specifically, we consider a setting with multiple agents, each corresponding to a copy of a linear process to be controlled. The agents' local processes can be partitioned into clusters based on similarities in dynamics and tasks. Combining ideas from sequential elimination and zeroth-order policy optimization, we propose a new algorithm that performs simultaneous clustering and learning to output a personalized policy (controller) for each cluster. Under a suitable notion of cluster separation that captures differences in closed-loop performance across systems, we prove that our approach guarantees correct clustering with high probability. Furthermore, we show that the sub-optimality gap of the policy learned for each cluster scales inversely with the size of the cluster, with no additional bias, unlike in prior works on collaborative learning-based control. Our work is the first to reveal how clustering can be used in data-driven control to learn personalized policies that enjoy statistical gains from collaboration but do not suffer sub-optimality due to inclusion of data from dissimilar processes. From a distributed implementation perspective, our method is attractive as it incurs only a mild logarithmic communication overhead.",
-      "published": "2025-11-21T18:45:53Z",
+      "title": "Adaptive Factor Graph-Based Tightly Coupled GNSS/IMU Fusion for Robust Positionin",
+      "summary": "Reliable positioning in GNSS-challenged environments remains a critical challenge for navigation systems. Tightly coupled GNSS/IMU fusion improves robustness but remains vulnerable to non-Gaussian noise and outliers. We present a robust and adaptive factor graph-based fusion framework that directly integrates GNSS pseudorange measurements with IMU preintegration factors and incorporates the Barron loss, a general robust loss function that unifies several m-estimators through a single tunable parameter. By adaptively down weighting unreliable GNSS measurements, our approach improves resilience positioning. The method is implemented in an extended GTSAM framework and evaluated on the UrbanNav dataset. The proposed solution reduces positioning errors by up to 41% relative to standard FGO, and achieves even larger improvements over extended Kalman filter (EKF) baselines in urban canyon environments. These results highlight the benefits of Barron loss in enhancing the resilience of GNSS/IMU-based navigation in urban and signal-compromised environments.",
+      "published": "2025-11-28T09:33:13Z",
       "authors": [
-        "Vinay Kanakeri",
-        "Shivam Bajaj",
-        "Ashwin Verma",
-        "Vijay Gupta",
-        "Aritra Mitra"
+        "Elham Ahmadi",
+        "Alireza Olama",
+        "Petri Välisuo",
+        "Heidi Kuusniemi"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2511.23017v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.23017v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.23017v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Language-conditioned world model improves policy generalization by reading environmental descriptions",
+      "summary": "To interact effectively with humans in the real world, it is important for agents to understand language that describes the dynamics of the environment--that is, how the environment behaves--rather than just task instructions specifying \"what to do\". Understanding this dynamics-descriptive language is important for human-agent interaction and agent behavior. Recent work address this problem using a model-based approach: language is incorporated into a world model, which is then used to learn a behavior policy. However, these existing methods either do not demonstrate policy generalization to unseen games or rely on limiting assumptions. For instance, assuming that the latency induced by inference-time planning is tolerable for the target task or expert demonstrations are available. Expanding on this line of research, we focus on improving policy generalization from a language-conditioned world model while dropping these assumptions. We propose a model-based reinforcement learning approach, where a language-conditioned world model is trained through interaction with the environment, and a policy is learned from this model--without planning or expert demonstrations. Our method proposes Language-aware Encoder for Dreamer World Model (LED-WM) built on top of DreamerV3. LED-WM features an observation encoder that uses an attention mechanism to explicitly ground language descriptions to entities in the observation. We show that policies trained with LED-WM generalize more effectively to unseen games described by novel dynamics and language compared to other baselines in several settings in two environments: MESSENGER and MESSENGER-WM.To highlight how the policy can leverage the trained world model before real-world deployment, we demonstrate the policy can be improved through fine-tuning on synthetic test trajectories generated by the world model.",
+      "published": "2025-11-28T06:13:27Z",
+      "authors": [
+        "Anh Nguyen",
+        "Stefan Lee"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2511.22904v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.22904v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.22904v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Predictive Safety Shield for Dyna-Q Reinforcement Learning",
+      "summary": "Obtaining safety guarantees for reinforcement learning is a major challenge to achieve applicability for real-world tasks. Safety shields extend standard reinforcement learning and achieve hard safety guarantees. However, existing safety shields commonly use random sampling of safe actions or a fixed fallback controller, therefore disregarding future performance implications of different safe actions. In this work, we propose a predictive safety shield for model-based reinforcement learning agents in discrete space. Our safety shield updates the Q-function locally based on safe predictions, which originate from a safe simulation of the environment model. This shielding approach improves performance while maintaining hard safety guarantees. Our experiments on gridworld environments demonstrate that even short prediction horizons can be sufficient to identify the optimal path. We observe that our approach is robust to distribution shifts, e.g., between simulation and reality, without requiring additional training.",
+      "published": "2025-11-26T15:59:55Z",
+      "authors": [
+        "Jin Pin",
+        "Krasowski Hanna",
+        "Vanneaux Elena"
       ],
       "categories": [
         "cs.LG",
-        "eess.SY",
-        "math.OC"
-      ],
-      "link": "https://arxiv.org/abs/2511.17489v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.17489v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.17489v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "A Framework for Adaptive Stabilisation of Nonlinear Stochastic Systems",
-      "summary": "We consider the adaptive control problem for discrete-time, nonlinear stochastic systems with linearly parameterised uncertainty. Assuming access to a parameterised family of controllers that can stabilise the system in a bounded set within an informative region of the state space when the parameter is well-chosen, we propose a certainty equivalence learning-based adaptive control strategy, and subsequently derive stability bounds on the closed-loop system that hold for some probabilities. We then show that if the entire state space is informative, and the family of controllers is globally stabilising with appropriately chosen parameters, high probability stability guarantees can be derived.",
-      "published": "2025-11-21T17:33:00Z",
-      "authors": [
-        "Seth Siriya",
-        "Jingge Zhu",
-        "Dragan Nešić",
-        "Ye Pu"
-      ],
-      "categories": [
-        "eess.SY",
-        "cs.LG",
-        "math.OC"
-      ],
-      "link": "https://arxiv.org/abs/2511.17436v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.17436v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.17436v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Incorporating Bayesian Transfer Learning into Particle Filter for Dual-Tracking System with Asymmetric Noise Intensities",
-      "summary": "Using Bayesian transfer learning, we develop a particle filter approach for tracking a nonlinear dynamical model in a dual-tracking system where intensities of measurement noise for both sensors are asymmetric. The densities for Bayesian transfer learning are approximated with the sum of weighted particles to improve the tracking performance of the primary sensor, which experiences a higher noise intensity compared to the source sensor. We present simulation results that validate the effectiveness of the proposed approach compared to an isolated particle filter and transfer learning applied to the unscented Kalman filter and the cubature Kalman filter. Furthermore, increasing the number of particles shows an improvement in the performance of transfer learning applied to the particle filter with a higher rate compared to the isolated particle filter. However, increasing the number of particles raises computational time per step. Moreover, the performance gain from incorporating Bayesian transfer learning is approximately linearly proportional to the absolute difference value between the noise intensities of the sensors in the dual-tracking system.",
-      "published": "2025-11-21T17:39:09Z",
-      "authors": [
-        "Omar A. Alotaibi",
-        "Brian L. Mark",
-        "Mohammad Reza Fasihi"
-      ],
-      "categories": [
-        "eess.SP",
-        "eess.SY"
-      ],
-      "link": "https://arxiv.org/abs/2511.17440v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.17440v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.17440v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Generative MIMO Beam Map Construction for Location Recovery and Beam Tracking",
-      "summary": "Machine learning (ML) has greatly advanced data-driven channel modeling and resource optimization in wireless communication systems. However, most existing ML-based methods rely on large, accurately labeled datasets with location information, which are often difficult and costly to obtain. This paper proposes a generative framework to recover location labels directly from sequences of sparse channel state information (CSI) measurements, without explicit location labels for radio map construction. Instead of directly storing raw CSI, we learn a compact low-dimensional radio map embedding and leverage a generative model to reconstruct the high-dimensional CSI. Specifically, to address the uncertainty of sparse CSI, a dual-scale feature extraction scheme is designed to enhance feature representation by jointly exploiting correlations from angular space and across neighboring samples. We develop a hybrid recurrent-convolutional encoder to learn mobility patterns, which combines a truncation strategy and multi-scale convolutions in the recurrent neural network (RNN) to ensure feature robustness against short-term fluctuations. Unlike conventional Gaussian priors in latent space, we embed a learnable radio map to capture the location information by encoding high-level positional features from CSI measurements. Finally, a diffusion-based generative decoder reconstructs the full CSI with high fidelity by conditioning on the positional features in the radio map. Numerical experiments demonstrate that the proposed model can improve localization accuracy by over 30% and achieve a 20% capacity gain in non-line-of-sight (NLOS) scenarios compared with model-based Kalman filter approaches.",
-      "published": "2025-11-21T07:25:49Z",
-      "authors": [
-        "Wangqian Chen",
-        "Junting Chen",
-        "Shuguang Cui"
-      ],
-      "categories": [
-        "eess.SP",
-        "cs.LG",
-        "eess.SY"
-      ],
-      "link": "https://arxiv.org/abs/2511.17007v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.17007v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.17007v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Generative Modeling of Clinical Time Series via Latent Stochastic Differential Equations",
-      "summary": "Clinical time series data from electronic health records and medical registries offer unprecedented opportunities to understand patient trajectories and inform medical decision-making. However, leveraging such data presents significant challenges due to irregular sampling, complex latent physiology, and inherent uncertainties in both measurements and disease progression. To address these challenges, we propose a generative modeling framework based on latent neural stochastic differential equations (SDEs) that views clinical time series as discrete-time partial observations of an underlying controlled stochastic dynamical system. Our approach models latent dynamics via neural SDEs with modality-dependent emission models, while performing state estimation and parameter learning through variational inference. This formulation naturally handles irregularly sampled observations, learns complex non-linear interactions, and captures the stochasticity of disease progression and measurement noise within a unified scalable probabilistic framework. We validate the framework on two complementary tasks: (i) individual treatment effect estimation using a simulated pharmacokinetic-pharmacodynamic (PKPD) model of lung cancer, and (ii) probabilistic forecasting of physiological signals using real-world intensive care unit (ICU) data from 12,000 patients. Results show that our framework outperforms ordinary differential equation and long short-term memory baseline models in accuracy and uncertainty estimation. These results highlight its potential for enabling precise, uncertainty-aware predictions to support clinical decision-making.",
-      "published": "2025-11-20T14:50:49Z",
-      "authors": [
-        "Muhammad Aslanimoghanloo",
-        "Ahmed ElGazzar",
-        "Marcel van Gerven"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "link": "https://arxiv.org/abs/2511.16427v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.16427v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.16427v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Artificial intelligence approaches for energy-efficient laser cutting machines",
-      "summary": "This research addresses the significant challenges of energy consumption and environmental impact in laser cutting by proposing novel deep learning (DL) methodologies to achieve energy reduction. Recognizing the current lack of adaptive control and the open-loop nature of CO2 laser suction pumps, this study utilizes closed-loop configurations that dynamically adjust pump power based on both the material being cut and the smoke level generated. To implement this adaptive system, diverse material classification methods are introduced, including techniques leveraging lens-less speckle sensing with a customized Convolutional Neural Network (CNN) and an approach using a USB camera with transfer learning via the pre-trained VGG16 CNN model. Furthermore, a separate DL model for smoke level detection is employed to simultaneously refine the pump's power output. This integration prompts the exhaust suction pump to automatically halt during inactive times and dynamically adjust power during operation, leading to experimentally proven and remarkable energy savings, with results showing a 20% to 50% reduction in the smoke suction pump's energy consumption, thereby contributing substantially to sustainable development in the manufacturing sector.",
-      "published": "2025-11-18T22:25:58Z",
-      "authors": [
-        "Mohamed Abdallah Salem",
-        "Hamdy Ahmed Ashour",
-        "Ahmed Elshenawy"
-      ],
-      "categories": [
-        "cs.CV",
         "cs.AI",
-        "cs.LG",
-        "cs.RO"
+        "cs.RO",
+        "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2511.14952v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.14952v1.pdf",
+      "link": "https://arxiv.org/abs/2511.21531v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.21531v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.14952v1",
+      "arxiv_id": "2511.21531v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression",
+      "summary": "As efficient alternatives to softmax Attention, linear state-space models (SSMs) achieve constant memory and linear compute, but maintain only a lossy, fading summary of the past, often leading to inferior performance in recall oriented tasks. We propose Gated KalmaNet (GKA), a layer that reduces this gap by accounting for the full past when predicting the next token, while maintaining SSM-style efficiency. GKA achieves this by solving an online ridge regression problem at test time, with constant memory and linear compute cost in the sequence length. Drawing inspiration from the Kalman Filter, we iteratively solve the online ridge regression problem. However, a critical insight is that standard Kalman filter equations are numerically unstable in low-precision environments (like bfloat16) and difficult to parallelize in modern hardware. We address both challenges through two key innovations: (1) an adaptive regularization strategy with input-dependent gating that controls the condition number of the ridge regression, ensuring numerical stability while balancing memory retention. And (2) the use of Chebyshev Iteration instead of other conventional iterative solvers, which we demonstrate to be more stable in low-precision settings. To further improve scalability, we develop a hardware-aware chunk-wise implementation of Chebyshev Iteration along with custom kernels for backpropagating through our adaptive regularization and gating mechanisms. Empirically, GKA shows strong language understanding capabilites on short-context tasks outperforming existing SSM layers (like Mamba2, GLA and Gated DeltaNet). On long-context, GKA excels at real-world RAG and LongQA tasks up to 128k tokens, achieving more than $10$% relative improvement over other fading memory baselines.",
+      "published": "2025-11-26T03:26:37Z",
+      "authors": [
+        "Liangzu Peng",
+        "Aditya Chattopadhyay",
+        "Luca Zancato",
+        "Elvis Nunez",
+        "Wei Xia",
+        "Stefano Soatto"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "link": "https://arxiv.org/abs/2511.21016v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.21016v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.21016v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "NOIR 2.0: Neural Signal Operated Intelligent Robots for Everyday Activities",
+      "summary": "Neural Signal Operated Intelligent Robots (NOIR) system is a versatile brain-robot interface that allows humans to control robots for daily tasks using their brain signals. This interface utilizes electroencephalography (EEG) to translate human intentions regarding specific objects and desired actions directly into commands that robots can execute. We present NOIR 2.0, an enhanced version of NOIR. NOIR 2.0 includes faster and more accurate brain decoding algorithms, which reduce task completion time by 46%. NOIR 2.0 uses few-shot robot learning algorithms to adapt to individual users and predict their intentions. The new learning algorithms leverage foundation models for more sample-efficient learning and adaptation (15 demos vs. a single demo), significantly reducing overall human time by 65%.",
+      "published": "2025-11-25T20:56:27Z",
+      "authors": [
+        "Tasha Kim",
+        "Yingke Wang",
+        "Hanvit Cho",
+        "Alex Hodges"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "link": "https://arxiv.org/abs/2511.20848v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.20848v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.20848v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Strong nonlinear detectability and moving horizon estimation for nonlinear systems with unknown inputs",
+      "summary": "This paper considers state estimation for general nonlinear discrete-time systems subject to measurement noise and possibly unbounded unknown inputs. To approach this problem, we first propose the concept of strong nonlinear detectability. This condition is sufficient and necessary for the existence of unknown input state estimators (UISEs), which reconstruct states from noisy sampled measurements and yield bounded estimation error even for unbounded unknown inputs. Based on the proposed detectability notion, a UISE is designed via a moving horizon estimation strategy using a full-order model as well as past and current measurements. Next, we tighten this detectability notion to design a two-stage MHE-based UISE, which is computationally more efficient than the MHE-based UISE using full-order models. In a simulation example with a plant growth process, both variants of MHE-based UISEs are compared with a conventional MHE to illustrate the merits of the developed methods.",
+      "published": "2025-11-28T17:25:45Z",
+      "authors": [
+        "Yang Guo",
+        "Jaime A. Moreno",
+        "Stefan Streif"
+      ],
+      "categories": [
+        "eess.SY"
+      ],
+      "link": "https://arxiv.org/abs/2511.23385v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.23385v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.23385v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Model Predictive Path Planning in Navier-Stokes Flow with POD-Based Reduced-Order Models",
+      "summary": "We present a framework for optimal trajectory generation in flow-driven systems governed by the Navier-Stokes equations, combining a Proper Orthogonal Decomposition (POD) reduced0order model (ROM) with Model Predictive Control (MPC). The approach (i) approximates the velocity field from data via snapshot POD and orthogonal projection, (ii) derives a Galerkin-projected dynamical model in reduced coordinates, and (iii) employs MPC to plan control inputs that steer an agent through the predicted flow while satisfying state and actuation constraints. By leveraging reduced-order modeling, the method enables real-time control in high-dimensional flow environments. Simulations demonstrate accurate flow-field reconstruction and efficient trajectory generation within realistic wind environments.",
+      "published": "2025-11-27T05:32:29Z",
+      "authors": [
+        "Adam Waterman",
+        "Martin Guay"
+      ],
+      "categories": [
+        "math.OC",
+        "eess.SY"
+      ],
+      "link": "https://arxiv.org/abs/2511.22123v1",
+      "pdf_link": "https://arxiv.org/pdf/2511.22123v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2511.22123v1",
       "relevance_score": 1
     }
   ],
