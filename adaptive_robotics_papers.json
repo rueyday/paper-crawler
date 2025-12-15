@@ -1,228 +1,247 @@
 {
-  "last_updated": "2025-12-01T08:34:22.398228",
+  "last_updated": "2025-12-15T08:35:03.834171",
   "total_papers": 11,
   "papers": [
     {
-      "title": "An AI-Enabled Hybrid Cyber-Physical Framework for Adaptive Control in Smart Grids",
-      "summary": "Evolving smart grids require flexible and adaptive control methods. A harmonized hybrid cyber-physical framework, which considers both physical and cyber layers and ensures adaptability, is one of the critical challenges to enable sustainable and scalable smart grids. This paper proposes a three-layer (physical, cyber, control) architecture, with an energy management system as the core of the system. Adaptive Dynamic Programming(ADP) and Artificial Intelligence-based optimization techniques are used for sustainability and scalability. The deployment is considered under two contingencies: Cloud Independent and cloud-assisted. They allow us to test the proposed model under a low-latency localized decision scenario and also under a centralized control scenario. The architecture is simulated on a standard IEEE 33-Bus system, yielding positive results. The proposed framework can ensure grid stability, optimize dispatch, and respond to ever-changing grid dynamics.",
-      "published": "2025-11-26T17:08:06Z",
+      "title": "ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning",
+      "summary": "Human-level contact-rich manipulation relies on the distinct roles of two key modalities: vision provides spatially rich but temporally slow global context, while force sensing captures rapid, high-frequency local contact dynamics. Integrating these signals is challenging due to their fundamental frequency and informational disparities. In this work, we propose ImplicitRDP, a unified end-to-end visual-force diffusion policy that integrates visual planning and reactive force control within a single network. We introduce Structural Slow-Fast Learning, a mechanism utilizing causal attention to simultaneously process asynchronous visual and force tokens, allowing the policy to perform closed-loop adjustments at the force frequency while maintaining the temporal coherence of action chunks. Furthermore, to mitigate modality collapse where end-to-end models fail to adjust the weights across different modalities, we propose Virtual-target-based Representation Regularization. This auxiliary objective maps force feedback into the same space as the action, providing a stronger, physics-grounded learning signal than raw force prediction. Extensive experiments on contact-rich tasks demonstrate that ImplicitRDP significantly outperforms both vision-only and hierarchical baselines, achieving superior reactivity and success rates with a streamlined training pipeline. Code and videos will be publicly available at https://implicit-rdp.github.io.",
+      "published": "2025-12-11T18:59:46Z",
       "authors": [
-        "Muhammad Siddique",
-        "Sohaib Zafar"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "link": "https://arxiv.org/abs/2511.21590v2",
-      "pdf_link": "https://arxiv.org/pdf/2511.21590v2.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.21590v2",
-      "relevance_score": 3
-    },
-    {
-      "title": "Power System Robust State Estimation As a Layer: A Novel End-to-end Learning Approach",
-      "summary": "Serving as an essential prerequisite for modern power system operation, robust state estimation (RSE) could effectively resist noises and outliers in measurements. The emerging neural network (NN) based end-to-end (E2E) learning framework enables real-time application of RSE but cannot strictly enforce the physical constraints involved, potentially yielding solutions that are statistically accurate yet physically inconsistent. To bridge this gap, this work proposes a novel E2E learning based RSE framework, where the RSE problem is innovatively constructed as an explicit differentiable layer of NN for the first time, ensuring physics alignments with rigors. Also, the measurement weights are treated as learnable parameters of NN to enhance estimation robustness. A hybrid loss function is formulated to pursue accurate and physically consistent solutions. To realize the proposed NN structure, the original non-convex RSE problem is specially relaxed. Extensive numerical simulations have been carried out to demonstrate that the proposed framework can significantly improve the SE performance while fulfilling physical consistency on six testing systems, in comparisons to the classical E2E learning based approach and the physics-informed neural network (PINN) approach.",
-      "published": "2025-11-28T02:02:29Z",
-      "authors": [
-        "Yibo Ding",
-        "Wenzhuo Shi",
-        "Mengzhao Duan",
-        "Yuhong Zhao",
-        "Jiaqi Ruan",
-        "Jian Zhao",
-        "Zhao Xu"
-      ],
-      "categories": [
-        "eess.SY"
-      ],
-      "link": "https://arxiv.org/abs/2511.22836v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.22836v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.22836v1",
-      "relevance_score": 3
-    },
-    {
-      "title": "Closed-Loop Control Law for Low Thrust Orbit Transfer with Guaranteed Stability",
-      "summary": "Electric propulsion is used to maximize payload capacity in communication satellites. These orbit raising maneuvers span several months and hundreds of revolutions, making trajectory design a complex challenge. The literature typically addresses this problem using feedback laws, with Q-law being one of the most prominent approaches. However, Q-law suffers from closed-loop stability issues, limiting its suitability for real-time on-board implementation. In this work, we focus on closed-loop orbit raising rather than offline trajectory planning and address the stability limitations of the Q-law through a Lyapunov based control design. A Lyapunov-guided modification of the classical Q-law is proposed to ensure closed-loop stability and enable real-time implementation. The effectiveness of the proposed method is demonstrated through closed-loop orbit transfers across various scenarios, including co-planar transfers, equatorial to polar orbit transfers, and geostationary transfer orbit (GTO) to geostationary earth orbit (GEO) transfers.",
-      "published": "2025-11-28T09:28:51Z",
-      "authors": [
-        "Suraj Kumar",
-        "Aditya Rallapalli",
-        "Nivriti Priyadarshini",
-        "Bharat Kumar GVP",
-        "Ravi Kumar L"
-      ],
-      "categories": [
-        "eess.SY"
-      ],
-      "link": "https://arxiv.org/abs/2511.23014v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.23014v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.23014v1",
-      "relevance_score": 2
-    },
-    {
-      "title": "SafeHumanoid: VLM-RAG-driven Control of Upper Body Impedance for Humanoid Robot",
-      "summary": "Safe and trustworthy Human Robot Interaction (HRI) requires robots not only to complete tasks but also to regulate impedance and speed according to scene context and human proximity. We present SafeHumanoid, an egocentric vision pipeline that links Vision Language Models (VLMs) with Retrieval-Augmented Generation (RAG) to schedule impedance and velocity parameters for a humanoid robot. Egocentric frames are processed by a structured VLM prompt, embedded and matched against a curated database of validated scenarios, and mapped to joint-level impedance commands via inverse kinematics. We evaluate the system on tabletop manipulation tasks with and without human presence, including wiping, object handovers, and liquid pouring. The results show that the pipeline adapts stiffness, damping, and speed profiles in a context-aware manner, maintaining task success while improving safety. Although current inference latency (up to 1.4 s) limits responsiveness in highly dynamic settings, SafeHumanoid demonstrates that semantic grounding of impedance control is a viable path toward safer, standard-compliant humanoid collaboration.",
-      "published": "2025-11-28T15:58:26Z",
-      "authors": [
-        "Yara Mahmoud",
-        "Jeffrin Sam",
-        "Nguyen Khang",
-        "Marcelino Fernando",
-        "Issatay Tokmurziyev",
-        "Miguel Altamirano Cabrera",
-        "Muhammad Haris Khan",
-        "Artem Lykov",
-        "Dzmitry Tsetserukou"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2511.23300v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.23300v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.23300v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Adaptive Factor Graph-Based Tightly Coupled GNSS/IMU Fusion for Robust Positionin",
-      "summary": "Reliable positioning in GNSS-challenged environments remains a critical challenge for navigation systems. Tightly coupled GNSS/IMU fusion improves robustness but remains vulnerable to non-Gaussian noise and outliers. We present a robust and adaptive factor graph-based fusion framework that directly integrates GNSS pseudorange measurements with IMU preintegration factors and incorporates the Barron loss, a general robust loss function that unifies several m-estimators through a single tunable parameter. By adaptively down weighting unreliable GNSS measurements, our approach improves resilience positioning. The method is implemented in an extended GTSAM framework and evaluated on the UrbanNav dataset. The proposed solution reduces positioning errors by up to 41% relative to standard FGO, and achieves even larger improvements over extended Kalman filter (EKF) baselines in urban canyon environments. These results highlight the benefits of Barron loss in enhancing the resilience of GNSS/IMU-based navigation in urban and signal-compromised environments.",
-      "published": "2025-11-28T09:33:13Z",
-      "authors": [
-        "Elham Ahmadi",
-        "Alireza Olama",
-        "Petri Välisuo",
-        "Heidi Kuusniemi"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "link": "https://arxiv.org/abs/2511.23017v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.23017v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.23017v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Language-conditioned world model improves policy generalization by reading environmental descriptions",
-      "summary": "To interact effectively with humans in the real world, it is important for agents to understand language that describes the dynamics of the environment--that is, how the environment behaves--rather than just task instructions specifying \"what to do\". Understanding this dynamics-descriptive language is important for human-agent interaction and agent behavior. Recent work address this problem using a model-based approach: language is incorporated into a world model, which is then used to learn a behavior policy. However, these existing methods either do not demonstrate policy generalization to unseen games or rely on limiting assumptions. For instance, assuming that the latency induced by inference-time planning is tolerable for the target task or expert demonstrations are available. Expanding on this line of research, we focus on improving policy generalization from a language-conditioned world model while dropping these assumptions. We propose a model-based reinforcement learning approach, where a language-conditioned world model is trained through interaction with the environment, and a policy is learned from this model--without planning or expert demonstrations. Our method proposes Language-aware Encoder for Dreamer World Model (LED-WM) built on top of DreamerV3. LED-WM features an observation encoder that uses an attention mechanism to explicitly ground language descriptions to entities in the observation. We show that policies trained with LED-WM generalize more effectively to unseen games described by novel dynamics and language compared to other baselines in several settings in two environments: MESSENGER and MESSENGER-WM.To highlight how the policy can leverage the trained world model before real-world deployment, we demonstrate the policy can be improved through fine-tuning on synthetic test trajectories generated by the world model.",
-      "published": "2025-11-28T06:13:27Z",
-      "authors": [
-        "Anh Nguyen",
-        "Stefan Lee"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "link": "https://arxiv.org/abs/2511.22904v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.22904v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.22904v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Predictive Safety Shield for Dyna-Q Reinforcement Learning",
-      "summary": "Obtaining safety guarantees for reinforcement learning is a major challenge to achieve applicability for real-world tasks. Safety shields extend standard reinforcement learning and achieve hard safety guarantees. However, existing safety shields commonly use random sampling of safe actions or a fixed fallback controller, therefore disregarding future performance implications of different safe actions. In this work, we propose a predictive safety shield for model-based reinforcement learning agents in discrete space. Our safety shield updates the Q-function locally based on safe predictions, which originate from a safe simulation of the environment model. This shielding approach improves performance while maintaining hard safety guarantees. Our experiments on gridworld environments demonstrate that even short prediction horizons can be sufficient to identify the optimal path. We observe that our approach is robust to distribution shifts, e.g., between simulation and reality, without requiring additional training.",
-      "published": "2025-11-26T15:59:55Z",
-      "authors": [
-        "Jin Pin",
-        "Krasowski Hanna",
-        "Vanneaux Elena"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.RO",
-        "eess.SY"
-      ],
-      "link": "https://arxiv.org/abs/2511.21531v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.21531v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.21531v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression",
-      "summary": "As efficient alternatives to softmax Attention, linear state-space models (SSMs) achieve constant memory and linear compute, but maintain only a lossy, fading summary of the past, often leading to inferior performance in recall oriented tasks. We propose Gated KalmaNet (GKA), a layer that reduces this gap by accounting for the full past when predicting the next token, while maintaining SSM-style efficiency. GKA achieves this by solving an online ridge regression problem at test time, with constant memory and linear compute cost in the sequence length. Drawing inspiration from the Kalman Filter, we iteratively solve the online ridge regression problem. However, a critical insight is that standard Kalman filter equations are numerically unstable in low-precision environments (like bfloat16) and difficult to parallelize in modern hardware. We address both challenges through two key innovations: (1) an adaptive regularization strategy with input-dependent gating that controls the condition number of the ridge regression, ensuring numerical stability while balancing memory retention. And (2) the use of Chebyshev Iteration instead of other conventional iterative solvers, which we demonstrate to be more stable in low-precision settings. To further improve scalability, we develop a hardware-aware chunk-wise implementation of Chebyshev Iteration along with custom kernels for backpropagating through our adaptive regularization and gating mechanisms. Empirically, GKA shows strong language understanding capabilites on short-context tasks outperforming existing SSM layers (like Mamba2, GLA and Gated DeltaNet). On long-context, GKA excels at real-world RAG and LongQA tasks up to 128k tokens, achieving more than $10$% relative improvement over other fading memory baselines.",
-      "published": "2025-11-26T03:26:37Z",
-      "authors": [
-        "Liangzu Peng",
-        "Aditya Chattopadhyay",
-        "Luca Zancato",
-        "Elvis Nunez",
-        "Wei Xia",
-        "Stefano Soatto"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.CL"
-      ],
-      "link": "https://arxiv.org/abs/2511.21016v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.21016v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.21016v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "NOIR 2.0: Neural Signal Operated Intelligent Robots for Everyday Activities",
-      "summary": "Neural Signal Operated Intelligent Robots (NOIR) system is a versatile brain-robot interface that allows humans to control robots for daily tasks using their brain signals. This interface utilizes electroencephalography (EEG) to translate human intentions regarding specific objects and desired actions directly into commands that robots can execute. We present NOIR 2.0, an enhanced version of NOIR. NOIR 2.0 includes faster and more accurate brain decoding algorithms, which reduce task completion time by 46%. NOIR 2.0 uses few-shot robot learning algorithms to adapt to individual users and predict their intentions. The new learning algorithms leverage foundation models for more sample-efficient learning and adaptation (15 demos vs. a single demo), significantly reducing overall human time by 65%.",
-      "published": "2025-11-25T20:56:27Z",
-      "authors": [
-        "Tasha Kim",
-        "Yingke Wang",
-        "Hanvit Cho",
-        "Alex Hodges"
+        "Wendi Chen",
+        "Han Xue",
+        "Yi Wang",
+        "Fangyuan Zhou",
+        "Jun Lv",
+        "Yang Jin",
+        "Shirun Tang",
+        "Chuan Wen",
+        "Cewu Lu"
       ],
       "categories": [
         "cs.RO",
         "cs.AI",
-        "cs.HC",
-        "cs.LG",
-        "eess.SY"
+        "cs.LG"
       ],
-      "link": "https://arxiv.org/abs/2511.20848v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.20848v1.pdf",
+      "link": "https://arxiv.org/abs/2512.10946v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.10946v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.20848v1",
-      "relevance_score": 1
+      "arxiv_id": "2512.10946v1",
+      "relevance_score": 3
     },
     {
-      "title": "Strong nonlinear detectability and moving horizon estimation for nonlinear systems with unknown inputs",
-      "summary": "This paper considers state estimation for general nonlinear discrete-time systems subject to measurement noise and possibly unbounded unknown inputs. To approach this problem, we first propose the concept of strong nonlinear detectability. This condition is sufficient and necessary for the existence of unknown input state estimators (UISEs), which reconstruct states from noisy sampled measurements and yield bounded estimation error even for unbounded unknown inputs. Based on the proposed detectability notion, a UISE is designed via a moving horizon estimation strategy using a full-order model as well as past and current measurements. Next, we tighten this detectability notion to design a two-stage MHE-based UISE, which is computationally more efficient than the MHE-based UISE using full-order models. In a simulation example with a plant growth process, both variants of MHE-based UISEs are compared with a conventional MHE to illustrate the merits of the developed methods.",
-      "published": "2025-11-28T17:25:45Z",
+      "title": "Linear quadratic control for discrete-time systems with stochastic and bounded noises",
+      "summary": "This paper focuses on the linear quadratic control (LQC) design of systems corrupted by both stochastic noise and bounded noise simultaneously. When only of these noises are considered, the LQC strategy leads to stochastic or robust controllers, respectively. However, there is no LQC strategy that can simultaneously handle stochastic and bounded noises efficiently. This limits the scope where existing LQC strategies can be applied. In this work, we look into the LQC problem for discrete-time systems that have both stochastic and bounded noises in its dynamics. We develop a state estimation for such systems by efficiently combining a Kalman filter and an ellipsoid set-membership filter. The developed state estimation can recover the estimation optimality when the system is subject to both kinds of noise, the stochastic and the bounded. Upon the estimated state, we derive a robust state-feedback optimal control law for the LQC problem. The control law derivation takes into account both stochastic and bounded-state estimation errors, so as to avoid over-conservativeness while sustaining stability in the control. In this way, the developed LQC strategy extends the range of scenarios where LQC can be applied, especially those of real-world control systems with diverse sensing which are subject to different kinds of noise. We present numerical simulations, and the results demonstrate the enhanced control performance with the proposed strategy.",
+      "published": "2025-12-11T20:41:38Z",
       "authors": [
-        "Yang Guo",
-        "Jaime A. Moreno",
-        "Stefan Streif"
-      ],
-      "categories": [
-        "eess.SY"
-      ],
-      "link": "https://arxiv.org/abs/2511.23385v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.23385v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2511.23385v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Model Predictive Path Planning in Navier-Stokes Flow with POD-Based Reduced-Order Models",
-      "summary": "We present a framework for optimal trajectory generation in flow-driven systems governed by the Navier-Stokes equations, combining a Proper Orthogonal Decomposition (POD) reduced0order model (ROM) with Model Predictive Control (MPC). The approach (i) approximates the velocity field from data via snapshot POD and orthogonal projection, (ii) derives a Galerkin-projected dynamical model in reduced coordinates, and (iii) employs MPC to plan control inputs that steer an agent through the predicted flow while satisfying state and actuation constraints. By leveraging reduced-order modeling, the method enables real-time control in high-dimensional flow environments. Simulations demonstrate accurate flow-field reconstruction and efficient trajectory generation within realistic wind environments.",
-      "published": "2025-11-27T05:32:29Z",
-      "authors": [
-        "Adam Waterman",
-        "Martin Guay"
+        "Xuehui Ma",
+        "Shiliang Zhang",
+        "Xiaohui Zhang",
+        "Jing Xin",
+        "Hector Garcia de Marina"
       ],
       "categories": [
         "math.OC",
         "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2511.22123v1",
-      "pdf_link": "https://arxiv.org/pdf/2511.22123v1.pdf",
+      "link": "https://arxiv.org/abs/2512.11106v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.11106v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2511.22123v1",
+      "arxiv_id": "2512.11106v1",
+      "relevance_score": 2
+    },
+    {
+      "title": "AERMANI-Diffusion: Regime-Conditioned Diffusion for Dynamics Learning in Aerial Manipulators",
+      "summary": "Aerial manipulators undergo rapid, configuration-dependent changes in inertial coupling forces and aerodynamic forces, making accurate dynamics modeling a core challenge for reliable control. Analytical models lose fidelity under these nonlinear and nonstationary effects, while standard data-driven methods such as deep neural networks and Gaussian processes cannot represent the diverse residual behaviors that arise across different operating conditions. We propose a regime-conditioned diffusion framework that models the full distribution of residual forces using a conditional diffusion process and a lightweight temporal encoder. The encoder extracts a compact summary of recent motion and configuration, enabling consistent residual predictions even through abrupt transitions or unseen payloads. When combined with an adaptive controller, the framework enables dynamics uncertainty compensation and yields markedly improved tracking accuracy in real-world tests.",
+      "published": "2025-12-11T16:10:32Z",
+      "authors": [
+        "Samaksh Ujjawal",
+        "Shivansh Pratap Singh",
+        "Naveen Sudheer Nair",
+        "Rishabh Dev Yadav",
+        "Wei Pan",
+        "Spandan Roy"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2512.10773v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.10773v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.10773v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Contact SLAM: An Active Tactile Exploration Policy Based on Physical Reasoning Utilized in Robotic Fine Blind Manipulation Tasks",
+      "summary": "Contact-rich manipulation is difficult for robots to execute and requires accurate perception of the environment. In some scenarios, vision is occluded. The robot can then no longer obtain real-time scene state information through visual feedback. This is called ``blind manipulation\". In this manuscript, a novel physically-driven contact cognition method, called ``Contact SLAM\", is proposed. It estimates the state of the environment and achieves manipulation using only tactile sensing and prior knowledge of the scene. To maximize exploration efficiency, this manuscript also designs an active exploration policy. The policy gradually reduces uncertainties in the manipulation scene. The experimental results demonstrated the effectiveness and accuracy of the proposed method in several contact-rich tasks, including the difficult and delicate socket assembly task and block-pushing task.",
+      "published": "2025-12-11T09:59:08Z",
+      "authors": [
+        "Gaozhao Wang",
+        "Xing Liu",
+        "Zhenduo Ye",
+        "Zhengxiong Liu",
+        "Panfeng Huang"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2512.10481v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.10481v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.10481v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Seamless Outdoor-Indoor Pedestrian Positioning System with GNSS/UWB/IMU Fusion: A Comparison of EKF, FGO, and PF",
+      "summary": "Accurate and continuous pedestrian positioning across outdoor-indoor environments remains challenging because GNSS, UWB, and inertial PDR are complementary yet individually fragile under signal blockage, multipath, and drift. This paper presents a unified GNSS/UWB/IMU fusion framework for seamless pedestrian localization and provides a controlled comparison of three probabilistic back-ends: an error-state extended Kalman filter, sliding-window factor graph optimization, and a particle filter. The system uses chest-mounted IMU-based PDR as the motion backbone and integrates absolute updates from GNSS outdoors and UWB indoors. To enhance transition robustness and mitigate urban GNSS degradation, we introduce a lightweight map-based feasibility constraint derived from OpenStreetMap building footprints, treating most building interiors as non-navigable while allowing motion inside a designated UWB-instrumented building. The framework is implemented in ROS 2 and runs in real time on a wearable platform, with visualization in Foxglove. We evaluate three scenarios: indoor (UWB+PDR), outdoor (GNSS+PDR), and seamless outdoor-indoor (GNSS+UWB+PDR). Results show that the ESKF provides the most consistent overall performance in our implementation.",
+      "published": "2025-12-11T09:59:03Z",
+      "authors": [
+        "Jiaqiang Zhang",
+        "Xianjia Yu",
+        "Sier Ha",
+        "Paola Torrico Moron",
+        "Sahar Salimpour",
+        "Farhad Kerama",
+        "Haizhou Zhang",
+        "Tomi Westerlund"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2512.10480v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.10480v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.10480v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Push Smarter, Not Harder: Hierarchical RL-Diffusion Policy for Efficient Nonprehensile Manipulation",
+      "summary": "Nonprehensile manipulation, such as pushing objects across cluttered environments, presents a challenging control problem due to complex contact dynamics and long-horizon planning requirements. In this work, we propose HeRD, a hierarchical reinforcement learning-diffusion policy that decomposes pushing tasks into two levels: high-level goal selection and low-level trajectory generation. We employ a high-level reinforcement learning (RL) agent to select intermediate spatial goals, and a low-level goal-conditioned diffusion model to generate feasible, efficient trajectories to reach them.\n  This architecture combines the long-term reward maximizing behaviour of RL with the generative capabilities of diffusion models. We evaluate our method in a 2D simulation environment and show that it outperforms the state-of-the-art baseline in success rate, path efficiency, and generalization across multiple environment configurations. Our results suggest that hierarchical control with generative low-level planning is a promising direction for scalable, goal-directed nonprehensile manipulation. Code, documentation, and trained models are available: https://github.com/carosteven/HeRD.",
+      "published": "2025-12-10T21:40:22Z",
+      "authors": [
+        "Steven Caro",
+        "Stephen L. Smith"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2512.10099v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.10099v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.10099v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "Token Expand-Merge: Training-Free Token Compression for Vision-Language-Action Models",
+      "summary": "Vision-Language-Action (VLA) models pretrained on large-scale multimodal datasets have emerged as powerful foundations for robotic perception and control. However, their massive scale, often billions of parameters, poses significant challenges for real-time deployment, as inference becomes computationally expensive and latency-sensitive in dynamic environments. To address this, we propose Token Expand-and-Merge-VLA (TEAM-VLA), a training-free token compression framework that accelerates VLA inference while preserving task performance. TEAM-VLA introduces a dynamic token expansion mechanism that identifies and samples additional informative tokens in the spatial vicinity of attention-highlighted regions, enhancing contextual completeness. These expanded tokens are then selectively merged in deeper layers under action-aware guidance, effectively reducing redundancy while maintaining semantic coherence. By coupling expansion and merging within a single feed-forward pass, TEAM-VLA achieves a balanced trade-off between efficiency and effectiveness, without any retraining or parameter updates. Extensive experiments on LIBERO benchmark demonstrate that TEAM-VLA consistently improves inference speed while maintaining or even surpassing the task success rate of full VLA models. The code is public available on \\href{https://github.com/Jasper-aaa/TEAM-VLA}{https://github.com/Jasper-aaa/TEAM-VLA}",
+      "published": "2025-12-10T18:59:24Z",
+      "authors": [
+        "Yifan Ye",
+        "Jiaqi Ma",
+        "Jun Cen",
+        "Zhihe Lu"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2512.09927v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.09927v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.09927v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "OSMO: Open-Source Tactile Glove for Human-to-Robot Skill Transfer",
+      "summary": "Human video demonstrations provide abundant training data for learning robot policies, but video alone cannot capture the rich contact signals critical for mastering manipulation. We introduce OSMO, an open-source wearable tactile glove designed for human-to-robot skill transfer. The glove features 12 three-axis tactile sensors across the fingertips and palm and is designed to be compatible with state-of-the-art hand-tracking methods for in-the-wild data collection. We demonstrate that a robot policy trained exclusively on human demonstrations collected with OSMO, without any real robot data, is capable of executing a challenging contact-rich manipulation task. By equipping both the human and the robot with the same glove, OSMO minimizes the visual and tactile embodiment gap, enabling the transfer of continuous shear and normal force feedback while avoiding the need for image inpainting or other vision-based force inference. On a real-world wiping task requiring sustained contact pressure, our tactile-aware policy achieves a 72% success rate, outperforming vision-only baselines by eliminating contact-related failure modes. We release complete hardware designs, firmware, and assembly instructions to support community adoption.",
+      "published": "2025-12-09T18:56:30Z",
+      "authors": [
+        "Jessica Yin",
+        "Haozhi Qi",
+        "Youngsun Wi",
+        "Sayantan Kundu",
+        "Mike Lambeta",
+        "William Yang",
+        "Changhao Wang",
+        "Tingfan Wu",
+        "Jitendra Malik",
+        "Tess Hellebrekers"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2512.08920v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.08920v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.08920v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "High-Dimensional Surrogate Modeling for Closed-Loop Learning of Neural-Network-Parameterized Model Predictive Control",
+      "summary": "Learning controller parameters from closed-loop data has been shown to improve closed-loop performance. Bayesian optimization, a widely used black-box and sample-efficient learning method, constructs a probabilistic surrogate of the closed-loop performance from few experiments and uses it to select informative controller parameters. However, it typically struggles with dense high-dimensional controller parameterizations, as they may appear, for example, in tuning model predictive controllers, because standard surrogate models fail to capture the structure of such spaces. This work suggests that the use of Bayesian neural networks as surrogate models may help to mitigate this limitation. Through a comparison between Gaussian processes with Matern kernels, finite-width Bayesian neural networks, and infinite-width Bayesian neural networks on a cart-pole task, we find that Bayesian neural network surrogate models achieve faster and more reliable convergence of the closed-loop cost and enable successful optimization of parameterizations with hundreds of dimensions. Infinite-width Bayesian neural networks also maintain performance in settings with more than one thousand parameters, whereas Matern-kernel Gaussian processes rapidly lose effectiveness. These results indicate that Bayesian neural network surrogate models may be suitable for learning dense high-dimensional controller parameterizations and offer practical guidance for selecting surrogate models in learning-based controller design.",
+      "published": "2025-12-12T16:41:35Z",
+      "authors": [
+        "Sebastian Hirt",
+        "Valentinus Suwanto",
+        "Hendrik Alsmeier",
+        "Maik Pfefferkorn",
+        "Rolf Findeisen"
+      ],
+      "categories": [
+        "cs.LG",
+        "eess.SY"
+      ],
+      "link": "https://arxiv.org/abs/2512.11705v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.11705v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.11705v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "H2R-Grounder: A Paired-Data-Free Paradigm for Translating Human Interaction Videos into Physically Grounded Robot Videos",
+      "summary": "Robots that learn manipulation skills from everyday human videos could acquire broad capabilities without tedious robot data collection. We propose a video-to-video translation framework that converts ordinary human-object interaction videos into motion-consistent robot manipulation videos with realistic, physically grounded interactions. Our approach does not require any paired human-robot videos for training only a set of unpaired robot videos, making the system easy to scale. We introduce a transferable representation that bridges the embodiment gap: by inpainting the robot arm in training videos to obtain a clean background and overlaying a simple visual cue (a marker and arrow indicating the gripper's position and orientation), we can condition a generative model to insert the robot arm back into the scene. At test time, we apply the same process to human videos (inpainting the person and overlaying human pose cues) and generate high-quality robot videos that mimic the human's actions. We fine-tune a SOTA video diffusion model (Wan 2.2) in an in-context learning manner to ensure temporal coherence and leveraging of its rich prior knowledge. Empirical results demonstrate that our approach achieves significantly more realistic and grounded robot motions compared to baselines, pointing to a promising direction for scaling up robot learning from unlabeled human videos. Project page: https://showlab.github.io/H2R-Grounder/",
+      "published": "2025-12-10T07:59:45Z",
+      "authors": [
+        "Hai Ci",
+        "Xiaokang Liu",
+        "Pei Yang",
+        "Yiren Song",
+        "Mike Zheng Shou"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "link": "https://arxiv.org/abs/2512.09406v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.09406v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.09406v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "VideoVLA: Video Generators Can Be Generalizable Robot Manipulators",
+      "summary": "Generalization in robot manipulation is essential for deploying robots in open-world environments and advancing toward artificial general intelligence. While recent Vision-Language-Action (VLA) models leverage large pre-trained understanding models for perception and instruction following, their ability to generalize to novel tasks, objects, and settings remains limited. In this work, we present VideoVLA, a simple approach that explores the potential of transforming large video generation models into robotic VLA manipulators. Given a language instruction and an image, VideoVLA predicts an action sequence as well as the future visual outcomes. Built on a multi-modal Diffusion Transformer, VideoVLA jointly models video, language, and action modalities, using pre-trained video generative models for joint visual and action forecasting. Our experiments show that high-quality imagined futures correlate with reliable action predictions and task success, highlighting the importance of visual imagination in manipulation. VideoVLA demonstrates strong generalization, including imitating other embodiments' skills and handling novel objects. This dual-prediction strategy - forecasting both actions and their visual consequences - explores a paradigm shift in robot learning and unlocks generalization capabilities in manipulation systems.",
+      "published": "2025-12-07T18:57:15Z",
+      "authors": [
+        "Yichao Shen",
+        "Fangyun Wei",
+        "Zhiying Du",
+        "Yaobo Liang",
+        "Yan Lu",
+        "Jiaolong Yang",
+        "Nanning Zheng",
+        "Baining Guo"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "link": "https://arxiv.org/abs/2512.06963v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.06963v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2512.06963v1",
       "relevance_score": 1
     }
   ],
