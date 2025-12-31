@@ -1,17 +1,16 @@
 # Paper Crawler
 
-This repo automatically collects the latest topic(currently robot manipulation)-related papers from arXiv (category: cs.RO), filters them by relevant keywords like "manipulation" or "grasp", and updates the results weekly.
+This repo automatically collects the latest topic-related papers from arXiv (category: cs.RO), filters them by relevant keywords, and updates the results weekly.
 
-## 🔄 Automation
+## Automation
 
 - Powered by [GitHub Actions](.github/workflows/crawl.yml)
-- Updates every **Monday at 08:00 UTC**
 
-## 📄 Latest Papers
+## Latest Papers
 
 Check [`robot_manipulation_papers.json`](robot_manipulation_papers.json) for the most recent list of papers.
 
-## 🚀 Setup Locally
+## Setup Locally
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/robot-paper-crawler.git
