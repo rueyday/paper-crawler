@@ -1,284 +1,109 @@
 {
-  "last_updated": "2025-12-29T08:34:52.807207",
-  "total_papers": 13,
+  "last_updated": "2026-01-05T08:36:48.165874",
+  "total_papers": 5,
   "papers": [
     {
-      "title": "Lyapunov-Based Kolmogorov-Arnold Network (KAN) Adaptive Control",
-      "summary": "Recent advancements in Lyapunov-based Deep Neural Networks (Lb-DNNs) have demonstrated improved performance over shallow NNs and traditional adaptive control for nonlinear systems with uncertain dynamics. Existing Lb-DNNs rely on multi-layer perceptrons (MLPs), which lack interpretable insights. As a first step towards embedding interpretable insights in the control architecture, this paper develops the first Lyapunov-based Kolmogorov-Arnold Networks (Lb-KAN) adaptive control method for uncertain nonlinear systems. Unlike MLPs with deep-layer matrix multiplications, KANs provide interpretable insights by direct functional decomposition. In this framework, KANs are employed to approximate uncertain dynamics and embedded into the control law, enabling visualizable functional decomposition. The analytical update laws are constructed from a Lyapunov-based analysis for real-time learning without prior data in a KAN architecture. The analysis uses the distinct KAN approximation theorem to formally bound the reconstruction error and its effect on the performance. The update law is derived by incorporating the KAN's learnable parameters into a Jacobian matrix, enabling stable, analytical, real-time adaptation and ensuring asymptotic convergence of tracking errors. Moreover, the Lb-KAN provides a foundation for interpretability characteristics by achieving visualizable functional decomposition. Simulation results demonstrate that the Lb-KAN controller reduces the function approximation error by 20.2% and 18.0% over the baseline Lb-LSTM and Lb-DNN methods, respectively.",
-      "published": "2025-12-24T22:09:32Z",
+      "title": "Vision-based Goal-Reaching Control for Mobile Robots Using a Hierarchical Learning Framework",
+      "summary": "Reinforcement learning (RL) is effective in many robotic applications, but it requires extensive exploration of the state-action space, during which behaviors can be unsafe. This significantly limits its applicability to large robots with complex actuators operating on unstable terrain. Hence, to design a safe goal-reaching control framework for large-scale robots, this paper decomposes the whole system into a set of tightly coupled functional modules. 1) A real-time visual pose estimation approach is employed to provide accurate robot states to 2) an RL motion planner for goal-reaching tasks that explicitly respects robot specifications. The RL module generates real-time smooth motion commands for the actuator system, independent of its underlying dynamic complexity. 3) In the actuation mechanism, a supervised deep learning model is trained to capture the complex dynamics of the robot and provide this model to 4) a model-based robust adaptive controller that guarantees the wheels track the RL motion commands even on slip-prone terrain. 5) Finally, to reduce human intervention, a mathematical safety supervisor monitors the robot, stops it on unsafe faults, and autonomously guides it back to a safe inspection area. The proposed framework guarantees uniform exponential stability of the actuation system and safety of the whole operation. Experiments on a 6,000 kg robot in different scenarios confirm the effectiveness of the proposed framework.",
+      "published": "2026-01-02T08:41:47Z",
       "authors": [
-        "Xuehui Shen",
-        "Wenqian Xue",
-        "Yixuan Wang",
-        "Warren E. Dixon"
+        "Mehdi Heydari Shahna",
+        "Pauli Mustalahti",
+        "Jouni Mattila"
       ],
       "categories": [
+        "cs.RO"
+      ],
+      "link": "https://arxiv.org/abs/2601.00610v1",
+      "pdf_link": "https://arxiv.org/pdf/2601.00610v1.pdf",
+      "source": "ArXiv",
+      "arxiv_id": "2601.00610v1",
+      "relevance_score": 1
+    },
+    {
+      "title": "NMPC-Augmented Visual Navigation and Safe Learning Control for Large-Scale Mobile Robots",
+      "summary": "A large-scale mobile robot (LSMR) is a high-order multibody system that often operates on loose, unconsolidated terrain, which reduces traction. This paper presents a comprehensive navigation and control framework for an LSMR that ensures stability and safety-defined performance, delivering robust operation on slip-prone terrain by jointly leveraging high-performance techniques. The proposed architecture comprises four main modules: (1) a visual pose-estimation module that fuses onboard sensors and stereo cameras to provide an accurate, low-latency robot pose, (2) a high-level nonlinear model predictive control that updates the wheel motion commands to correct robot drift from the robot reference pose on slip-prone terrain, (3) a low-level deep neural network control policy that approximates the complex behavior of the wheel-driven actuation mechanism in LSMRs, augmented with robust adaptive control to handle out-of-distribution disturbances, ensuring that the wheels accurately track the updated commands issued by high-level control module, and (4) a logarithmic safety module to monitor the entire robot stack and guarantees safe operation. The proposed low-level control framework guarantees uniform exponential stability of the actuation subsystem, while the safety module ensures the whole system-level safety during operation. Comparative experiments on a 6,000 kg LSMR actuated by two complex electro-hydrostatic drives, while synchronizing modules operating at different frequencies.",
+      "published": "2026-01-02T08:40:35Z",
+      "authors": [
+        "Mehdi Heydari Shahna",
+        "Pauli Mustalahti",
+        "Jouni Mattila"
+      ],
+      "categories": [
+        "cs.RO",
         "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2512.21437v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.21437v1.pdf",
+      "link": "https://arxiv.org/abs/2601.00609v1",
+      "pdf_link": "https://arxiv.org/pdf/2601.00609v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2512.21437v1",
-      "relevance_score": 4
-    },
-    {
-      "title": "Tracing Energy Flow: Learning Tactile-based Grasping Force Control to Prevent Slippage in Dynamic Object Interaction",
-      "summary": "Regulating grasping force to reduce slippage during dynamic object interaction remains a fundamental challenge in robotic manipulation, especially when objects are manipulated by multiple rolling contacts, have unknown properties (such as mass or surface conditions), and when external sensing is unreliable. In contrast, humans can quickly regulate grasping force by touch, even without visual cues. Inspired by this ability, we aim to enable robotic hands to rapidly explore objects and learn tactile-driven grasping force control under motion and limited sensing. We propose a physics-informed energy abstraction that models the object as a virtual energy container. The inconsistency between the fingers' applied power and the object's retained energy provides a physically grounded signal for inferring slip-aware stability. Building on this abstraction, we employ model-based learning and planning to efficiently model energy dynamics from tactile sensing and perform real-time grasping force optimization. Experiments in both simulation and hardware demonstrate that our method can learn grasping force control from scratch within minutes, effectively reduce slippage, and extend grasp duration across diverse motion-object pairs, all without relying on external sensing or prior object knowledge.",
-      "published": "2025-12-24T08:19:25Z",
-      "authors": [
-        "Cheng-Yu Kuo",
-        "Hirofumi Shin",
-        "Takamitsu Matsubara"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2512.21043v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.21043v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.21043v1",
-      "relevance_score": 3
-    },
-    {
-      "title": "FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration",
-      "summary": "Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation. While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms. Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots. FAR-AVIO embeds a Schur complement formulation into an Extended Kalman Filter(EKF), enabling joint pose-landmark optimization for accuracy while maintaining constant-time updates by efficiently marginalizing landmark states. On top of this backbone, we introduce Adaptive Weight Adjustment and Reliability Evaluation(AWARE), an online sensor health module that continuously assesses the reliability of visual, inertial and DVL measurements and adaptively regulates their sigma weights, and we develop an efficient online calibration scheme that jointly estimates DVL-IMU extrinsics, without dedicated calibration manoeuvres. Numerical simulations and real-world underwater experiments consistently show that FAR-AVIO outperforms state-of-the-art underwater SLAM baselines in both localization accuracy and computational efficiency, enabling robust operation on low-power embedded platforms. Our implementation has been released as open source software at https://far-vido.gitbook.io/far-vido-docs.",
-      "published": "2025-12-23T13:36:47Z",
-      "authors": [
-        "Hao Wei",
-        "Peiji Wang",
-        "Qianhao Wang",
-        "Tong Qin",
-        "Fei Gao",
-        "Yulin Si"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2512.20355v2",
-      "pdf_link": "https://arxiv.org/pdf/2512.20355v2.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.20355v2",
-      "relevance_score": 2
-    },
-    {
-      "title": "Bab_Sak Robotic Intubation System (BRIS): A Learning-Enabled Control Framework for Safe Fiberoptic Endotracheal Intubation",
-      "summary": "Endotracheal intubation is a critical yet technically demanding procedure, with failure or improper tube placement leading to severe complications. Existing robotic and teleoperated intubation systems primarily focus on airway navigation and do not provide integrated control of endotracheal tube advancement or objective verification of tube depth relative to the carina. This paper presents the Robotic Intubation System (BRIS), a compact, human-in-the-loop platform designed to assist fiberoptic-guided intubation while enabling real-time, objective depth awareness. BRIS integrates a four-way steerable fiberoptic bronchoscope, an independent endotracheal tube advancement mechanism, and a camera-augmented mouthpiece compatible with standard clinical workflows. A learning-enabled closed-loop control framework leverages real-time shape sensing to map joystick inputs to distal bronchoscope tip motion in Cartesian space, providing stable and intuitive teleoperation under tendon nonlinearities and airway contact. Monocular endoscopic depth estimation is used to classify airway regions and provide interpretable, anatomy-aware guidance for safe tube positioning relative to the carina. The system is validated on high-fidelity airway mannequins under standard and difficult airway configurations, demonstrating reliable navigation and controlled tube placement. These results highlight BRIS as a step toward safer, more consistent, and clinically compatible robotic airway management.",
-      "published": "2025-12-26T11:05:45Z",
-      "authors": [
-        "Saksham Gupta",
-        "Sarthak Mishra",
-        "Arshad Ayub",
-        "Kamran Farooque",
-        "Spandan Roy",
-        "Babita Gupta"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2512.21983v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.21983v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.21983v1",
+      "arxiv_id": "2601.00609v1",
       "relevance_score": 1
     },
     {
-      "title": "Quadrupped-Legged Robot Movement Plan Generation using Large Language Model",
-      "summary": "Traditional control interfaces for quadruped robots often impose a high barrier to entry, requiring specialized technical knowledge for effective operation. To address this, this paper presents a novel control framework that integrates Large Language Models (LLMs) to enable intuitive, natural language-based navigation. We propose a distributed architecture where high-level instruction processing is offloaded to an external server to overcome the onboard computational constraints of the DeepRobotics Jueying Lite 3 platform. The system grounds LLM-generated plans into executable ROS navigation commands using real-time sensor fusion (LiDAR, IMU, and Odometry). Experimental validation was conducted in a structured indoor environment across four distinct scenarios, ranging from single-room tasks to complex cross-zone navigation. The results demonstrate the system's robustness, achieving an aggregate success rate of over 90\\% across all scenarios, validating the feasibility of offloaded LLM-based planning for autonomous quadruped deployment in real-world settings.",
-      "published": "2025-12-24T17:22:00Z",
+      "title": "MSACL: Multi-Step Actor-Critic Learning with Lyapunov Certificates for Exponentially Stabilizing Control",
+      "summary": "Achieving provable stability in model-free reinforcement learning (RL) remains a challenge, particularly in balancing exploration with rigorous safety. This article introduces MSACL, a framework that integrates exponential stability theory with maximum entropy RL through multi-step Lyapunov certificate learning. Unlike methods relying on complex reward engineering, MSACL utilizes off-policy multi-step data to learn Lyapunov certificates satisfying theoretical stability conditions. By introducing Exponential Stability Labels (ESL) and a $λ$-weighted aggregation mechanism, the framework effectively balances the bias-variance trade-off in multi-step learning. Policy optimization is guided by a stability-aware advantage function, ensuring the learned policy promotes rapid Lyapunov descent. We evaluate MSACL across six benchmarks, including stabilization and nonlinear tracking tasks, demonstrating its superiority over state-of-the-art Lyapunov-based RL algorithms. MSACL achieves exponential stability and rapid convergence under simple rewards, while exhibiting significant robustness to uncertainties and generalization to unseen trajectories. Sensitivity analysis establishes the multi-step horizon $n=20$ as a robust default across diverse systems. By linking Lyapunov theory with off-policy actor-critic frameworks, MSACL provides a foundation for verifiably safe learning-based control. Source code and benchmark environments will be made publicly available.",
+      "published": "2025-12-31T16:36:44Z",
       "authors": [
-        " Muhtadin",
-        "Vincentius Gusti Putu A. B. M.",
-        "Ahmad Zaini",
-        "Mauridhi Hery Purnomo",
-        "I Ketut Eddy Purnama",
-        "Chastine Fatichah"
+        "Yongwei Zhang",
+        "Yuanzhe Xing",
+        "Quan Quan",
+        "Zhikun She"
       ],
       "categories": [
-        "cs.RO",
-        "cs.HC"
-      ],
-      "link": "https://arxiv.org/abs/2512.21293v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.21293v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.21293v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "Global End-Effector Pose Control of an Underactuated Aerial Manipulator via Reinforcement Learning",
-      "summary": "Aerial manipulators, which combine robotic arms with multi-rotor drones, face strict constraints on arm weight and mechanical complexity. In this work, we study a lightweight 2-degree-of-freedom (DoF) arm mounted on a quadrotor via a differential mechanism, capable of full six-DoF end-effector pose control. While the minimal design enables simplicity and reduced payload, it also introduces challenges such as underactuation and sensitivity to external disturbances, including manipulation of heavy loads and pushing tasks. To address these, we employ reinforcement learning, training a Proximal Policy Optimization (PPO) agent in simulation to generate feedforward commands for quadrotor acceleration and body rates, along with joint angle targets. These commands are tracked by an incremental nonlinear dynamic inversion (INDI) attitude controller and a PID joint controller, respectively. Flight experiments demonstrate centimeter-level position accuracy and degree-level orientation precision, with robust performance under external force disturbances. The results highlight the potential of learning-based control strategies for enabling contact-rich aerial manipulation using simple, lightweight platforms.",
-      "published": "2025-12-24T10:00:01Z",
-      "authors": [
-        "Shlok Deshmukh",
-        "Javier Alonso-Mora",
-        "Sihao Sun"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2512.21085v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.21085v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.21085v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "A General Purpose Method for Robotic Interception of Non-Cooperative Dynamic Targets",
-      "summary": "This paper presents a general purpose framework for autonomous, vision-based interception of dynamic, non-cooperative targets, validated across three distinct mobility platforms: an unmanned aerial vehicle (UAV), a four-wheeled ground rover, and an air-thruster spacecraft testbed. The approach relies solely on a monocular camera with fiducials for target tracking and operates entirely in the local observer frame without the need for global information. The core contribution of this work is a streamlined and general approach to autonomous interception that can be adapted across robots with varying dynamics, as well as our comprehensive study of the robot interception problem across heterogenous mobility systems under limited observability and no global localization. Our method integrates (1) an Extended Kalman Filter for relative pose estimation amid intermittent measurements, (2) a history-conditioned motion predictor for dynamic target trajectory propagation, and (3) a receding-horizon planner solving a constrained convex program in real time to ensure time-efficient and kinematically feasible interception paths. Our operating regime assumes that observability is restricted by partial fields of view, sensor dropouts, and target occlusions. Experiments are performed in these conditions and include autonomous UAV landing on dynamic targets, rover rendezvous and leader-follower tasks, and spacecraft proximity operations. Results from simulated and physical experiments demonstrate robust performance with low interception errors (both during station-keeping and upon scenario completion), high success rates under deterministic and stochastic target motion profiles, and real-time execution on embedded processors such as the Jetson Orin, VOXL2, and Raspberry Pi 5. These results highlight the framework's generalizability, robustness, and computational efficiency.",
-      "published": "2025-12-23T21:14:03Z",
-      "authors": [
-        "Tanmay P. Patel",
-        "Erica L. Tevere",
-        "Erik H. Kramer",
-        "Rudranarayan M. Mukherjee"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2512.20769v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.20769v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.20769v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "ActionFlow: A Pipelined Action Acceleration for Vision Language Models on Edge",
-      "summary": "Vision-Language-Action (VLA) models have emerged as a unified paradigm for robotic perception and control, enabling emergent generalization and long-horizon task execution. However, their deployment in dynamic, real-world environments is severely hin dered by high inference latency. While smooth robotic interaction requires control frequencies of 20 to 30 Hz, current VLA models typi cally operate at only 3-5 Hz on edge devices due to the memory bound nature of autoregressive decoding. Existing optimizations often require extensive retraining or compromise model accuracy. To bridge this gap, we introduce ActionFlow, a system-level inference framework tailored for resource-constrained edge plat forms. At the core of ActionFlow is a Cross-Request Pipelin ing strategy, a novel scheduler that redefines VLA inference as a macro-pipeline of micro-requests. The strategy intelligently batches memory-bound Decode phases with compute-bound Prefill phases across continuous time steps to maximize hardware utilization. Furthermore, to support this scheduling, we propose a Cross Request State Packed Forward operator and a Unified KV Ring Buffer, which fuse fragmented memory operations into efficient dense computations. Experimental results demonstrate that ActionFlow achieves a 2.55x improvement in FPS on the OpenVLA-7B model without retraining, enabling real-time dy namic manipulation on edge hardware. Our work is available at https://anonymous.4open.science/r/ActionFlow-1D47.",
-      "published": "2025-12-23T11:29:03Z",
-      "authors": [
-        "Yuntao Dai",
-        "Hang Gu",
-        "Teng Wang",
-        "Qianyu Cheng",
-        "Yifei Zheng",
-        "Zhiyong Qiu",
-        "Lei Gong",
-        "Wenqi Lou",
-        "Xuehai Zhou"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.RO"
-      ],
-      "link": "https://arxiv.org/abs/2512.20276v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.20276v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.20276v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "LoGoPlanner: Localization Grounded Navigation Policy with Metric-aware Visual Geometry",
-      "summary": "Trajectory planning in unstructured environments is a fundamental and challenging capability for mobile robots. Traditional modular pipelines suffer from latency and cascading errors across perception, localization, mapping, and planning modules. Recent end-to-end learning methods map raw visual observations directly to control signals or trajectories, promising greater performance and efficiency in open-world settings. However, most prior end-to-end approaches still rely on separate localization modules that depend on accurate sensor extrinsic calibration for self-state estimation, thereby limiting generalization across embodiments and environments. We introduce LoGoPlanner, a localization-grounded, end-to-end navigation framework that addresses these limitations by: (1) finetuning a long-horizon visual-geometry backbone to ground predictions with absolute metric scale, thereby providing implicit state estimation for accurate localization; (2) reconstructing surrounding scene geometry from historical observations to supply dense, fine-grained environmental awareness for reliable obstacle avoidance; and (3) conditioning the policy on implicit geometry bootstrapped by the aforementioned auxiliary tasks, thereby reducing error propagation. We evaluate LoGoPlanner in both simulation and real-world settings, where its fully end-to-end design reduces cumulative error while metric-aware geometry memory enhances planning consistency and obstacle avoidance, leading to more than a 27.3\\% improvement over oracle-localization baselines and strong generalization across embodiments and environments. The code and models have been made publicly available on the https://steinate.github.io/logoplanner.github.io.",
-      "published": "2025-12-22T18:03:08Z",
-      "authors": [
-        "Jiaqi Peng",
-        "Wenzhe Cai",
-        "Yuqiang Yang",
-        "Tai Wang",
-        "Yuan Shen",
-        "Jiangmiao Pang"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "link": "https://arxiv.org/abs/2512.19629v2",
-      "pdf_link": "https://arxiv.org/pdf/2512.19629v2.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.19629v2",
-      "relevance_score": 1
-    },
-    {
-      "title": "LeLaR: The First In-Orbit Demonstration of an AI-Based Satellite Attitude Controller",
-      "summary": "Attitude control is essential for many satellite missions. Classical controllers, however, are time-consuming to design and sensitive to model uncertainties and variations in operational boundary conditions. Deep Reinforcement Learning (DRL) offers a promising alternative by learning adaptive control strategies through autonomous interaction with a simulation environment. Overcoming the Sim2Real gap, which involves deploying an agent trained in simulation onto the real physical satellite, remains a significant challenge. In this work, we present the first successful in-orbit demonstration of an AI-based attitude controller for inertial pointing maneuvers. The controller was trained entirely in simulation and deployed to the InnoCube 3U nanosatellite, which was developed by the Julius-Maximilians-Universität Würzburg in cooperation with the Technische Universität Berlin, and launched in January 2025. We present the AI agent design, the methodology of the training procedure, the discrepancies between the simulation and the observed behavior of the real satellite, and a comparison of the AI-based attitude controller with the classical PD controller of InnoCube. Steady-state metrics confirm the robust performance of the AI-based controller during repeated in-orbit maneuvers.",
-      "published": "2025-12-22T17:00:25Z",
-      "authors": [
-        "Kirill Djebko",
-        "Tom Baumann",
-        "Erik Dilger",
-        "Frank Puppe",
-        "Sergio Montenegro"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.AI",
         "cs.LG",
+        "cs.AI",
+        "cs.RO",
         "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2512.19576v2",
-      "pdf_link": "https://arxiv.org/pdf/2512.19576v2.pdf",
+      "link": "https://arxiv.org/abs/2512.24955v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.24955v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2512.19576v2",
+      "arxiv_id": "2512.24955v1",
       "relevance_score": 1
     },
     {
-      "title": "Translating Flow to Policy via Hindsight Online Imitation",
-      "summary": "Recent advances in hierarchical robot systems leverage a high-level planner to propose task plans and a low-level policy to generate robot actions. This design allows training the planner on action-free or even non-robot data sources (e.g., videos), providing transferable high-level guidance. Nevertheless, grounding these high-level plans into executable actions remains challenging, especially with the limited availability of high-quality robot data. To this end, we propose to improve the low-level policy through online interactions. Specifically, our approach collects online rollouts, retrospectively annotates the corresponding high-level goals from achieved outcomes, and aggregates these hindsight-relabeled experiences to update a goal-conditioned imitation policy. Our method, Hindsight Flow-conditioned Online Imitation (HinFlow), instantiates this idea with 2D point flows as the high-level planner. Across diverse manipulation tasks in both simulation and physical world, our method achieves more than $2\\times$ performance improvement over the base policy, significantly outperforming the existing methods. Moreover, our framework enables policy acquisition from planners trained on cross-embodiment video data, demonstrating its potential for scalable and transferable robot learning.",
-      "published": "2025-12-22T11:06:06Z",
+      "title": "UniAct: Unified Motion Generation and Action Streaming for Humanoid Robots",
+      "summary": "A long-standing objective in humanoid robotics is the realization of versatile agents capable of following diverse multimodal instructions with human-level flexibility. Despite advances in humanoid control, bridging high-level multimodal perception with whole-body execution remains a significant bottleneck. Existing methods often struggle to translate heterogeneous instructions -- such as language, music, and trajectories -- into stable, real-time actions. Here we show that UniAct, a two-stage framework integrating a fine-tuned MLLM with a causal streaming pipeline, enables humanoid robots to execute multimodal instructions with sub-500 ms latency. By unifying inputs through a shared discrete codebook via FSQ, UniAct ensures cross-modal alignment while constraining motions to a physically grounded manifold. This approach yields a 19% improvement in the success rate of zero-shot tracking of imperfect reference motions. We validate UniAct on UniMoCap, our 20-hour humanoid motion benchmark, demonstrating robust generalization across diverse real-world scenarios. Our results mark a critical step toward responsive, general-purpose humanoid assistants capable of seamless interaction through unified perception and control.",
+      "published": "2025-12-30T16:20:13Z",
       "authors": [
-        "Yitian Zheng",
-        "Zhangchen Ye",
-        "Weijun Dong",
-        "Shengjie Wang",
-        "Yuyang Liu",
-        "Chongjie Zhang",
-        "Chuan Wen",
-        "Yang Gao"
+        "Nan Jiang",
+        "Zimo He",
+        "Wanhe Yu",
+        "Lexi Pang",
+        "Yunhao Li",
+        "Hongjie Li",
+        "Jieming Cui",
+        "Yuhan Li",
+        "Yizhou Wang",
+        "Yixin Zhu",
+        "Siyuan Huang"
       ],
       "categories": [
-        "cs.RO",
-        "cs.LG"
+        "cs.CV",
+        "cs.RO"
       ],
-      "link": "https://arxiv.org/abs/2512.19269v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.19269v1.pdf",
+      "link": "https://arxiv.org/abs/2512.24321v1",
+      "pdf_link": "https://arxiv.org/pdf/2512.24321v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2512.19269v1",
+      "arxiv_id": "2512.24321v1",
       "relevance_score": 1
     },
     {
-      "title": "H2R-Grounder: A Paired-Data-Free Paradigm for Translating Human Interaction Videos into Physically Grounded Robot Videos",
-      "summary": "Robots that learn manipulation skills from everyday human videos could acquire broad capabilities without tedious robot data collection. We propose a video-to-video translation framework that converts ordinary human-object interaction videos into motion-consistent robot manipulation videos with realistic, physically grounded interactions. Our approach does not require any paired human-robot videos for training only a set of unpaired robot videos, making the system easy to scale. We introduce a transferable representation that bridges the embodiment gap: by inpainting the robot arm in training videos to obtain a clean background and overlaying a simple visual cue (a marker and arrow indicating the gripper's position and orientation), we can condition a generative model to insert the robot arm back into the scene. At test time, we apply the same process to human videos (inpainting the person and overlaying human pose cues) and generate high-quality robot videos that mimic the human's actions. We fine-tune a SOTA video diffusion model (Wan 2.2) in an in-context learning manner to ensure temporal coherence and leveraging of its rich prior knowledge. Empirical results demonstrate that our approach achieves significantly more realistic and grounded robot motions compared to baselines, pointing to a promising direction for scaling up robot learning from unlabeled human videos. Project page: https://showlab.github.io/H2R-Grounder/",
-      "published": "2025-12-10T07:59:45Z",
+      "title": "Safety for Weakly-Hard Control Systems via Graph-Based Barrier Functions",
+      "summary": "Despite significant advancement in technology, communication and computational failures are still prevalent in safety-critical engineering applications. Often, networked control systems experience packet dropouts, leading to open-loop behavior that significantly affects the behavior of the system. Similarly, in real-time control applications, control tasks frequently experience computational overruns and thus occasionally no new actuator command is issued. This article addresses the safety verification and controller synthesis problem for a class of control systems subject to weakly-hard constraints, i.e., a set of window-based constraints where the number of failures are bounded within a given time horizon. The results are based on a new notion of graph-based barrier functions that are specifically tailored to the considered system class, offering a set of constraints whose satisfaction leads to safety guarantees despite communication failures. Subsequent reformulations of the safety constraints are proposed to alleviate conservatism and improve computational tractability, and the resulting trade-offs are discussed. Finally, several numerical case studies demonstrate the effectiveness of the proposed approach.",
+      "published": "2026-01-01T22:27:50Z",
       "authors": [
-        "Hai Ci",
-        "Xiaokang Liu",
-        "Pei Yang",
-        "Yiren Song",
-        "Mike Zheng Shou"
+        "Marc Seidel",
+        "Mahathi Anand",
+        "Frank Allgöwer"
       ],
       "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
+        "eess.SY"
       ],
-      "link": "https://arxiv.org/abs/2512.09406v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.09406v1.pdf",
+      "link": "https://arxiv.org/abs/2601.00494v1",
+      "pdf_link": "https://arxiv.org/pdf/2601.00494v1.pdf",
       "source": "ArXiv",
-      "arxiv_id": "2512.09406v1",
-      "relevance_score": 1
-    },
-    {
-      "title": "VideoVLA: Video Generators Can Be Generalizable Robot Manipulators",
-      "summary": "Generalization in robot manipulation is essential for deploying robots in open-world environments and advancing toward artificial general intelligence. While recent Vision-Language-Action (VLA) models leverage large pre-trained understanding models for perception and instruction following, their ability to generalize to novel tasks, objects, and settings remains limited. In this work, we present VideoVLA, a simple approach that explores the potential of transforming large video generation models into robotic VLA manipulators. Given a language instruction and an image, VideoVLA predicts an action sequence as well as the future visual outcomes. Built on a multi-modal Diffusion Transformer, VideoVLA jointly models video, language, and action modalities, using pre-trained video generative models for joint visual and action forecasting. Our experiments show that high-quality imagined futures correlate with reliable action predictions and task success, highlighting the importance of visual imagination in manipulation. VideoVLA demonstrates strong generalization, including imitating other embodiments' skills and handling novel objects. This dual-prediction strategy - forecasting both actions and their visual consequences - explores a paradigm shift in robot learning and unlocks generalization capabilities in manipulation systems.",
-      "published": "2025-12-07T18:57:15Z",
-      "authors": [
-        "Yichao Shen",
-        "Fangyun Wei",
-        "Zhiying Du",
-        "Yaobo Liang",
-        "Yan Lu",
-        "Jiaolong Yang",
-        "Nanning Zheng",
-        "Baining Guo"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "link": "https://arxiv.org/abs/2512.06963v1",
-      "pdf_link": "https://arxiv.org/pdf/2512.06963v1.pdf",
-      "source": "ArXiv",
-      "arxiv_id": "2512.06963v1",
+      "arxiv_id": "2601.00494v1",
       "relevance_score": 1
     }
   ],
