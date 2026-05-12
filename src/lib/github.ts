@@ -9,7 +9,7 @@ const DEFAULTS: Record<string, unknown> = {
   'reading.json':     { papers: [], last_updated: '' },
   'queue.json':       { papers: [], last_updated: '' },
   'recommended.json': { papers: [], last_updated: '' },
-  'keywords.json':    { keywords: ['perception-driven control', 'adaptive control', 'physical intelligence', 'robot learning'] },
+  'keywords.json':    { keywords: ['reinforcement learning', 'manipulation', 'adaptive control', 'imitation learning', 'robot learning'] },
 };
 
 export function getPAT(): string | null {

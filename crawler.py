@@ -9,14 +9,33 @@ import os
 class AdaptiveRobotPaperCrawler:
     def __init__(self):
         self.headers = {'User-Agent': 'Mozilla/5.0'}
-        self.keywords = self._load_keywords()
+        self.nodes, self.edges = self._load_graph()
 
-    def _load_keywords(self) -> List[str]:
+    def _load_graph(self):
         try:
-            with open('public/data/keywords.json', 'r', encoding='utf-8') as f:
-                return json.load(f).get('keywords', [])
+            with open('public/data/graph.json', 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('nodes', []), data.get('edges', [])
         except (FileNotFoundError, json.JSONDecodeError):
-            return ['perception-driven control', 'adaptive control', 'physical intelligence', 'robot learning']
+            default_nodes = [
+                {'id': '1', 'label': 'reinforcement learning'},
+                {'id': '2', 'label': 'manipulation'},
+                {'id': '3', 'label': 'adaptive control'},
+            ]
+            return default_nodes, []
+
+    def _get_degrees(self) -> Dict[str, int]:
+        degrees = {n['id']: 0 for n in self.nodes}
+        for e in self.edges:
+            degrees[e['source']] = degrees.get(e['source'], 0) + 1
+            degrees[e['target']] = degrees.get(e['target'], 0) + 1
+        return degrees
+
+    def _build_query(self) -> str:
+        degrees = self._get_degrees()
+        sorted_nodes = sorted(self.nodes, key=lambda n: degrees.get(n['id'], 0), reverse=True)
+        terms = ' OR '.join(f'"{n["label"]}"' for n in sorted_nodes[:8])
+        return f'cat:cs.RO AND ({terms})'
 
     def search_arxiv_api(self, query: str, max_results: int = 50) -> List[Dict]:
         params = {
@@ -55,12 +74,19 @@ class AdaptiveRobotPaperCrawler:
                 continue
         return papers
 
-    def filter_papers(self, papers: List[Dict]) -> List[Dict]:
+    def score_papers(self, papers: List[Dict]) -> List[Dict]:
+        degrees = self._get_degrees()
         for p in papers:
-            score = sum(
-                2 if kw in p['title'].lower() else 1 if kw in p['summary'].lower() else 0
-                for kw in self.keywords
-            )
+            title_l = p['title'].lower()
+            summary_l = p['summary'].lower()
+            score = 0
+            for node in self.nodes:
+                weight = degrees.get(node['id'], 0) + 1
+                label = node['label'].lower()
+                if label in title_l:
+                    score += weight * 2
+                elif label in summary_l:
+                    score += weight
             p['relevance_score'] = score
         return sorted(
             [p for p in papers if p['relevance_score'] > 0],
@@ -69,13 +95,14 @@ class AdaptiveRobotPaperCrawler:
         )
 
     def run(self):
-        raw = self.search_arxiv_api('cat:cs.RO AND (adaptive OR control)', 50)
-        filtered = self.filter_papers(raw)
+        query = self._build_query()
+        raw = self.search_arxiv_api(query, 50)
+        scored = self.score_papers(raw)
         os.makedirs('public/data', exist_ok=True)
         with open('public/data/recommended.json', 'w', encoding='utf-8') as f:
             json.dump({
                 'last_updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-                'papers': filtered[:25],
+                'papers': scored[:25],
             }, f, indent=2)
 
 if __name__ == '__main__':

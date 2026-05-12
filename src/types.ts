@@ -19,3 +19,20 @@ export interface RecommendedData extends PaperList {}
 export interface KeywordsData {
   keywords: string[];
 }
+
+export interface TopicNode {
+  id: string;
+  label: string;
+  x?: number;
+  y?: number;
+}
+
+export interface TopicEdge {
+  source: string;
+  target: string;
+}
+
+export interface TopicGraphData {
+  nodes: TopicNode[];
+  edges: TopicEdge[];
+}
