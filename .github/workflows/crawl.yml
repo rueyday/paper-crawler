@@ -1,37 +1,30 @@
 name: Update Robot Papers
 on:
   schedule:
-    - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
+    - cron: '0 8 * * 1'  # Every Monday 08:00 UTC
   workflow_dispatch:
 
 jobs:
-  run-crawler:
+  crawl:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # This is crucial for pushing changes
+      contents: write
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      
-      - name: Install dependencies
-        run: pip install feedparser
-      
-      - name: Run crawler script
+
+      - name: Run crawler
         run: python crawler.py
-      
-      - name: Commit and push changes
+
+      - name: Commit updated recommendations
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add robot_manipulation_papers.json adaptive_robotics_papers.json
-          git commit -m "🤖 Auto-update robot papers" || echo "No changes to commit"
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/recommended.json
+          git commit -m "🤖 Auto-update robot papers" || echo "No changes"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

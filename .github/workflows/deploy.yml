@@ -1,48 +1,46 @@
 name: Build and Deploy
 on:
-  schedule:
-    - cron: '0 0 * * 1' # Monday midnight
-  workflow_dispatch:    # Allows manual refresh via GitHub UI
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-          
-      - name: Run Crawler
-        run: python crawler.py
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
-      - name: Install and Build
+      - name: Install and build
         run: |
           npm install
           npm run build
         env:
+          VITE_USERNAME: ${{ secrets.VITE_USERNAME }}
           VITE_PASSWORD_HASH: ${{ secrets.VITE_PASSWORD_HASH }}
+          VITE_GITHUB_REPO: ${{ secrets.VITE_GITHUB_REPO }}
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - uses: actions/configure-pages@v4
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: ./dist
 
-      - name: Deploy to GitHub Pages
+      - id: deploy
         uses: actions/deploy-pages@v4

@@ -47,6 +47,13 @@ __pycache__/
 node_modules/
 npm-debug.log
 
+### Vite local env (contains VITE_GITHUB_REPO for local dev) ###
+.env.local
+.env*.local
+
+### Legacy crawler output (replaced by data/recommended.json) ###
+papers.json
+
 ### ROS 2 ###
 install/
 log/
