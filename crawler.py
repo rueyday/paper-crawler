@@ -13,7 +13,7 @@ class AdaptiveRobotPaperCrawler:
 
     def _load_keywords(self) -> List[str]:
         try:
-            with open('data/keywords.json', 'r', encoding='utf-8') as f:
+            with open('public/data/keywords.json', 'r', encoding='utf-8') as f:
                 return json.load(f).get('keywords', [])
         except (FileNotFoundError, json.JSONDecodeError):
             return ['perception-driven control', 'adaptive control', 'physical intelligence', 'robot learning']
@@ -71,8 +71,8 @@ class AdaptiveRobotPaperCrawler:
     def run(self):
         raw = self.search_arxiv_api('cat:cs.RO AND (adaptive OR control)', 50)
         filtered = self.filter_papers(raw)
-        os.makedirs('data', exist_ok=True)
-        with open('data/recommended.json', 'w', encoding='utf-8') as f:
+        os.makedirs('public/data', exist_ok=True)
+        with open('public/data/recommended.json', 'w', encoding='utf-8') as f:
             json.dump({
                 'last_updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 'papers': filtered[:25],
