@@ -5,11 +5,14 @@ const IS_DEV = import.meta.env.DEV;
 // File paths in the repo (under public/ so Vite also serves them locally)
 const DATA_DIR = 'public/data';
 
+const BASE = import.meta.env.BASE_URL as string; // e.g. '/paper-crawler/'
+
 const DEFAULTS: Record<string, unknown> = {
   'reading.json':     { papers: [], last_updated: '' },
   'queue.json':       { papers: [], last_updated: '' },
   'recommended.json': { papers: [], last_updated: '' },
   'keywords.json':    { keywords: ['reinforcement learning', 'manipulation', 'adaptive control', 'imitation learning', 'robot learning'] },
+  'graph.json':       { nodes: [], edges: [] },
 };
 
 export function getPAT(): string | null {
@@ -21,9 +24,9 @@ export function setPAT(pat: string): void {
 }
 
 export async function fetchData<T>(filename: string): Promise<T> {
-  // In dev, Vite serves public/ at root — fetch locally
+  // In dev, Vite serves public/ at BASE_URL — fetch locally
   if (IS_DEV) {
-    const res = await fetch(`/data/${filename}?t=${Date.now()}`);
+    const res = await fetch(`${BASE}data/${filename}?t=${Date.now()}`);
     if (res.status === 404) return DEFAULTS[filename] as T ?? {} as T;
     if (!res.ok) throw new Error(`Fetch failed for ${filename}: HTTP ${res.status}`);
     return res.json();
